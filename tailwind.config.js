@@ -10,6 +10,12 @@ module.exports = {
       {
         mytheme: {
           primary: "#000000",
+         
+          // Text Primary
+          tp: "#9cfcc0",
+
+          // Text Secondary
+          ts: "#56966e",
 
           secondary: "#ff00ff",
 
