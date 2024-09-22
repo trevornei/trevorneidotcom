@@ -9,29 +9,26 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          
-"primary": "#000000",
-          
-"secondary": "#ff00ff",
-          
-"accent": "#00ff00",
-          
-"neutral": "#ff00ff",
-          
-"base-100": "#000000",
-          
-"info": "#0000ff",
-          
-"success": "#00ff00",
-          
-"warning": "#00ff00",
-          
-"error": "#ff0000",
-          },
+          primary: "#000000",
+
+          secondary: "#ff00ff",
+
+          accent: "#00ff00",
+
+          neutral: "#ff00ff",
+
+          "base-100": "#000000",
+
+          info: "#0000ff",
+
+          success: "#00ff00",
+
+          warning: "#00ff00",
+
+          error: "#fe3849",
         },
-      ],
-    },
-    plugins: [
-     require('daisyui'),
-  ],
+      },
+    ],
+  },
+  plugins: [require("daisyui")],
 };
