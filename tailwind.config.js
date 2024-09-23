@@ -10,9 +10,12 @@ module.exports = {
       colors: {
         // Text Primary
         tp: "#9cfcc0",
-
         // Text Secondary
         ts: "#56966e",
+        // Text Pink
+        tpink: "#d44179",
+        // Background Light Green
+        bgdg: "#0b1a17",
       },
     }, 
   },
