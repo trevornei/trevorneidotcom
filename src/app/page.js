@@ -1,11 +1,13 @@
-'use client';
-
-import Nav from './components/Nav'
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
-		<Nav />
-	</> 
-  )
+      <div className="flex flex-col">
+        <Nav />
+        <Footer />
+      </div>
+    </>
+  );
 }
