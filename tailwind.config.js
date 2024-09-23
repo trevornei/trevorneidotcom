@@ -5,18 +5,23 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      colors: {
+        // Text Primary
+        tp: "#9cfcc0",
+
+        // Text Secondary
+        ts: "#56966e",
+      },
+    }, 
+  },
   daisyui: {
     themes: [
       {
         mytheme: {
           primary: "#000000",
          
-          // Text Primary
-          tp: "#9cfcc0",
-
-          // Text Secondary
-          ts: "#56966e",
-
           secondary: "#ff00ff",
 
           accent: "#00ff00",

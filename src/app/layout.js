@@ -9,20 +9,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <body>
       <nav className="border-2 border-solid border-error navbar">
         <ul className="">
           <li className="">
-            <h1 className="">Blog</h1> 
+            <h1 className="text-tp">Blog</h1> 
           </li> 
           <li className="">
-            <h1 className="">About</h1> 
+            <h1 className="text-tp">About</h1> 
           </li> 
           <li className="">
-            <h1 className="">Contact</h1> 
+            <h1 className="text-tp">Contact</h1> 
           </li> 
         </ul>
-      </nav>
-      <body>
+      </nav> 
         {children}
       </body>
     </html>
