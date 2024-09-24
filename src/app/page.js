@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className="flex flex-col">
         <Nav />
-        <div className="flex flex-row items-center justify-center">
+        <div className="flex flex-row items-center justify-center animate-spin-slow-md">
           <div className="flex flex-row items-center justify-center">
             <Image
               src="/images/CirclesAndSpheres/SVG/circles_26_white.svg"
