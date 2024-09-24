@@ -8,12 +8,13 @@ export default function Home() {
       <div className="flex flex-col">
         <Nav />
         <div className="flex flex-row items-center justify-center">
-          <div className="flex flex-row items-center justify-center ">
+          <div className="flex flex-row items-center justify-center">
             <Image
               src="/images/CirclesAndSpheres/SVG/circles_26_white.svg"
               width={500}
               height={500}
               alt="Picture of the author"
+              className="animate-spin-slow-md"
             />
           </div>
           <div className="flex flex-row items-center justify-center ">
@@ -22,6 +23,7 @@ export default function Home() {
               width={500}
               height={500}
               alt="Picture of the author"
+              className="animate-spin-slow"
             />
           </div>
         </div>

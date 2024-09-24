@@ -17,6 +17,10 @@ module.exports = {
         // Background Light Green
         bgdg: "#0b1a17",
       },
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
+        'spin-slow-md': 'spin 8s linear infinite',
+      }
     }, 
   },
   daisyui: {
