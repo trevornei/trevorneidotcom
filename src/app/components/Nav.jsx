@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function Nav() {
   return (
     <>
-      <nav className="flex flex-row items-center justify-between border-2 border-solid xl:px-10 border-error navbar bg-bgdg">
+      <nav className="flex flex-row items-center justify-between xl:px-10 navbar bg-bgdg">
         <div className="">
           <Image
-            src="/CirclesAndSpheres/SVG/circles_40.svg"
+            src="/images/CirclesAndSpheres/SVG/circles_79_white.svg"
             width={80}
             height={80}
             alt="Logo"

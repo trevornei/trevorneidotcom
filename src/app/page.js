@@ -7,10 +7,10 @@ export default function Home() {
     <>
       <div className="flex flex-col">
         <Nav />
-        <div className="flex flex-row bg-tp/50 ">
-          <div className="flex flex-row items-center justify-center backdrop-blur-x">
+        <div className="flex flex-row items-center justify-center">
+          <div className="flex flex-row items-center justify-center ">
             <Image
-              src="/CirclesAndSpheres/SVG/circles_35.svg"
+              src="/images/CirclesAndSpheres/SVG/circles_26_white.svg"
               width={500}
               height={500}
               alt="Picture of the author"
@@ -18,15 +18,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row items-center justify-center ">
             <Image
-              src="/CirclesAndSpheres/SVG/circles_26.svg"
-              width={500}
-              height={500}
-              alt="Picture of the author"
-            />
-          </div>
-          <div className="flex flex-row items-center justify-center ">
-            <Image
-              src="/CirclesAndSpheres/SVG/circles_57.svg"
+              src="/images/CirclesAndSpheres/SVG/circles_57_white.svg"
               width={500}
               height={500}
               alt="Picture of the author"
