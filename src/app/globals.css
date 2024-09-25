@@ -22,5 +22,5 @@
 }
 
 nav {
-  @apply text-2xl font-semibold font-chakra;
+  @apply text-2xl font-semibold font-silkscreen;
 }
