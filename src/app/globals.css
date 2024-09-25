@@ -9,18 +9,18 @@
 
 @font-face {
   font-family: 'Chakra Petch';
-  src: url('/fonts/ChakraPetch.woff2') format('woff2');
+  src: url('/fonts/Chakra_Petch.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Silkscreen';
-  src: url('/fonts/Silkscreen.woff2') format('woff2');
+  src: url('/fonts/Silkscreen.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 nav {
   @apply text-2xl font-semibold font-silkscreen;
-}
+} 
