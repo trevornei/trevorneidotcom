@@ -17,7 +17,7 @@ export default function Nav() {
         <div className="">
           <ul className="flex flex-row gap-10">
             <li className="">
-              <h1 className="text-tp">Blog</h1>
+              <h1 className="font-bold text-tp">Blog</h1>
             </li>
             <li className="">
               <h1 className="text-tp">About</h1>

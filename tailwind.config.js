@@ -17,6 +17,10 @@ module.exports = {
         // Background Light Green
         bgdg: "#0b1a17",
       },
+      fontFamily: {
+        chakra: ['Chakra Petch', 'sans-serif'],
+        silkscreen: ['Silkscreen', 'monospace'],
+      },
       animation: {
         // Existing
         "spin-slow": "spin 5s ease infinite",
