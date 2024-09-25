@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Nav() {
   return (
     <>
-      <nav className="flex flex-row items-center justify-between xl:px-10 navbar bg-bgdg">
+      <nav className="z-50 flex flex-row items-center justify-between xl:px-10 navbar bg-bgdg">
         <div className="">
           <Image
             src="/images/CirclesAndSpheres/SVG/circles_79_white.svg"
