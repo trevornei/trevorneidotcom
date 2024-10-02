@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #000000;
 }
+
+/* Fonts Imported */ 
 
 @font-face {
   font-family: 'Chakra Petch';
@@ -28,6 +30,13 @@
   font-style: normal;
 }
 
+/* REUSABLE COMPONENTS*/
+
 nav {
-  @apply text-2xl font-semibold font-chakra;
-} 
+  @apply text-2xl font-semibold font-chakra backdrop-blur-sm;
+}
+
+/* Glassy Containers */
+
+/* <h> & all text <tags> */
+
