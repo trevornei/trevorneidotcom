@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         chakra: ['Chakra Petch', 'sans-serif'],
         silkscreen: ['Silkscreen', 'monospace'],
+        rubikglitch: ['Rubik Glitch', 'monospace'],
       },
       animation: {
         // Existing

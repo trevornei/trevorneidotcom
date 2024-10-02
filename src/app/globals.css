@@ -16,11 +16,18 @@
 
 @font-face {
   font-family: 'Silkscreen';
+  src: url('/public/fonts/Silkscreen/silkscreen-regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Silkscreen';
   src: url('/fonts/Silkscreen.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 nav {
-  @apply text-2xl font-semibold font-silkscreen;
+  @apply text-2xl font-semibold font-chakra;
 } 

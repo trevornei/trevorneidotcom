@@ -32,12 +32,12 @@ export default function Home() {
               width={210}
               height={210}
               alt="Picture of the author"
-              className="animate-spin-slow-md "
+              className="animate-spin-slow-md"
             />
           </div>
         </div>
         <div className="">
-          <div className="flex flex-row items-center justify-center animate-tilt">
+          <div className="flex flex-row items-center justify-center">
             <Image
               src="/images/CirclesAndSpheres/SVG/circles_57_white.svg"
               width={300}

@@ -14,16 +14,16 @@ export default function Nav() {
             alt="Logo"
           />
         </div>
-        <div className=" font-silkscreen">
+        <div className=" font-chakra">
           <ul className="flex flex-row gap-10">
             <li className="">
-              <h1 className="text-3xl text-tp font-silkscreen">Blog</h1>
+              <h1 className="text-3xl text-tp font-chakra">Blog</h1>
             </li>
             <li className="">
-              <h1 className="text-3xl text-tp font-silkscreen">About</h1>
+              <h1 className="text-3xl text-tp font-chakra">About</h1>
             </li>
             <li className="">
-              <h1 className="text-3xl text-tp font-silkscreen">Contact</h1>
+              <h1 className="text-3xl text-tp font-chakra">Contact</h1>
             </li>
           </ul>
         </div>
