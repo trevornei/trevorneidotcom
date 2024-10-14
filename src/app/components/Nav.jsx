@@ -8,10 +8,11 @@ export default function Nav() {
       <nav className="z-50 flex flex-row items-center justify-between xl:px-10 navbar bg-bgdg">
         <div className="">
           <Image
-            src="/images/CirclesAndSpheres/SVG/circles_79_white.svg"
+            src="/assets/images/CirclesAndSpheres/SVG/circles_79_white.svg"
             width={80}
             height={80}
             alt="Logo"
+            priority={true}
           />
         </div>
         <div className=" font-chakra">
