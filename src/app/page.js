@@ -9,7 +9,7 @@ import CardThree from "./components/home/cardThree";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-hidden">
         <Nav />
         <Hero />
         <CardTwo />

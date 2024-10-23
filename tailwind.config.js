@@ -38,6 +38,7 @@ module.exports = {
         "rotate-y": "rotateY 3s ease infinite",
         tilt: "tilt 3s ease-in-out infinite",
         shake: "shake 1s ease-in-out infinite",
+        rotateAndScale: 'rotateAndScale 8s linear infinite',
       },
       keyframes: {
         slideRight: {
@@ -70,6 +71,14 @@ module.exports = {
           "25%": { transform: "translateX(-5px)" },
           "75%": { transform: "translateX(5px)" },
         },
+        rotateAndScale: {
+          '0%': { transform: 'rotate(0deg) scale(1)' },
+          '20%': { transform: 'rotate(72deg) scale(1.2)' },
+          '40%': { transform: 'rotate(144deg) scale(1.5)' },
+          '60%': { transform: 'rotate(216deg) scale(1.3)' },
+          '80%': { transform: 'rotate(288deg) scale(1.1)' },
+          '100%': { transform: 'rotate(360deg) scale(1)' },
+        }, 
       },
     },
   },

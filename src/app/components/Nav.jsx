@@ -46,18 +46,12 @@ export default function Nav() {
             ref={logoRef} // Set the ref to target the logo
           />
         </div>
-        <div className="font-chakra">
-          <ul className="flex flex-row gap-10">
-            <li className="">
-              <h1 className="text-3xl text-tp font-chakra">Blog</h1>
-            </li>
-            <li className="">
-              <h1 className="text-3xl text-tp font-chakra">About</h1>
-            </li>
-            <li className="">
-              <h1 className="text-3xl text-tp font-chakra">Contact</h1>
-            </li>
-          </ul>
+        <div>  
+          <button>
+           <div className="w-8 h-8 rounded-full bg-tp flex items-center justify-center">
+            <div className="w-4 h-4 rounded-full bg-ts animate-ping"></div> 
+           </div> 
+          </button> 
         </div>
       </nav>
     </>
