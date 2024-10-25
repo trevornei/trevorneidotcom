@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { useGsap } from "gsap/dist/ScrollTrigger";
 
 export default function Nav() {
   const logoRef = useRef(null); // Reference for the logo
@@ -63,7 +62,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="z-50 flex sticky flex-row items-center justify-between xl:px-10 navbar bg-gradient-to-b from-ts/30 to-bgdg">
+      <nav className="z-50 flex sticky flex-row items-center justify-between xl:px-10 navbar ">
         <div className="">
           <Image
             src="/assets/images/CirclesAndSpheres/SVG/circles_79_white.svg"
@@ -82,6 +81,10 @@ export default function Nav() {
           </button>
         </div>
       </nav>
+      <div className="flex items-center justify-center">
+        <div className="xl:h-px w-10/12 bg-white"></div>
+      
+      </div>
     </>
   );
 }

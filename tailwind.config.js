@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      rotate: {
+        '35': '35deg',
+        '55': '55deg'
+      },
       colors: {
         // Text Primary
         tp: "#9cfcc0",
