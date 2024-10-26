@@ -39,6 +39,9 @@ nav {
 }
 
 /* Glassy Containers */
+.glassy {
+  @apply bg-white/10 backdrop-blur-md shadow-lg
+}
 
 /* <h> & all text <tags> */
 

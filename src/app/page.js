@@ -11,10 +11,12 @@ export default function Home() {
     <>
       <div className="flex flex-col overflow-hidden">
         <Nav />
-        <Hero />
-        <CardTwo />
-        <CardThree />
-        <Footer />
+        <div className="flex flex-col items-center justify-center overflow-hidden">
+          <Hero />
+          <CardTwo />
+          <CardThree />
+          <Footer />
+        </div>
       </div>
     </>
   );

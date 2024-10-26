@@ -1,7 +1,8 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
+import Modal from './modal' 
 
 export default function Nav() {
   const logoRef = useRef(null); // Reference for the logo
@@ -60,31 +61,54 @@ export default function Nav() {
     };
   }, []);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <>
       <nav className="z-50 flex sticky flex-row items-center justify-between xl:px-10 navbar ">
         <div className="">
+          {/* Logo */}
           <Image
             src="/assets/images/CirclesAndSpheres/SVG/circles_79_white.svg"
-            width={80}
-            height={80}
-            alt="Logo"
+            width={100}
+            height={100}
+            alt="Logo for trevor nei dot com"
             priority={true}
             ref={logoRef} // Set the ref to target the logo
           />
         </div>
         <div>
-          <button priority={true} ref={navUt}>
-            <div className="w-8 h-8 rounded-full bg-ts flex items-center justify-center">
-              <div className="w-4 h-4 rounded-tl-full rounded-tr-full -rotate-[130deg] rounded-br-full from-bg-tp to-bg-ts bg-gradient-to-b "></div>
+          {/* Haystack button */}
+          <button onClick={openModal} className="relative">
+          <Image
+            src="/assets/images/ma_cherry/3.png"
+            className="absolute top-0 right-0 blur-xl animate-pulse-slow animate-spin-slow"
+            width={100}
+            height={100}
+            alt="Absract shape for button styling"
+          /> 
+            <div className="w-12 h-12 rounded-full glassy bg-ts flex flex-col items-center justify-center">
+              <div className="w-4 h-1  bg-white"></div>
+              <div className="w-4 h-1 my-1 bg-white"></div>
+              <div className="w-4 h-1  bg-white"></div>
             </div>
           </button>
         </div>
       </nav>
+      {/* Line at the bottom of the nav bar. */}
       <div className="flex items-center justify-center">
-        <div className="xl:h-px w-10/12 bg-white"></div>
-      
+        <div className="h-px w-10/12 bg-white"></div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <h2 className="text-xl font-semibold mb-4">Modal Title</h2>
+        <p>This is the content inside the modal.</p>
+        <button onClick={closeModal} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
+          Close Modal
+        </button>
+      </Modal>
     </>
   );
 }
