@@ -4,80 +4,98 @@ import Image from "next/image";
 export default function CardThree() {
     return (
         <>
-            <div className="mt-36 grid grid-cols-4 gap-16 xl:w-10/12">
+            <div className="relative mt-36 grid grid-cols-4 gap-16 xl:w-10/12">
+                <Image
+                    src="/assets/images/ma_cherry/el 10.png"
+                    className="absolute blur-[300px] -translate-x-32 inset-0  rotate-35"
+                    alt="Another logo"
+                    width={800}
+                    height={800}
+                />
+                <Image
+                    src="/assets/images/ma_cherry/el 10.png"
+                    className="absolute translate-x-72 translate-y-56 blur-[600px] bottom-0 right-0  rotate-180"
+                    alt="Another logo"
+                    width={800}
+                    height={800}
+                />
+                {/*Card One */}
                 <div className="flex flex-row glassy p-8 col-span-3 justify-items-start">
                     <Image
-                        src="/assets/images/x-logo/logo-white.png"
+                        src="/assets/images/umt-logo/logo.png"
                         alt="Another logo"
                         width={100}
                         height={100}
                     />
                     <div className="flex flex-col">
                         <h3 className="">
-                            Title
+                            University of Montana (2024)
                         </h3>
                         <h4 className="">
-                            Subtitle
+                            Freshman studying Computer Science – Software Engineering B.A.
                         </h4>
                         <p className="">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
                         </p>
                     </div>
                 </div>
                 <div className="flex flex-row glassy p-8 col-start-2 col-span-3 justify-items-end">
                     <Image
-                        src="/assets/images/x-logo/logo-white.png"
+                        src="/assets/images/certs/coursera-cyber-cert.png"
                         alt="Another logo"
                         width={100}
                         height={100}
                     />
                     <div className="flex flex-col">
                         <h3 className="">
-                            Title
+                           Google Cybersecurity Certificate 
                         </h3>
                         <h4 className="">
-                            Subtitle
+                           ≈160 Hrs. 
                         </h4>
                         <p className="">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-row glass p-8 col-span-3 justify-items-start">
+                
+                {/*Card Two */}
+                <div className="flex flex-row glassy p-8 col-span-3 justify-items-start">
                     <Image
-                        src="/assets/images/x-logo/logo-white.png"
+                        src="/assets/images/certs/intermediate_python_cert_Trevor_Nei.png"
                         alt="Another logo"
                         width={100}
                         height={100}
                     />
                     <div className="flex flex-col">
                         <h3 className="">
-                            Title
+                           Intermediate Python – Front End Masters 
                         </h3>
                         <h4 className="">
                             Subtitle
                         </h4>
                         <p className="">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-row glass p-8 col-start-2 col-span-3 justify-items-start">
+                
+                {/*Card Three */}
+                <div className="flex flex-row glassy p-8 col-start-2 col-span-3 justify-items-start">
                     <Image
-                        src="/assets/images/x-logo/logo-white.png"
+                        src="/assets/images/certs/promineo-trevor-nei.png"
                         alt="Another logo"
                         width={100}
                         height={100}
                     />
                     <div className="flex flex-col">
                         <h3 className="">
-                            Title
+                           Front End Developer Bootcamp 
                         </h3>
                         <h4 className="">
-                            Subtitle
+                            Promineo
                         </h4>
                         <p className="">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
                         </p>
                     </div>
                 </div>
