@@ -31,7 +31,7 @@ const Modal = ({ isOpen, onClose, children }) => {
 
     return (
         <>
-            <div ref={overlayRef} className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800">
+            <div ref={overlayRef} className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-3xl">
                 <div
                     ref={modalRef}
                     className="bg-white p-6 rounded-lg shadow-lg relative"
