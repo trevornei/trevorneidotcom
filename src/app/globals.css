@@ -46,25 +46,29 @@ nav {
 /* <h> & all text <tags> */
 
 h1 {
-  @apply text-4xl;
+  @apply text-4xl selection:bg-tp selection:text-black;
 }
 
 h2 {
-  @apply text-3xl;
+  @apply text-3xl selection:bg-tp selection:text-black;
 }
 
 h3 {
-  @apply text-2xl;
+  @apply text-2xl selection:bg-tp selection:text-black;
 }
 
 h4 {
-  @apply text-xl;
+  @apply text-xl selection:bg-tp selection:text-black;
 }
 
 h5 {
-  @apply text-lg;
+  @apply text-lg selection:bg-tp selection:text-black;
 }
 
 h6 {
-  @apply text-base;
+  @apply text-base selection:bg-tp selection:text-black;
+}
+
+p {
+  @apply selection:bg-tp selection:text-black;
 }
