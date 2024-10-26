@@ -102,11 +102,27 @@ export default function Nav() {
       <div className="flex items-center justify-center">
         <div className="h-px w-10/12 bg-white"></div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <h2 className="text-xl font-semibold mb-4">Modal Title</h2>
-        <p>This is the content inside the modal.</p>
-        <button onClick={closeModal} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
-          Close Modal
+      <Modal isOpen={isModalOpen} onClose={closeModal} className="">
+       <h1 className="">EXPLORE</h1> 
+        <ul className="flex flex-col items-center justify-center">
+          <li className="">
+            <h3 className="">
+              Home
+            </h3>
+          </li>
+          <li className="">
+            <h3 className="">
+              Notes
+            </h3>
+          </li>
+          <li className="">
+            <h3 className="">
+              Contact
+            </h3>
+          </li>
+        </ul>
+        <button onClick={closeModal} className="mt-4 px-4 py-2 backdrop-blur-3xl bg-tp/20 text-white rounded">
+          Close 
         </button>
       </Modal>
     </>
