@@ -4,7 +4,8 @@ import Image from "next/image";
 export default function CardThree() {
     return (
         <>
-            <div className="relative mt-36 grid grid-cols-4 gap-16 xl:w-10/12">
+
+            <div className="relative mt-36 grid grid-cols-4 grid-rows-5 gap-16 xl:w-10/12 xl:mb-20">
                 <Image
                     src="/assets/images/ma_cherry/el 10.png"
                     className="absolute blur-[300px] -translate-x-32 inset-0  rotate-35"
@@ -20,11 +21,17 @@ export default function CardThree() {
                     height={800}
                 />
                 {/*Card One */}
-                <div className="flex flex-row glassy p-8 col-span-3 justify-items-start">
+                <div className="row-start-2">
+                    <h1 className="font-extrabold text-tpink">
+                       CERTIFICATES 
+                    </h1>
+                </div>
+                <div className="flex flex-row glassy row-start-2 col-start-2 col-span-3 justify-items-start">
                     <Image
                         src="/assets/images/umt-logo/logo.png"
                         alt="Another logo"
-                        width={100}
+                        className="object-none"
+                        width={300}
                         height={100}
                     />
                     <div className="flex flex-col">
@@ -32,64 +39,68 @@ export default function CardThree() {
                             University of Montana (2024)
                         </h3>
                         <h4 className="">
-                            Freshman studying Computer Science – Software Engineering B.A.
+                            Studying Computer Science – Software Engineering B.A.
                         </h4>
                         <p className="">
 
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-row glassy p-8 col-start-2 col-span-3 justify-items-end">
+                <div className="flex flex-row glassy row-start-3 col-start-2 col-span-3 justify-items-end">
                     <Image
                         src="/assets/images/certs/coursera-cyber-cert.png"
                         alt="Another logo"
-                        width={100}
+                        className="object-none"
+                        width={300}
                         height={100}
                     />
                     <div className="flex flex-col">
                         <h3 className="">
-                           Google Cybersecurity Certificate 
+                            Google Cybersecurity Certificate
                         </h3>
                         <h4 className="">
-                           ≈160 Hrs. 
+                            ≈160 Hrs.
                         </h4>
                         <p className="">
                         </p>
                     </div>
                 </div>
-                
+
                 {/*Card Two */}
-                <div className="flex flex-row glassy p-8 col-span-3 justify-items-start">
+                <div className="flex flex-row glassy row-start-4 col-span-3 col-start-2 justify-items-start">
                     <Image
                         src="/assets/images/certs/intermediate_python_cert_Trevor_Nei.png"
                         alt="Another logo"
-                        width={100}
+                        className="object-none"
+                        width={300}
                         height={100}
                     />
                     <div className="flex flex-col">
                         <h3 className="">
-                           Intermediate Python – Front End Masters 
+                            Intermediate Python
                         </h3>
                         <h4 className="">
-                            Subtitle
+                            Front End Masters
                         </h4>
                         <p className="">
 
                         </p>
                     </div>
                 </div>
-                
+
                 {/*Card Three */}
-                <div className="flex flex-row glassy p-8 col-start-2 col-span-3 justify-items-start">
+                <div className="flex flex-row glassy row-start-5 col-start-2 col-span-3 justify-items-start">
                     <Image
                         src="/assets/images/certs/promineo-trevor-nei.png"
                         alt="Another logo"
-                        width={100}
+                        className="object-none"
+                        width={300}
                         height={100}
                     />
+                    {/* Text Area */}
                     <div className="flex flex-col">
                         <h3 className="">
-                           Front End Developer Bootcamp 
+                            Front End Developer Bootcamp
                         </h3>
                         <h4 className="">
                             Promineo
