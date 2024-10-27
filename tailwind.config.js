@@ -33,6 +33,7 @@ module.exports = {
 
         // New Animations
         "pulse-fast": "pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "pulse-once": "grow 1.5s cubic-bezier(0.4, 0, 0.6, 1) 0",
         "pulse-slow": "pulse 4s ease-in-out infinite",
         "bounce-slow": "bounce 4s infinite",
         "slide-right": "slideRight 8s ease-in-out infinite",

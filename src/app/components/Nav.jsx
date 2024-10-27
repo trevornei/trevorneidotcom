@@ -2,13 +2,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import Modal from './modal' 
+import Modal from './modal'
 
 export default function Nav() {
   const logoRef = useRef(null); // Reference for the logo
 
   const navUt = useRef(null); // Reference for the logo
-  
+
   useEffect(() => {
     const logoElement = logoRef.current;
 
@@ -83,17 +83,19 @@ export default function Nav() {
         <div>
           {/* Haystack button */}
           <button onClick={openModal} className="relative">
-          <Image
-            src="/assets/images/ma_cherry/3.png"
-            className="absolute top-0 right-0 blur-xl animate-pulse-slow animate-spin-slow"
-            width={100}
-            height={100}
-            alt="Absract shape for button styling"
-          /> 
-            <div className="w-12 h-12 rounded-full glassy bg-ts flex flex-col items-center justify-center">
-              <div className="w-4 h-1  bg-white"></div>
-              <div className="w-4 h-1 my-1 bg-white"></div>
-              <div className="w-4 h-1  bg-white"></div>
+            <Image
+              src="/assets/images/ma_cherry/3.png"
+              className="absolute top-0 right-0 blur-xl animate-pulse-slow animate-spin-slow"
+              width={100}
+              height={100}
+              alt="Absract shape for button styling"
+            />
+            <div className="w-12 h-12 rounded-full glassy flex flex-col items-center justify-center transition-transform duration-500 ease-linear transform hover:scale-110" onClick={(e) => e.currentTarget.classList.add('animate-pulse-once')}>
+              <div className="flex items-start flex-col">
+                <div className="w-4 h-1 bg-white transition-transform duration-500 ease-in-out transform hover:translate-x-1"></div>
+                <div className="w-5 h-1 my-1 bg-white transition-transform duration-500 ease-in-out transform hover:translate-x-1"></div>
+                <div className="w-4 h-1 bg-white transition-transform duration-500 ease-in-out transform hover:translate-x-1"></div>
+              </div>
             </div>
           </button>
         </div>
@@ -103,7 +105,7 @@ export default function Nav() {
         <div className="h-px w-10/12 bg-white"></div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal} className="">
-       <h1 className="">EXPLORE</h1> 
+        <h1 className="">EXPLORE</h1>
         <ul className="flex flex-col items-center justify-center">
           <li className="">
             <h3 className="">
@@ -122,7 +124,7 @@ export default function Nav() {
           </li>
         </ul>
         <button onClick={closeModal} className="mt-4 px-4 py-2 backdrop-blur-3xl bg-tp/20 text-white rounded">
-          Close 
+          Close
         </button>
       </Modal>
     </>
