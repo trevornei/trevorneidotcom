@@ -9,6 +9,7 @@
 
 /* Fonts Imported */ 
 
+/*
 @font-face {
   font-family: 'Chakra Petch';
   src: url('/fonts/Chakra_Petch.woff2') format('woff2');
@@ -29,6 +30,7 @@
   font-weight: 400;
   font-style: normal;
 }
+*/
 
 /* REUSABLE COMPONENTS*/
 
@@ -37,6 +39,36 @@ nav {
 }
 
 /* Glassy Containers */
+.glassy {
+  @apply bg-white/10 backdrop-blur-md shadow-lg
+}
 
 /* <h> & all text <tags> */
 
+h1 {
+  @apply text-4xl selection:bg-tp selection:text-black;
+}
+
+h2 {
+  @apply text-3xl selection:bg-tp selection:text-black;
+}
+
+h3 {
+  @apply text-2xl selection:bg-tp selection:text-black;
+}
+
+h4 {
+  @apply text-xl selection:bg-tp selection:text-black;
+}
+
+h5 {
+  @apply text-lg selection:bg-tp selection:text-black;
+}
+
+h6 {
+  @apply text-base selection:bg-tp selection:text-black;
+}
+
+p {
+  @apply selection:bg-tp selection:text-black;
+}
