@@ -15,10 +15,10 @@ export default function Hero() {
                     />
                     <Image
                         src="/assets/images/ma_cherry/image_2.png"
-                        className="absolute inset-0 rotate-180 object-cover blur-2xl -z-10 animate-rotateAndScale"
+                        className="absolute inset-0 rotate-180 object-cover blur-md -z-10 animate-rotateAndScale saturate-200"
                         alt="Shoshone"
-                        width={800}
-                        height={800}
+                        width={600}
+                        height={600}
                     />
                     <Image
                         src="/assets/images/profile_pictures/profile_picture.png"

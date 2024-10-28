@@ -23,6 +23,11 @@ export default function CardThree() {
                 {/*Card One */}
                 <div className="row-start-2">
                     <h1 className="font-extrabold text-tpink">
+                       EDUCATION 
+                    </h1>
+                </div>
+                <div className="row-start-3">
+                    <h1 className="font-extrabold text-tpink">
                        CERTIFICATES 
                     </h1>
                 </div>
@@ -30,8 +35,8 @@ export default function CardThree() {
                     <Image
                         src="/assets/images/umt-logo/logo.png"
                         alt="Another logo"
-                        className="object-none"
-                        width={300}
+                        className="object-contain"
+                        width={200}
                         height={100}
                     />
                     <div className="flex flex-col">
