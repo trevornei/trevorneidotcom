@@ -9,13 +9,13 @@
 
 /* Fonts Imported */ 
 
-/*
 @font-face {
   font-family: 'Chakra Petch';
   src: url('/fonts/Chakra_Petch.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
+/*
 
 @font-face {
   font-family: 'Silkscreen';
@@ -46,29 +46,29 @@ nav {
 /* <h> & all text <tags> */
 
 h1 {
-  @apply text-4xl selection:bg-tp selection:text-black;
+  @apply text-4xl selection:bg-tp selection:text-black font-chakra ;
 }
 
 h2 {
-  @apply text-3xl selection:bg-tp selection:text-black;
+  @apply text-3xl selection:bg-tp selection:text-black font-chakra ;
 }
 
 h3 {
-  @apply text-2xl selection:bg-tp selection:text-black;
+  @apply text-2xl selection:bg-tp selection:text-black font-chakra ;
 }
 
 h4 {
-  @apply text-xl selection:bg-tp selection:text-black;
+  @apply text-xl selection:bg-tp selection:text-black font-chakra ;
 }
 
 h5 {
-  @apply text-lg selection:bg-tp selection:text-black;
+  @apply text-lg selection:bg-tp selection:text-black font-chakra ;
 }
 
 h6 {
-  @apply text-base selection:bg-tp selection:text-black;
+  @apply text-base selection:bg-tp selection:text-black font-chakra ;
 }
 
 p {
-  @apply selection:bg-tp selection:text-black;
+  @apply selection:bg-tp selection:text-black font-chakra;
 }

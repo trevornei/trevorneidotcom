@@ -47,7 +47,7 @@ export default function CardThree() {
                             Studying Computer Science – Software Engineering B.A.
                         </h4>
                         <p className="">
-
+                        I am currently pursuing a comprehensive education in various programming languages and frameworks, including JavaScript, Python, Go, GSAP, React, NextJS, and Vite. My focus is on mastering both front-end and back-end development to enhance my skills as a software engineer. Through these studies, I aim to build a solid foundation to tackle complex software engineering challenges.
                         </p>
                     </div>
                 </div>
@@ -67,6 +67,7 @@ export default function CardThree() {
                             ≈160 Hrs.
                         </h4>
                         <p className="">
+                        The Google Cybersecurity Certificate provided me with a solid foundation in cybersecurity principles and practices. Through approximately 160 hours of intensive coursework, I gained hands-on experience in identifying and mitigating security threats. This certification has significantly enhanced my understanding of cybersecurity, preparing me to tackle real-world challenges in the field.
                         </p>
                     </div>
                 </div>

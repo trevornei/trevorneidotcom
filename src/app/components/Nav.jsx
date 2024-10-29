@@ -104,8 +104,8 @@ export default function Nav() {
       <div className="flex items-center justify-center">
         <div className="h-px w-10/12 bg-white"></div>
       </div>
+      <div className="flex items-center justify-center">
       <Modal isOpen={isModalOpen} onClose={closeModal} className="">
-        <h1 className="">EXPLORE</h1>
         <ul className="flex flex-col items-center justify-center">
           <li className="">
             <h3 className="">
@@ -123,10 +123,11 @@ export default function Nav() {
             </h3>
           </li>
         </ul>
-        <button onClick={closeModal} className="mt-4 px-4 py-2 backdrop-blur-3xl bg-tp/20 text-white rounded">
+        <button onClick={closeModal} className="mt-4 px-4 py-2 backdrop-blur-3xl bg- text-white rounded">
           Close
         </button>
       </Modal>
+      </div>
     </>
   );
 }

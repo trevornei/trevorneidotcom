@@ -34,15 +34,16 @@ export default function Hero() {
 
 
                     <div className="relative border-2 border-tp p-8 flex flex-col xl:w-[700px] xl:h-[500px] overflow-hidden bg-white/10 backdrop-blur-md rounded-r-badge shadow-lg">
-                        <div className="">
-                            <h1 className="font-bold xl:pb-4 xl:text-7xl">WELCOME.</h1>
-                        </div>
-                        <div className="relative z-10">
-                            <h3 className=" text-3xl font-semibold">
-                                Crafting Interconnected Experiences
+                        <div className="relative z-10 flex gap-x-4 flex-col items-start justify-start">
+                            <div className="">
+                                <h1 className="font-bold xl:pb-4 xl:text-7xl">WELCOME.</h1>
+                            </div>
+                            <h3 className=" font-semibold">
+                                👋 I’m Trevor -----&gt;
                             </h3>
-                            <p className="text-xl text-tp xl:leading-8">
-                                I’m Trevor, a front-end developer, cybersecurity enthusiast, and passionate explorer of how technology can connect us in meaningful ways. With a strong foundation in full-stack web development and an ever-growing fascination for ethical hacking, I blend creativity and security into every project I undertake.</p>
+                            <h3 className="text-tp font-bold">
+                                Developer. Climber. Nerd.
+                            </h3>
                         </div>
                     </div>
                 </div>
