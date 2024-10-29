@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <>
-            <div className="relative flex flex-col xl:flex-row items-start justify-start p-0 xl:h-[500px] xl:w-10/12 xl:my-28">
+            <div className="relative flex flex-col xl:flex-row items-start justify-start p-0 xl:h-[500px] xl:w-10/12 xl:py-10 xl:my-20">
                 {/* First container for the profile picture */}
                 <div className="relative flex items-end xl:w-[500px] xl:h-[500px] overflow-hidden bg-white/10 backdrop-blur-md shadow-lg  rounded-tl-full rounded-bl-full border-2 border-tp">
                     <Image
@@ -30,20 +30,25 @@ export default function Hero() {
                 </div>
 
                 {/* Second container for the blurred DSV2-36 image */}
-                <div className="flex flex-col items-start justify-start ml-8">
+                <div className="flex flex-col items-start justify-start  m-y-10">
 
 
-                    <div className="relative border-2 border-tp p-8 flex flex-col xl:w-[700px] xl:h-[500px] overflow-hidden bg-white/10 backdrop-blur-md rounded-r-badge shadow-lg">
+                    <div className="relative border-2 border-tp p-8 flex flex-col xl:w-[700px] xl:h-[500px] overflow-hidden bg-white/10 backdrop-blur-md  shadow-lg">
                         <div className="relative z-10 flex gap-x-4 flex-col items-start justify-start">
-                            <div className="">
-                                <h1 className="font-bold xl:pb-4 xl:text-7xl">WELCOME.</h1>
-                            </div>
-                            <h3 className=" font-semibold">
-                                👋 I’m Trevor -----&gt;
-                            </h3>
-                            <h3 className="text-tp font-bold">
-                                Developer. Climber. Nerd.
-                            </h3>
+                           <h1 className=" font-extrabold text-white xl:text-8xl">
+                            SOFTWARE 
+                           </h1> 
+                           <h1 className="font-extrabold text-grey xl:text-8xl">
+                            ENGINEER 
+                           </h1> 
+                          <div className="flex flex-row items-center justify-start w-full h-full">
+                            <div className="bg-blue-400 m-10 ml-0 xl:w-1/3 xl:h-64 flex flex-col items-center justify-start">
+                                
+                            </div> 
+                            <div className="bg-blue-400/40 m-10 xl:w-1/3 xl:h-64 flex flex-col items-center justify-start">
+                                
+                            </div>   
+                          </div> 
                         </div>
                     </div>
                 </div>
