@@ -35,10 +35,10 @@ export default function Hero() {
 
                     <div className="relative border-2 border-tp p-8 flex flex-col xl:w-[600px] xl:h-[500px] overflow-hidden bg-black/40 backdrop-blur-md  shadow-lg xl:ml-10">
                         <div className="relative z-10 flex gap-x-4 flex-col items-start justify-center">
-                            <h1 className=" font-extrabold text-white xl:text-8xl">
+                            <h1 className=" font-extrabold text-white xl:text-6xl xl:mx-8">
                                 SOFTWARE
                             </h1>
-                            <h1 className="font-extrabold text-grey xl:text-8xl">
+                            <h1 className="font-extrabold text-grey xl:text-6xl xl:mx-8">
                                 ENGINEER
                             </h1>
                             <div className="flex flex-row items-center justify-center w-full h-full ">

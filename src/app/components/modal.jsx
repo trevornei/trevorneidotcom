@@ -31,10 +31,10 @@ const Modal = ({ isOpen, onClose, children }) => {
 
     return (
         <>
-            <div ref={overlayRef} className="fixed xl:h-auto inset-0 z-50 flex items-center justify-center backdrop-blur-3xl border-2 border-tp flex-col ">
+            <div ref={overlayRef} className="fixed xl:h-auto inset-0 z-50 flex items-center justify-center backdrop-blur-3xl border-8 border-tp/5 flex-col ">
                 <div
                     ref={modalRef}
-                    className="glassy shadow-ts p-6 flex flex-col items-center justify-center gap-y-4 rounded-lg relative"
+                    className="  p-6 flex flex-col items-center justify-center gap-y-4 rounded-lg relative"
                     style={{ opacity: 1 }}
                 >
                     {children}

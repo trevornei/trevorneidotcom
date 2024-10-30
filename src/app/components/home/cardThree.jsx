@@ -5,7 +5,7 @@ export default function CardThree() {
     return (
         <>
 
-            <div className="relative mt-36 grid grid-cols-4 grid-rows-5 gap-16 xl:w-10/12 xl:mb-20">
+            <div className="relative mt-36 grid grid-cols-4 grid-rows-5 gap-16 xl:w-10/12 xl:mb-20 -translate-y-56">
                 <Image
                     src="/assets/images/ma_cherry/el 10.png"
                     className="absolute blur-[300px] -translate-x-32 inset-0  rotate-35"

@@ -106,25 +106,25 @@ export default function Nav() {
       </div>
       <div className="flex items-center justify-center">
       <Modal isOpen={isModalOpen} onClose={closeModal} className="">
-        <ul className="flex flex-col items-center justify-center">
+        <ul className="flex flex-col items-start gap-y-6 justify-center text-tp font-extrabold font-chakra">
           <li className="">
-            <h3 className="">
+            <h3 className="text-6xl">
               Home
             </h3>
           </li>
           <li className="">
-            <h3 className="">
+            <h3 className="text-6xl">
               Notes
             </h3>
           </li>
           <li className="">
-            <h3 className="">
+            <h3 className="text-6xl">
               Contact
             </h3>
           </li>
         </ul>
         <button onClick={closeModal} className="mt-4 px-4 py-2 backdrop-blur-3xl bg- text-white rounded">
-          Close
+         CLOSE 
         </button>
       </Modal>
       </div>
