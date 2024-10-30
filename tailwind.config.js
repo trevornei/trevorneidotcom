@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'white-sm': '0 1px 1px rgba(255, 255, 255, 0.1)',
+        'white-md': '0 4px 3px rgba(255, 255, 255, 0.1)',
+        'white-lg': '0 10px 8px rgba(255, 255, 255, 0.1)',
+        'white-xl': '0 20px 15px rgba(255, 255, 255, 0.1)',
+        'white-2xl': '0 25px 25px rgba(255, 255, 255, 0.1)',
+      },
       rotate: {
         '35': '35deg',
         '55': '55deg'

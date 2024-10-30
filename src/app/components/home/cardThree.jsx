@@ -21,17 +21,17 @@ export default function CardThree() {
                     height={800}
                 />
                 {/*Card One */}
-                <div className="row-start-2">
+                <div className="xl:row-start-2">
                     <h1 className="font-extrabold text-tpink">
                        EDUCATION 
                     </h1>
                 </div>
-                <div className="row-start-3">
+                <div className="xl:row-start-3">
                     <h1 className="font-extrabold text-tpink">
                        CERTIFICATES 
                     </h1>
                 </div>
-                <div className="flex flex-row glassy row-start-2 col-start-2 col-span-3 justify-items-start">
+                <div className="flex flex-row glassy xl:row-start-2 xl:col-start-2 xl:col-span-3 xl:justify-items-start">
                     <Image
                         src="/assets/images/umt-logo/logo.png"
                         alt="Another logo"
@@ -51,7 +51,7 @@ export default function CardThree() {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-row glassy row-start-3 col-start-2 col-span-3 justify-items-end">
+                <div className="flex flex-row glassy xl:row-start-3 xl:col-start-2 xl:col-span-3 xl:justify-items-end">
                     <Image
                         src="/assets/images/certs/coursera-cyber-cert.png"
                         alt="Another logo"
@@ -73,7 +73,7 @@ export default function CardThree() {
                 </div>
 
                 {/*Card Two */}
-                <div className="flex flex-row glassy row-start-4 col-span-3 col-start-2 justify-items-start">
+                <div className="flex flex-row glassy xl:row-start-4 xl:col-span-3 xl:col-start-2 justify-items-start">
                     <Image
                         src="/assets/images/certs/intermediate_python_cert_Trevor_Nei.png"
                         alt="Another logo"
@@ -95,7 +95,7 @@ export default function CardThree() {
                 </div>
 
                 {/*Card Three */}
-                <div className="flex flex-row glassy row-start-5 col-start-2 col-span-3 justify-items-start">
+                <div className="flex flex-row glassy xl:row-start-5 xl:col-start-2 xl:col-span-3 justify-items-start">
                     <Image
                         src="/assets/images/certs/promineo-trevor-nei.png"
                         alt="Another logo"
