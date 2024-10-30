@@ -8,15 +8,15 @@ module.exports = {
   theme: {
     extend: {
       dropShadow: {
-        'white-sm': '0 1px 1px rgba(255, 255, 255, 0.1)',
-        'white-md': '0 4px 3px rgba(255, 255, 255, 0.1)',
-        'white-lg': '0 10px 8px rgba(255, 255, 255, 0.1)',
-        'white-xl': '0 20px 15px rgba(255, 255, 255, 0.1)',
-        'white-2xl': '0 25px 25px rgba(255, 255, 255, 0.1)',
+        "white-sm": "0 1px 1px rgba(255, 255, 255, 0.1)",
+        "white-md": "0 4px 3px rgba(255, 255, 255, 0.1)",
+        "white-lg": "0 10px 8px rgba(255, 255, 255, 0.1)",
+        "white-xl": "0 20px 15px rgba(255, 255, 255, 0.1)",
+        "white-2xl": "0 25px 25px rgba(255, 255, 255, 0.1)",
       },
       rotate: {
-        '35': '35deg',
-        '55': '55deg'
+        35: "35deg",
+        55: "55deg",
       },
       colors: {
         // Text Primary
@@ -29,9 +29,9 @@ module.exports = {
         bgdg: "#0b1a17",
       },
       fontFamily: {
-        chakra: ['Chakra Petch', 'sans-serif'],
-        silkscreen: ['Silkscreen', 'monospace'],
-        rubikglitch: ['Rubik Glitch', 'monospace'],
+        chakra: ["Chakra Petch", "sans-serif"],
+        silkscreen: ["Silkscreen", "monospace"],
+        rubikglitch: ["Rubik Glitch", "monospace"],
       },
       animation: {
         // Existing
@@ -50,7 +50,7 @@ module.exports = {
         "rotate-y": "rotateY 3s ease infinite",
         tilt: "tilt 3s ease-in-out infinite",
         shake: "shake 1s ease-in-out infinite",
-        rotateAndScale: 'rotateAndScale 8s linear infinite',
+        rotateAndScale: "rotateAndScale 8s linear infinite",
       },
       keyframes: {
         slideRight: {
@@ -84,13 +84,13 @@ module.exports = {
           "75%": { transform: "translateX(5px)" },
         },
         rotateAndScale: {
-          '0%': { transform: 'rotate(0deg) scale(1)' },
-          '20%': { transform: 'rotate(72deg) scale(1.2)' },
-          '40%': { transform: 'rotate(144deg) scale(1.5)' },
-          '60%': { transform: 'rotate(216deg) scale(1.3)' },
-          '80%': { transform: 'rotate(288deg) scale(1.1)' },
-          '100%': { transform: 'rotate(360deg) scale(1)' },
-        }, 
+          "0%": { transform: "rotate(0deg) scale(1)" },
+          "20%": { transform: "rotate(72deg) scale(1.2)" },
+          "40%": { transform: "rotate(144deg) scale(1.5)" },
+          "60%": { transform: "rotate(216deg) scale(1.3)" },
+          "80%": { transform: "rotate(288deg) scale(1.1)" },
+          "100%": { transform: "rotate(360deg) scale(1)" },
+        },
       },
     },
   },

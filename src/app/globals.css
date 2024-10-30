@@ -7,11 +7,11 @@
   --foreground: #000000;
 }
 
-/* Fonts Imported */ 
+/* Fonts Imported */
 
 @font-face {
-  font-family: 'Chakra Petch';
-  src: url('/fonts/Chakra_Petch.woff2') format('woff2');
+  font-family: "Chakra Petch";
+  src: url("/fonts/Chakra_Petch.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -35,40 +35,40 @@
 /* REUSABLE COMPONENTS*/
 
 nav {
-  @apply text-2xl font-semibold font-chakra backdrop-blur-sm;
+  @apply font-chakra text-2xl font-semibold backdrop-blur-sm;
 }
 
 /* Glassy Containers */
 .glassy {
-  @apply bg-white/10 backdrop-blur-md shadow-lg
+  @apply bg-white/10 shadow-lg backdrop-blur-md;
 }
 
 /* <h> & all text <tags> */
 
 h1 {
-  @apply text-4xl selection:bg-tp selection:text-black font-chakra ;
+  @apply font-chakra text-4xl selection:bg-tp selection:text-black;
 }
 
 h2 {
-  @apply text-3xl selection:bg-tp selection:text-black font-chakra ;
+  @apply font-chakra text-3xl selection:bg-tp selection:text-black;
 }
 
 h3 {
-  @apply text-2xl selection:bg-tp selection:text-black font-chakra ;
+  @apply font-chakra text-2xl selection:bg-tp selection:text-black;
 }
 
 h4 {
-  @apply text-xl selection:bg-tp selection:text-black font-chakra ;
+  @apply font-chakra text-xl selection:bg-tp selection:text-black;
 }
 
 h5 {
-  @apply text-lg selection:bg-tp selection:text-black font-chakra ;
+  @apply font-chakra text-lg selection:bg-tp selection:text-black;
 }
 
 h6 {
-  @apply text-base selection:bg-tp selection:text-black font-chakra ;
+  @apply font-chakra text-base selection:bg-tp selection:text-black;
 }
 
 p {
-  @apply selection:bg-tp selection:text-black font-chakra;
+  @apply font-chakra selection:bg-tp selection:text-black;
 }

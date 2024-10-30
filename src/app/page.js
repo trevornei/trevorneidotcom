@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Hero from "./components/home/hero";
 import CardThree from "./components/home/cardThree";
 
-
 export default function Home() {
   return (
     <>

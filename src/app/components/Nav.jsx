@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import Modal from './modal'
+import Modal from "./modal";
 
 export default function Nav() {
   const logoRef = useRef(null); // Reference for the logo
@@ -23,7 +23,11 @@ export default function Nav() {
         (180 / Math.PI);
 
       // Apply the rotation using GSAP
-      gsap.to(logoElement, { rotation: angle, duration: 0.5, ease: "power3.out" });
+      gsap.to(logoElement, {
+        rotation: angle,
+        duration: 0.5,
+        ease: "power3.out",
+      });
     };
 
     // Add the mousemove event listener
@@ -68,7 +72,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="z-50 flex sticky flex-row items-center justify-between xl:px-10 navbar ">
+      <nav className="navbar sticky z-50 flex flex-row items-center justify-between xl:px-10">
         <div className="">
           {/* Logo */}
           <Image
@@ -85,16 +89,21 @@ export default function Nav() {
           <button onClick={openModal} className="relative">
             <Image
               src="/assets/images/ma_cherry/3.png"
-              className="absolute top-0 right-0 blur-xl saturate-200 animate-pulse-slow animate-spin-slow"
+              className="absolute right-0 top-0 animate-pulse-slow animate-spin-slow blur-xl saturate-200"
               width={100}
               height={100}
               alt="Absract shape for button styling"
             />
-            <div className="w-12 h-12 rounded-full glassy flex flex-col items-center justify-center transition-transform duration-500 ease-linear transform hover:scale-110" onClick={(e) => e.currentTarget.classList.add('animate-pulse-once')}>
-              <div className="flex items-start flex-col">
-                <div className="w-4 h-1 bg-white transition-transform duration-500 ease-in-out transform hover:translate-x-1"></div>
-                <div className="w-5 h-1 my-1 bg-white transition-transform duration-500 ease-in-out transform hover:translate-x-1"></div>
-                <div className="w-4 h-1 bg-white transition-transform duration-500 ease-in-out transform hover:translate-x-1"></div>
+            <div
+              className="glassy flex h-12 w-12 transform flex-col items-center justify-center rounded-full transition-transform duration-500 ease-linear hover:scale-110"
+              onClick={(e) =>
+                e.currentTarget.classList.add("animate-pulse-once")
+              }
+            >
+              <div className="flex flex-col items-start">
+                <div className="h-1 w-4 transform bg-white transition-transform duration-500 ease-in-out hover:translate-x-1"></div>
+                <div className="my-1 h-1 w-5 transform bg-white transition-transform duration-500 ease-in-out hover:translate-x-1"></div>
+                <div className="h-1 w-4 transform bg-white transition-transform duration-500 ease-in-out hover:translate-x-1"></div>
               </div>
             </div>
           </button>
@@ -105,28 +114,25 @@ export default function Nav() {
         <div className="h-px w-10/12 bg-white"></div>
       </div>
       <div className="flex items-center justify-center">
-      <Modal isOpen={isModalOpen} onClose={closeModal} className="">
-        <ul className="flex flex-col items-start gap-y-6 justify-center text-tp font-extrabold font-chakra">
-          <li className="">
-            <h3 className="text-6xl">
-              Home
-            </h3>
-          </li>
-          <li className="">
-            <h3 className="text-6xl">
-              Notes
-            </h3>
-          </li>
-          <li className="">
-            <h3 className="text-6xl">
-              Contact
-            </h3>
-          </li>
-        </ul>
-        <button onClick={closeModal} className="mt-4 px-4 py-2 backdrop-blur-3xl bg- text-white rounded">
-         CLOSE 
-        </button>
-      </Modal>
+        <Modal isOpen={isModalOpen} onClose={closeModal} className="">
+          <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
+            <li className="">
+              <h3 className="text-6xl">Home</h3>
+            </li>
+            <li className="">
+              <h3 className="text-6xl">Notes</h3>
+            </li>
+            <li className="">
+              <h3 className="text-6xl">Contact</h3>
+            </li>
+          </ul>
+          <button
+            onClick={closeModal}
+            className="bg- mt-4 rounded px-4 py-2 text-white backdrop-blur-3xl"
+          >
+            CLOSE
+          </button>
+        </Modal>
       </div>
     </>
   );
