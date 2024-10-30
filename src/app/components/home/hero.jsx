@@ -4,11 +4,11 @@ export default function Hero() {
     return (
         <>
 
-            <div className="relative flex flex-row pt-16 xl:flex-row items-center justify-end w-3/4 h-1/2 p-0 xl:h-[500px] xl:w-10/12 xl:py-10  xl:my-20">
+            <div className="relative flex flex-row pt-16 xl:flex-row items-center justify-end w-3/4  rounded-3xl h-1/2 p-0 xl:h-[500px] xl:w-10/12 xl:py-10  xl:my-20">
                 {/* First container for the profile picture */}
 
                 {/* Second container for the blurred DSV2-36 image */}
-                    <div className="absolute -z-10 flex flex-row items-end w-11/12 h-1/2 xl:w-full xl:h-[500px] overflow-hidden bg-white/10 backdrop-blur-md shadow-lg   border-2 border-tp ">
+                    <div className="absolute -z-10 flex flex-row items-end w-11/12 h-1/2 xl:w-full xl:h-[500px] overflow-hidden bg-black/10 backdrop-blur-md shadow-lg rounded-l-3xl border-8 border-black/5 ">
                         <Image
                             src="/assets/images/ma_cherry/image_2.png"
                             className="absolute inset-0 object-cover blur-2xl -z-10 animate-rotateAndScale"
@@ -33,9 +33,9 @@ export default function Hero() {
                     </div>
                 <div className="flex flex-col items-start justify-start ">
 
-                    <div className="relative border-2 border-tp p-8 flex flex-col xl:w-[600px] xl:h-[500px] overflow-hidden bg-black/40 backdrop-blur-md  shadow-lg xl:ml-10">
+                    <div className="relative  p-8 flex flex-col xl:w-[600px] xl:h-[500px] overflow-hidden bg-black/40 backdrop-blur-md  shadow-lg xl:ml-10">
                         <div className="relative z-10 flex gap-x-4 flex-col items-start justify-center">
-                            <h1 className=" font-extrabold text-white xl:text-6xl xl:mx-8">
+                            <h1 className=" font-extrabold text-white xl:text-6xl xl:mx-8 xl:pb-5">
                                 SOFTWARE
                             </h1>
                             <h1 className="font-extrabold text-grey xl:text-6xl xl:mx-8">
