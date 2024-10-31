@@ -30,8 +30,8 @@ export default function Hero() {
             height={500}
           />
         </div>
-        <div className="flex flex-col items-center justify-end rounded-3xl rounded-l-none md:w-1/2 md:items-end md:rounded-l-none lg:h-full lg:w-1/2 lg:justify-center lg:rounded-l-none xl:items-end xl:justify-center xl:rounded-l-none 2xl:rounded-l-none">
-          <div className="relative flex w-1/2 flex-col overflow-hidden rounded-3xl bg-black/40 p-8 shadow-lg backdrop-blur-md md:w-full md:rounded-l-none lg:m-0 lg:h-full lg:w-full lg:items-center lg:justify-center lg:rounded-l-none xl:h-full xl:w-full xl:items-center xl:justify-center xl:rounded-l-none 2xl:rounded-l-none">
+        <div className="flex w-full flex-col items-center justify-end rounded-3xl rounded-l-none md:w-1/2 md:items-end md:rounded-l-none lg:h-full lg:w-1/2 lg:justify-center lg:rounded-l-none xl:items-end xl:justify-center xl:rounded-l-none 2xl:rounded-l-none">
+          <div className="relative flex w-full flex-col overflow-hidden rounded-3xl bg-black/40 p-8 shadow-lg backdrop-blur-md md:w-full md:rounded-l-none lg:m-0 lg:h-full lg:w-full lg:items-center lg:justify-center lg:rounded-l-none xl:h-full xl:w-full xl:items-center xl:justify-center xl:rounded-l-none 2xl:rounded-l-none">
             <div className="lg:py-auto xl:py-auto relative z-10 flex flex-col items-center justify-center gap-x-4">
               <h1 className="font-extrabold text-white xl:mx-8 xl:pb-5 xl:text-6xl">
                 SOFTWARE
