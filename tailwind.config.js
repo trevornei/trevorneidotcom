@@ -51,6 +51,7 @@ module.exports = {
         tilt: "tilt 3s ease-in-out infinite",
         shake: "shake 1s ease-in-out infinite",
         rotateAndScale: "rotateAndScale 8s linear infinite",
+        "rotateAndScale-7s": "rotateAndScale 7s linear infinite",
       },
       keyframes: {
         slideRight: {
