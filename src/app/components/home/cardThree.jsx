@@ -4,15 +4,15 @@ import Image from "next/image";
 export default function CardThree() {
   return (
     <>
-      <div className="relative grid grid-cols-4 grid-rows-5 gap-16 xl:mb-20 xl:mt-24 xl:w-10/12">
+      <div className="relative flex w-10/12 flex-col sm:flex sm:w-1/12 sm:flex-col md:mt-16 md:flex md:w-10/12 md:flex-col lg:mt-24 lg:grid lg:w-10/12 lg:grid-cols-4 lg:grid-rows-5 lg:gap-16 xl:mt-24 xl:w-10/12">
         {/*Card One */}
-        <div className="xl:row-start-1">
+        <div className="row-start-1 xl:row-start-1">
           <h1 className="font-extrabold text-tpink">EDUCATION</h1>
         </div>
-        <div className="xl:row-start-2">
+        <div className="row-start-2 xl:row-start-2">
           <h1 className="font-extrabold text-tpink">CERTIFICATES</h1>
         </div>
-        <div className="glassy flex flex-row xl:col-span-3 xl:col-start-2 xl:row-start-1 xl:justify-items-start">
+        <div className="glassy flex flex-row lg:col-span-3 xl:col-span-3 xl:col-start-2 xl:row-start-1 xl:justify-items-start">
           <Image
             src="/assets/images/umt-logo/logo.png"
             alt="Another logo"
@@ -36,7 +36,7 @@ export default function CardThree() {
             </p>
           </div>
         </div>
-        <div className="glassy flex flex-row xl:col-span-3 xl:col-start-2 xl:row-start-2 xl:justify-items-end">
+        <div className="glassy flex flex-row xl:col-span-full xl:col-start-2 xl:row-start-2 xl:justify-items-end">
           <Image
             src="/assets/images/certs/coursera-cyber-cert.png"
             alt="Another logo"
@@ -60,7 +60,7 @@ export default function CardThree() {
         </div>
 
         {/*Card Two */}
-        <div className="glassy flex flex-row justify-items-start xl:col-span-3 xl:col-start-2 xl:row-start-3">
+        <div className="glassy flex flex-row justify-items-start lg:col-span-3 xl:col-span-3 xl:col-start-2 xl:row-start-3">
           <Image
             src="/assets/images/certs/intermediate_python_cert_Trevor_Nei.png"
             alt="Another logo"
@@ -76,7 +76,7 @@ export default function CardThree() {
         </div>
 
         {/*Card Three */}
-        <div className="glassy flex flex-row justify-items-start xl:col-span-3 xl:col-start-2 xl:row-start-4">
+        <div className="glassy flex flex-row justify-items-start lg:col-span-3 xl:col-span-3 xl:col-start-2 xl:row-start-4">
           <Image
             src="/assets/images/certs/promineo-trevor-nei.png"
             alt="Another logo"
