@@ -12,7 +12,8 @@ export default function Home() {
         <Nav />
         <div className="flex flex-col items-center justify-center overflow-hidden">
           <Hero />
-          <CardTwo />
+          {/*<CardTwo /> */}
+          <CardThree />
           <Footer />
         </div>
       </div>
