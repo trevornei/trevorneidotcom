@@ -5,30 +5,50 @@ import Link from "next/link";
 export default function CardTwo() {
   return (
     <>
-      <div className="flex w-10/12 flex-row flex-wrap overflow-hidden xl:my-72">
+      <div className="lg:px-10/12 relative flex w-screen flex-row flex-wrap overflow-hidden border-2 border-white sm:flex-row md:flex-row lg:flex-row xl:my-72 xl:rounded-none xl:backdrop-blur-3xl">
+        <div className="relative z-10 flex h-full w-full items-center justify-center">
+          <Image
+            src="/assets/images/CirclesAndSpheres/SVG/circles_100.svg"
+            alt="A new generated image"
+            className="absolute object-cover lg:right-0 lg:top-0 xl:-right-20 xl:top-0 xl:h-auto xl:w-[500px] 2xl:right-0 2xl:top-0"
+            width={800}
+            height={800}
+          />
+        </div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-black">
+          <Image
+            src="/assets/images/ma_cherry/image_8.png"
+            alt="A new image"
+            className="absolute inset-0 -z-10 object-cover sm:h-auto sm:w-[200px] md:h-full md:w-full xl:bottom-10 2xl:right-0 2xl:h-auto 2xl:w-full 2xl:-rotate-55"
+            width={1700}
+            height={1700}
+          />
+        </div>
         <Image
-          src="/assets/images/Climbing/Shoshone.jpeg"
-          alt="Profile picture of a snake"
-          className="h-fit max-w-none object-cover grayscale"
-          width={600}
-          height={200}
+          src="/assets/images/illustrator/2xl_grid.svg"
+          alt="2xl grid"
+          className="absolute inset-0 -z-10"
+          width={1700}
+          height={1700}
         />
-        <Image
-          src="/assets/images/Climbing/perry_shoshone.jpeg"
-          alt="Profile picture of a snake"
-          className="object-none grayscale"
-          width={600}
-          height={200}
-        />
-        <Image
-          src="/assets/images/Climbing/climbing_shoshone.png"
-          alt="Profile picture of a snake"
-          className="object-cover grayscale"
-          width={600}
-          height={200}
-        />
+        <div className="xl:px-18 x glassy relative z-0 flex-col items-start justify-center gap-6 px-12 py-16 text-white sm:flex-col sm:items-start sm:justify-center sm:gap-6 sm:px-16 sm:py-24 md:flex-col md:items-start md:justify-center md:gap-6 md:px-16 md:py-24 lg:w-1/2 lg:flex-col lg:items-start lg:justify-center lg:gap-6 lg:px-16 lg:py-24 lg:text-8xl xl:flex-col xl:items-start xl:justify-center xl:gap-24 xl:py-28 2xl:gap-24">
+          <h1 className="font-extrabold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
+            Developer.
+          </h1>
+          <h1 className="sm: font-extrabold md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
+            Comedy Nerd.
+          </h1>
+          <h1 className="sm: font-extrabold md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
+            Climber.
+          </h1>
+          <h1 className="sm: font-extrabold md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
+            Silly friend.
+          </h1>
+          <h1 className="sm: font-extrabold md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
+            River Surfer.🏄‍♂️
+          </h1>
+        </div>
       </div>
-      <div className=""></div>
     </>
   );
 }
