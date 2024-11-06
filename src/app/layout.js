@@ -1,7 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Nav } from "./components/Nav";
-
+import gsap from "gsap";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
@@ -14,6 +16,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+
   return (
     <html lang="en" className="scroll-smooth">
       <meta
@@ -21,7 +25,11 @@ export default function RootLayout({ children }) {
         content="width=device-width, initial-scale=1.0"
       ></meta>
       <head />
-      <body className="overflow-x-hidden">{children}</body>
+      <body className="overflow-x-hidden">
+        <div id="smooth-wrapper">
+          <div id="smooth-content">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
