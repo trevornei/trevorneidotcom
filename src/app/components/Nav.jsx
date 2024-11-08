@@ -3,11 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import Modal from "./modal";
+import { useRouter } from "next/navigation";
 
 export default function Nav() {
+  const router = useRouter();
   const logoRef = useRef(null); // Reference for the logo
 
-  const navUt = useRef(null); // Reference for the logo
+  const navUt = useRef(null); // Reference for the nav button
 
   useEffect(() => {
     const logoElement = logoRef.current;
@@ -41,6 +43,8 @@ export default function Nav() {
 
   useEffect(() => {
     const navBtn = navUt.current;
+
+    if (!navBtn) return; // Ensure navBtn is not null
 
     const rotateLogo = (e) => {
       const rect = navBtn.getBoundingClientRect();
@@ -116,14 +120,20 @@ export default function Nav() {
       <div className="flex items-center justify-center">
         <Modal isOpen={isModalOpen} onClose={closeModal} className="">
           <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
-            <li className="">
-              <h3 className="text-6xl">Home</h3>
-            </li>
-            <li className="">
-              <h3 className="text-6xl">Notes</h3>
-            </li>
-            <li className="">
-              <h3 className="text-6xl">Contact</h3>
+            <button onClick={() => router.push("/")}>
+              <li className="hover:rounded-btn hover:border-2 hover:border-tpink hover:p-2">
+                <h3 className="text-6xl">Home</h3>
+              </li>
+            </button>
+            <button onClick={() => router.push("/notes")}>
+              <li className="hover:rounded-btn hover:border-2 hover:border-tpink hover:p-2">
+                <h3 className="text-6xl">Notes</h3>
+              </li>
+            </button>
+            <li className="hover:rounded-btn hover:border-2 hover:border-tpink hover:p-2">
+              <button onClick={() => router.push("/contact")}>
+                <h3 className="text-6xl">Contact</h3>
+              </button>
             </li>
           </ul>
           <button
