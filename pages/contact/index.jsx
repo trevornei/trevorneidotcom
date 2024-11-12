@@ -1,6 +1,7 @@
 import gsap from "gsap";
-import Nav from "../src/app/components/Nav";
-import Footer from "../src/app/components/Footer";
+import Nav from "../../src/app/components/Nav";
+import Footer from "../../src/app/components/Footer";
+import "./contact.css";
 
 export default function Contact() {
   return (
