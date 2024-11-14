@@ -10,13 +10,9 @@ gsap.registerPlugin(ScrambleTextPlugin);
 export default function Hero() {
   useEffect(() => {
     gsap.to(".software", {
-      revealDelay: 2,
-      duration: 2,
       scrambleText: "SOFTWARE",
     }),
       gsap.to(".engineer", {
-        revealDelay: 0,
-        duration: 2,
         scrambleText: "ENGINEER",
       }),
       gsap.fromTo(
@@ -55,7 +51,7 @@ export default function Hero() {
           <div className="m-0 my-0 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-3xl bg-black/50 p-10 backdrop-blur-md sm:m-0 sm:my-0 sm:h-full sm:items-center sm:rounded-none sm:py-10 md:w-full md:rounded-l-none md:py-10 lg:m-0 lg:h-full lg:w-full lg:items-center lg:justify-center lg:rounded-l-none lg:px-8 lg:py-10 xl:h-full xl:w-full xl:items-center xl:justify-center xl:rounded-l-none xl:py-16 2xl:rounded-l-none">
             <Image
               src="/assets/images/ma_cherry/el 6.png"
-              className="absolute -z-30 rotate-90 animate-rotateAndScale-7s object-cover blur-[200px] saturate-200 sm:right-0 sm:-z-10 sm:h-full sm:w-full md:right-0 md:h-[400px] md:w-[400px] lg:h-[600px] lg:w-[600px]"
+              className="animate-rotateAndScale-7s absolute -z-30 rotate-90 object-cover blur-[200px] saturate-200 sm:right-0 sm:-z-10 sm:h-full sm:w-full md:right-0 md:h-[400px] md:w-[400px] lg:h-[600px] lg:w-[600px]"
               alt="Shoshone"
               width={600}
               height={600}
