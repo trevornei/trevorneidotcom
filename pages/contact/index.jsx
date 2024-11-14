@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div>
       <Nav />
-      <div>Contact</div>
+      <div className="contact">Contact</div>
       <Footer />
     </div>
   );
