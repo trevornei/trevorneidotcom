@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function CardTwo() {
   return (
     <>
-      <div className="lg:px-10/12 relative flex w-screen flex-row flex-wrap overflow-hidden border-2 border-white sm:flex-row md:flex-row lg:flex-row xl:my-72 xl:rounded-none xl:backdrop-blur-3xl">
+      <div className="lg:px-10/12 relative flex w-screen flex-row flex-wrap overflow-hidden border-[1px] border-white sm:flex-row md:flex-row lg:flex-row xl:my-72 xl:rounded-none xl:backdrop-blur-3xl">
         <div className="relative z-10 flex h-full w-full items-center justify-center">
           <Image
             src="/assets/images/CirclesAndSpheres/SVG/circles_100.svg"

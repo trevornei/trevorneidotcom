@@ -5,6 +5,7 @@ import gsap from "gsap";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Analytics } from "@vercel/analytics/react";
+import initGSAP from "../utils/gsap";
 
 export const metadata = {
   title: "Trevor Nei - Software Engineer",
@@ -15,9 +16,9 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
-  gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+initGSAP();
 
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <meta
