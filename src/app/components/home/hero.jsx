@@ -7,6 +7,7 @@ import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
 import initGSAP from "../../../utils/gsap";
 
 initGSAP();
+gsap.config({ token: process.env.NEXT_PUBLIC_TOKEN });
 gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Hero() {

@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 initGSAP();
-
+gsap.config({ token: process.env.NEXT_PUBLIC_TOKEN });
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 export default function RootLayout({ children }) {
