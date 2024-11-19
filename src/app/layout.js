@@ -1,7 +1,7 @@
 import "./globals.css";
-import gsap from "gsap";
-import ScrollSmoother from "gsap/ScrollSmoother";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import initGSAP from "../utils/gsap";
 
 export const metadata = {

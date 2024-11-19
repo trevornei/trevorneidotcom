@@ -2,8 +2,8 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import gsap from "gsap";
-import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
+import { gsap } from "gsap";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import initGSAP from "../../../utils/gsap";
 
 initGSAP();
