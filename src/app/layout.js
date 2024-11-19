@@ -1,10 +1,7 @@
-import localFont from "next/font/local";
 import "./globals.css";
-import { Nav } from "./components/Nav";
 import gsap from "gsap";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { Analytics } from "@vercel/analytics/react";
 import initGSAP from "../utils/gsap";
 
 export const metadata = {
@@ -17,6 +14,8 @@ export const metadata = {
 };
 
 initGSAP();
+
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 export default function RootLayout({ children }) {
   return (
