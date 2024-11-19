@@ -1,9 +1,4 @@
 import "./globals.css";
-import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import initGSAP from "../utils/gsap";
-
 export const metadata = {
   title: "Trevor Nei - Software Engineer",
   description:
@@ -12,10 +7,6 @@ export const metadata = {
     icon: "/images/CirclesAndSpheres/SVG/circles_79_white.svg",
   },
 };
-
-initGSAP();
-gsap.config({ token: process.env.NEXT_PUBLIC_TOKEN });
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 export default function RootLayout({ children }) {
   return (
@@ -26,9 +17,7 @@ export default function RootLayout({ children }) {
       ></meta>
       <head />
       <body className="overflow-x-hidden">
-        <div id="smooth-wrapper">
-          <div id="smooth-content">{children}</div>
-        </div>
+        <div>{children}</div>
       </body>
     </html>
   );

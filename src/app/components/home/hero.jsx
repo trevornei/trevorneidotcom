@@ -2,29 +2,8 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import { gsap } from "gsap";
-import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
-import initGSAP from "../../../utils/gsap";
-
-initGSAP();
-gsap.config({ token: process.env.NEXT_PUBLIC_TOKEN });
-gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Hero() {
-  useEffect(() => {
-    gsap.to(".software", {
-      scrambleText: "SOFTWARE",
-    }),
-      gsap.to(".engineer", {
-        scrambleText: "ENGINEER",
-      }),
-      gsap.fromTo(
-        ".moveHero",
-        { opacity: 0, x: -300 },
-        { opacity: 1, x: 0, duration: 1.75 },
-      );
-  }, []);
-
   return (
     <>
       <div className="absolute z-30 mb-20 hidden -rotate-[10deg] overflow-hidden bg-tp sm:left-[215px] sm:top-[497px] sm:block md:left-[200px] md:top-[500px] md:mb-32 md:block lg:left-[400px] lg:top-[700px] lg:block xl:block 2xl:block">
