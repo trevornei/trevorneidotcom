@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "image": "",
+        "title": "Code Bootcamps: The Good, The Bad, and The Ugly",
+        "description": "A look at the pros and cons of code bootcamps, including their impact on the tech industry and the skills they teach.",
+        "date": "2024-01-01",
+        "url": ""
+    },
+    {
+        "id": 2,
+        "image": "",
+        "title": "What is the Virtual DOM?",
+        "description": "A look at the Virtual DOM and how it works in React.",
+        "date": "2024-01-02",
+        "url": ""
+    },
+    {
+        "id": 3,
+        "image": "",
+        "title": "What is a React Hook?",
+        "description": "A look at the different types of React Hooks and how to use them.",
+        "date": "",
+        "url": ""
+    },
+    {
+        "id": 4,
+        "image": "",
+        "title": "What is the mounting lifecycle?",
+        "description": "A look at the different phases of the mounting lifecycle in React.",
+        "date": "",
+        "url": ""
+    },
+    {
+        "id": 5,
+        "image": "",
+        "title": "What is the updating lifecycle?",
+        "description": "A look at the different phases of the updating lifecycle in React.",
+        "date": "",
+        "url": ""
+    },
+    {
+        "id": 6,
+        "image": "",
+        "title": "What is the unmounting lifecycle?",
+        "description": "A look at the different phases of the unmounting lifecycle in React.",
+        "date": "",
+        "url": ""
+    },
+    {
+        "id": 7,
+        "image": "",
+        "title": "",
+        "description": "",
+        "date": "",
+        "url": ""
+    },
+    {
+        "id": 8,
+        "image": "",
+        "title": "",
+        "description": "",
+        "date": "",
+        "url": ""
+    }
+]

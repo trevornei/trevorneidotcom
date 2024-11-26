@@ -1,12 +1,5 @@
+import localFont from "next/font/local";
 import "./globals.css";
-export const metadata = {
-  title: "Trevor Nei - Software Engineer",
-  description:
-    "Trevor Nei is a software engineer based out of Missoula Montana.",
-  icons: {
-    icon: "/images/CirclesAndSpheres/SVG/circles_79_white.svg",
-  },
-};
 
 export default function RootLayout({ children }) {
   return (
@@ -17,7 +10,9 @@ export default function RootLayout({ children }) {
       ></meta>
       <head />
       <body className="overflow-x-hidden">
-        <div>{children}</div>
+        <div id="smooth-wrapper">
+          <div id="smooth-content">{children}</div>
+        </div>
       </body>
     </html>
   );

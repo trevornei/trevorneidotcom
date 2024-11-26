@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #000000;
+}
+
+/* Fonts Imported */
+
+@font-face {
+  font-family: "Chakra Petch";
+  src: url("/fonts/Chakra_Petch.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/*
+
+@font-face {
+  font-family: 'Silkscreen';
+  src: url('/public/fonts/Silkscreen/silkscreen-regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Silkscreen';
+  src: url('/fonts/Silkscreen.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+/* REUSABLE COMPONENTS*/
+
+nav {
+  @apply font-chakra text-2xl font-semibold backdrop-blur-sm;
+}
+
+/* Glassy Containers */
+.glassy {
+  @apply bg-white/10 shadow-lg backdrop-blur-md;
+}
+
+/* <h> & all text <tags> */
+
+h1 {
+  @apply font-chakra text-4xl selection:bg-tp selection:text-black;
+}
+
+h2 {
+  @apply font-chakra text-3xl selection:bg-tp selection:text-black;
+}
+
+h3 {
+  @apply font-chakra text-2xl selection:bg-tp selection:text-black;
+}
+
+h4 {
+  @apply font-chakra text-xl selection:bg-tp selection:text-black;
+}
+
+h5 {
+  @apply font-chakra text-lg selection:bg-tp selection:text-black;
+}
+
+h6 {
+  @apply font-chakra text-base selection:bg-tp selection:text-black;
+}
+
+p {
+  @apply font-chakra selection:bg-tp selection:text-black;
+}

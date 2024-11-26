@@ -1,15 +1,20 @@
 import "./contact.css";
-import Nav from "../../src/app/components/Nav.jsx";
-import Footer from "../../src/app/components/Footer.jsx";
 import Head from "next/head";
 import "./index.jsx";
+
+export const metadata = {
+  title: "Contact Trevor Nei - Software Engineer",
+  description:
+    "Trevor Nei is a software engineer based out of Missoula Montana. You can contact me on LinkedIn, GitHub, or X.",
+  icons: {
+    icon: "/images/CirclesAndSpheres/SVG/circles_79_white.svg",
+  },
+};
 
 export default function ContactLayout({ children }) {
   return (
     <>
-      <Nav />
-      <body>{children}</body>
-      <Footer />
+      <body className="">{children}</body>
     </>
   );
 }
