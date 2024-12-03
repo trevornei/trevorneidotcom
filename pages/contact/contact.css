@@ -17,25 +17,15 @@
 }
 /*
 
-@font-face {
-  font-family: 'Silkscreen';
-  src: url('/public/fonts/Silkscreen/silkscreen-regular.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Silkscreen';
-  src: url('/fonts/Silkscreen.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-*/
 
 /* REUSABLE COMPONENTS*/
 
 nav {
   @apply font-chakra text-2xl font-semibold backdrop-blur-sm;
+}
+
+.contact-box {
+  @apply border-[1px] border-white p-8 sm:p-10 md:p-20 mt-20 w-10/12 items-center justify-center flex
 }
 
 /* Glassy Containers */
