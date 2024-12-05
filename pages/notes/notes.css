@@ -15,22 +15,6 @@
   font-weight: 400;
   font-style: normal;
 }
-/*
-
-@font-face {
-  font-family: 'Silkscreen';
-  src: url('/public/fonts/Silkscreen/silkscreen-regular.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Silkscreen';
-  src: url('/fonts/Silkscreen.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-*/
 
 /* REUSABLE COMPONENTS*/
 
@@ -39,14 +23,22 @@ nav {
 }
 
 /* Glassy Containers */
-.glassy {
-  @apply bg-white/10 shadow-lg backdrop-blur-md;
+.glassy-dark {
+  @apply bg-tpink/50 shadow-lg backdrop-blur-md;
+}
+
+.glassy-mid {
+  @apply bg-tp/10 shadow-purple-900/60 shadow-lg backdrop-blur-md rounded-xl p-2 my-4;
+}
+
+.turn {
+  @apply rotate-90 blur-[100px]
 }
 
 /* <h> & all text <tags> */
 
 h1 {
-  @apply font-chakra text-4xl selection:bg-tp selection:text-black;
+  @apply font-chakra text-4xl text-tp font-bold selection:bg-tp selection:text-black;
 }
 
 h2 {
@@ -58,7 +50,7 @@ h3 {
 }
 
 h4 {
-  @apply font-chakra text-xl selection:bg-tp selection:text-black;
+  @apply font-chakra text-xl selection:bg-tp selection:text-black ;
 }
 
 h5 {
@@ -71,4 +63,18 @@ h6 {
 
 p {
   @apply font-chakra selection:bg-tp selection:text-black;
+}
+
+/* Reusable Styles. */
+
+.bdr-light {
+  @apply border-[2px] border-tp/30 py-6 px-6 mt-16
+}
+
+.button {
+  @apply border-white border-[1px] w-24 bg-black/50 rounded-btn h-6
+}
+
+.position-bottom-right {
+  @apply bottom-0 right-0
 }
