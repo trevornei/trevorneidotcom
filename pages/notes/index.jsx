@@ -11,7 +11,7 @@ export default function Notes() {
       <Nav className="" />
 
       <div className="flex flex-col items-center justify-center">
-        <div className="glassy flex w-10/12 flex-col items-start justify-center">
+        <div className="glassy flex w-10/12 flex-col items-end justify-center">
           <div className="relative flex h-auto w-full items-center justify-center">
             <Image
               src="/assets/images/ma_cherry/el 1.png"
@@ -24,7 +24,12 @@ export default function Notes() {
 
           <div className="relative mb-20 font-bold">
             <h1>Welcome.</h1>
-            <h4>I write about technology, culture, and travel.</h4>
+            <div className="">
+              <h4>Tech</h4>
+              <h4>Travel</h4>
+              <h4>Languages</h4>
+              <h4>Culture</h4>
+            </div>
           </div>
 
           {blogPosts.map((posts) => (

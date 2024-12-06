@@ -28,7 +28,7 @@ nav {
 }
 
 .glassy-mid {
-  @apply bg-tp/10 shadow-purple-900/60 shadow-lg backdrop-blur-md rounded-xl p-2 my-4;
+  @apply bg-tp/5 shadow-tp/10 shadow-md backdrop-blur-xl rounded-xl p-2 my-4;
 }
 
 .turn {
@@ -62,7 +62,7 @@ h6 {
 }
 
 p {
-  @apply font-chakra selection:bg-tp selection:text-black;
+  @apply font-chakra font-semibold text-tp selection:bg-tp selection:text-black;
 }
 
 /* Reusable Styles. */
