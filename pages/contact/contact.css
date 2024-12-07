@@ -25,12 +25,20 @@ nav {
 }
 
 .contact-box {
-  @apply border-[1px] border-white p-8 sm:p-10 md:p-20 mt-20 w-10/12 items-center justify-center flex
+  @apply border-[1px] border-white p-8 sm:p-10 md:p-20 mt-20 w-10/12 items-center overflow-hidden justify-center flex
+}
+
+.chop {
+  @apply overflow-hidden
 }
 
 /* Glassy Containers */
 .glassy {
   @apply bg-white/10 shadow-lg backdrop-blur-md;
+}
+
+.blr-img {
+  @apply blur-[100px] mt-16
 }
 
 /* <h> & all text <tags> */
