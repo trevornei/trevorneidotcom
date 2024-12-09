@@ -8,10 +8,8 @@ import blogPosts from "./posts.json";
 export default function Notes() {
   return (
     <>
-      <Nav className="" />
-
       <div className="flex flex-col items-center justify-center">
-        <div className="glassy flex w-10/12 flex-col items-end justify-center">
+        <div className="flex w-10/12 flex-col items-end justify-center">
           <div className="relative flex h-auto w-full items-center justify-center">
             <Image
               src="/assets/images/ma_cherry/el 1.png"
@@ -21,10 +19,19 @@ export default function Notes() {
               height={1000}
             />
           </div>
+          <div className="relative flex h-auto w-full items-center justify-center">
+            <Image
+              src="/assets/images/ma_cherry/el 5.png"
+              className="blr absolute inset-0 -z-30 hidden object-cover"
+              alt="Shoshone"
+              width={1000}
+              height={1000}
+            />
+          </div>
 
           <div className="relative mb-20 font-bold">
             <h1>Welcome.</h1>
-            <div className="">
+            <div className="flex flex-row">
               <h4>Tech</h4>
               <h4>Travel</h4>
               <h4>Languages</h4>

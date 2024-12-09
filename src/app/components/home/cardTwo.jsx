@@ -42,9 +42,6 @@ export default function CardTwo() {
             Climber.
           </h1>
           <h1 className="sm: font-extrabold md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
-            Silly friend.
-          </h1>
-          <h1 className="sm: font-extrabold md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
             River Surfer.🏄‍♂️
           </h1>
         </div>

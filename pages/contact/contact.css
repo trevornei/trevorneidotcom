@@ -32,6 +32,10 @@ nav {
   @apply overflow-hidden
 }
 
+.blr {
+  @apply blur-[300px] -z-30
+}
+
 /* Glassy Containers */
 .glassy {
   @apply bg-white/10 shadow-lg backdrop-blur-md;
