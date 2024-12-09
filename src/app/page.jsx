@@ -1,9 +1,9 @@
 import Nav from "./components/Nav";
 import Image from "next/image";
 import Footer from "./components/Footer";
-import Hero from "./components/home/hero";
-import CardThree from "./components/home/cardThree";
-import CardTwo from "./components/home/cardTwo";
+import Hero from "./home/hero";
+import CardThree from "./home/cardThree";
+import CardTwo from "./home/cardTwo";
 
 export default function Home() {
   return (
