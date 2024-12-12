@@ -1,5 +1,4 @@
-import Nav from "../../src/app/components/Nav";
-import Footer from "../../src/app/components/Footer";
+import Nav from "../components/Nav";
 import "./contact.css";
 import Image from "next/image";
 
@@ -62,7 +61,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

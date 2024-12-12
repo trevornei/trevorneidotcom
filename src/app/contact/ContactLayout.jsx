@@ -1,5 +1,5 @@
 import "./contact.css";
-import "./index.jsx";
+import "./page.jsx";
 
 export const metadata = {
   title: "Contact Trevor Nei - Software Engineer",
