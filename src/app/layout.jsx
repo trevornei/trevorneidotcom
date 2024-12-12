@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,9 +12,9 @@ export default function RootLayout({ children }) {
       ></meta>
       <head />
       <body className="overflow-x-hidden">
-        <div id="smooth-wrapper">
-          <div id="smooth-content">{children}</div>
-        </div>
+        <div id="smooth-content">{children}</div>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
