@@ -25,15 +25,15 @@ nav {
 }
 
 .contact-box {
-  @apply border-[1px] border-white p-8 sm:p-10 md:p-20 mt-20 w-10/12 items-center overflow-hidden justify-center flex
+  @apply flex w-10/12 items-center justify-center overflow-hidden border-[1px] border-white p-8 sm:p-10 md:p-20;
 }
 
 .chop {
-  @apply overflow-hidden
+  @apply overflow-hidden;
 }
 
 .blr {
-  @apply blur-[300px] -z-30
+  @apply -z-30 blur-[300px];
 }
 
 /* Glassy Containers */
@@ -42,7 +42,7 @@ nav {
 }
 
 .blr-img {
-  @apply blur-[100px] mt-16
+  @apply blur-[100px];
 }
 
 /* <h> & all text <tags> */

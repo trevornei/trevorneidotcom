@@ -5,17 +5,17 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <>
-      <Nav className="2x:mb-96 mb-20" />
-      <div className="chop relative z-10 mt-24 flex min-h-screen items-center justify-center">
-        <div className="contact-box flex w-10/12 flex-row items-center justify-center sm:flex-col 2xl:w-10/12 2xl:py-24">
+      <Nav className="" />
+      <div className="relative z-10 flex min-h-screen items-center justify-center">
+        <div className="contact-box flex w-10/12 flex-row items-center justify-center sm:flex-col">
           <Image
             src="/assets/images/ma_cherry/el 10.png"
             width={500}
             height={500}
-            className="blr-img absolute -z-10"
+            className="blr-img absolute"
           />
           <h3 className="font-bold">You can find me on</h3>
-          <div className="flex flex-col items-center justify-between sm:flex-row">
+          <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex flex-row items-center justify-center">
               <a
                 href="https://www.linkedin.com/in/trevornei-dev/"
