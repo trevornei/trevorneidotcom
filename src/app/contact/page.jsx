@@ -15,7 +15,7 @@ export default function Contact() {
             className="blr-img absolute"
           />
           <h3 className="font-bold">You can find me on</h3>
-          <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          <div className="m-4 flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex flex-row items-center justify-center">
               <a
                 href="https://www.linkedin.com/in/trevornei-dev/"
@@ -27,7 +27,7 @@ export default function Contact() {
                   alt="LinkedIn"
                   width={100}
                   height={100}
-                  className="sm:m-20"
+                  className=""
                 />
               </a>
             </div>
