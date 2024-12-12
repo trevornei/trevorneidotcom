@@ -1,6 +1,5 @@
 "use client";
-import Nav from "../../src/app/components/Nav.jsx";
-import Footer from "../../src/app/components/Footer.jsx";
+import Nav from "../components/Nav.jsx";
 import "./notes.css";
 import Image from "next/image.js";
 
@@ -52,7 +51,6 @@ export default function Notes() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

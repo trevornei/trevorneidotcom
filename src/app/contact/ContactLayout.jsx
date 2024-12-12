@@ -1,5 +1,4 @@
 import "./contact.css";
-import Head from "next/head";
 import "./index.jsx";
 
 export const metadata = {

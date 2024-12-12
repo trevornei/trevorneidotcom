@@ -1,9 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation"; // Correct import for App Router
+
 import Image from "next/image";
 import { gsap } from "gsap";
 import Modal from "./modal";
-import { useRouter } from "next/navigation";
 
 export default function Nav() {
   const router = useRouter();
