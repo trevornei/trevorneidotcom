@@ -7,6 +7,7 @@ import blogPosts from "./posts.json";
 export default function Notes() {
   return (
     <>
+      <Nav />
       <div className="flex flex-col items-center justify-center">
         <div className="flex w-10/12 flex-col items-end justify-center">
           <div className="relative flex h-auto w-full items-center justify-center">
