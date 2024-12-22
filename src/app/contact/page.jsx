@@ -7,13 +7,7 @@ export default function Contact() {
     <>
       <Nav className="" />
       <div className="relative z-10 flex min-h-screen items-center justify-center">
-        <div className="contact-box flex w-10/12 flex-row items-center justify-center sm:flex-col">
-          <Image
-            src="/assets/images/ma_cherry/el 10.png"
-            width={500}
-            height={500}
-            className="blr-img absolute"
-          />
+        <div className="contact-box flex w-10/12 flex-row items-center justify-center bg-gradient-to-r from-purple-500/30 to-tp/40 sm:flex-col">
           <h3 className="font-bold">You can find me on</h3>
           <div className="m-4 flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex flex-row items-center justify-center">
