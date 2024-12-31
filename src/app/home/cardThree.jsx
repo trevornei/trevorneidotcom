@@ -10,7 +10,7 @@ export default function CardThree() {
   return (
     <>
       <div className="relative xl:h-[1000px] xl:w-full">
-        <div className="absolute z-10 flex-col items-center justify-center xl:left-[500px]">
+        <div className="glassy absolute z-10 flex-col items-center justify-center rounded-md border-[1px] border-white xl:left-[500px] xl:px-4 xl:py-8">
           <h1 className="text-tp">Missoula MT</h1>
           <h2 className="">University of Montana</h2>
           <h3 className="">Studying Computer Science</h3>
