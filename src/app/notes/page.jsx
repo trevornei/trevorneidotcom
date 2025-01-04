@@ -1,7 +1,6 @@
 "use client";
 import Nav from "../components/Nav.jsx";
 import "./notes.css";
-import Image from "next/image.js";
 
 import blogPosts from "./posts.json";
 export default function Notes() {
@@ -9,33 +8,14 @@ export default function Notes() {
     <>
       <Nav />
       <div className="flex flex-col items-center justify-center">
-        <div className="flex w-10/12 flex-col items-end justify-center">
-          <div className="relative flex h-auto w-full items-center justify-center">
-            <Image
-              src="/assets/images/ma_cherry/el 1.png"
-              className="absolute inset-0 object-cover"
-              alt="Shoshone"
-              width={1000}
-              height={1000}
-            />
-          </div>
-          <div className="relative flex h-auto w-full items-center justify-center">
-            <Image
-              src="/assets/images/ma_cherry/el 5.png"
-              className="blr absolute inset-0 -z-30 hidden object-cover"
-              alt="Shoshone"
-              width={1000}
-              height={1000}
-            />
-          </div>
-
-          <div className="relative mb-20 font-bold">
+        <div className="mx-auto flex w-10/12 flex-col items-start justify-center xl:mt-8 2xl:mt-10">
+          <div className="sm: px-2 font-bold xl:mb-4">
             <h1>Welcome.</h1>
-            <div className="flex flex-row">
-              <h4>Tech</h4>
-              <h4>Travel</h4>
-              <h4>Languages</h4>
-              <h4>Culture</h4>
+            <div className="flex h-full w-full flex-row">
+              <p className="bg-gradient-to-r from-purple-300 to-slate-200 bg-clip-text text-transparent">
+                Notes is my blog where I talk about technology, travel, & living
+                in the modern era.
+              </p>
             </div>
           </div>
 
@@ -48,6 +28,7 @@ export default function Notes() {
               <p>{posts.description}</p>
               <p>{posts.date}</p>
               <button className="button">Click Here.</button>
+              <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-r from-slate-600 to-slate-900 blur-[100px] hover:from-pink-500 hover:to-orange-500"></div>
             </div>
           ))}
         </div>
