@@ -9,27 +9,16 @@ import wr from "../../../public/assets/images/Climbing/wr.jpeg";
 export default function CardThree() {
   return (
     <>
-      <div className="relative items-center justify-center xl:h-[1000px] xl:w-full">
+      <div className="relative xl:h-[1000px] xl:w-full">
         <div className="flex flex-col items-center justify-center">
-          <div className="glassy indicator flex-col items-center justify-center rounded-md border-[1px] border-white/20 xl:left-[500px] xl:px-4 xl:py-8">
-            <span className="badge indicator-item badge-secondary">SYN</span>
+          <span className="badge indicator-item badge-secondary">SYN</span>
+          <div className="glassy indicator flex-col items-start justify-center rounded-md border-[1px] border-white/20 xl:p-4">
             <h1 className="text-tp">Missoula MT📍</h1>
             <h2 className="">University of Montana</h2>
             <h3 className="">Studying Computer Science</h3>
           </div>
-          <div className="glassy mockup-code">
-            <pre data-prefix="$">
-              <code>npm i daisyui</code>
-            </pre>
-            <pre data-prefix=">" className="text-warning">
-              <code>installing...</code>
-            </pre>
-            <pre data-prefix=">" className="text-success">
-              <code>Done!</code>
-            </pre>
-          </div>
         </div>
-        <div className="relative h-[300px] w-[300px] bg-transparent">
+        {/* <div className="relative h-[300px] w-[300px] bg-transparent">
           <Image
             src={meClimb}
             alt="Climbing"
@@ -65,7 +54,7 @@ export default function CardThree() {
             width={300}
             height={300}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
