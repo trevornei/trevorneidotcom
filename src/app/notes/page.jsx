@@ -1,12 +1,50 @@
 "use client";
+import React, { useEffect, useState } from "react";
 import Nav from "../components/Nav.jsx";
 import "./notes.css";
 
 import blogPosts from "./posts.json";
 export default function Notes() {
+  const [isHovered, setHovered] = useState(false);
+
+  useEffect(() => {
+    const element = document.querySelector(".hvr");
+
+    if (element) {
+      const handleMouseOver = () => {
+        element.classList.add(
+          "bg-gradient-to-r",
+          "from-purple-500/20",
+          "to-transparent",
+          "backdrop-blur-2xl",
+        );
+        setHovered(true);
+      };
+
+      const handleMouseOut = () => {
+        element.classList.remove(
+          "bg-gradient-to-r",
+          "from-purple-500/20",
+          "to-transparent",
+          "backdrop-blur-2xl",
+        );
+        setHovered(false);
+      };
+
+      element.addEventListener("mouseover", handleMouseOver);
+      element.addEventListener("mouseout", handleMouseOut);
+
+      return () => {
+        element.removeEventListener("mouseover", handleMouseOver);
+        element.removeEventListener("mouseout", handleMouseOut);
+      };
+    }
+  }, []);
+
   return (
     <>
       <Nav />
+      <div className="absolute rotate-[70deg] bg-gradient-to-r from-ts to-blue-500 blur-[120px] lg:right-[0px] lg:top-[400px] lg:h-[100px] lg:w-[900px]"></div>
       <div className="flex flex-col items-center justify-center">
         <div className="mx-auto flex w-10/12 flex-col items-start justify-center xl:mt-8 2xl:mt-10">
           <div className="sm: px-2 font-bold xl:mb-4">
@@ -18,17 +56,15 @@ export default function Notes() {
               </p>
             </div>
           </div>
-
           {blogPosts.map((posts) => (
             <div
-              className="glassy-mid relative flex w-full flex-col gap-2 overflow-clip"
+              className="glassy-mid hvr relative flex w-full flex-col gap-2 overflow-clip"
               key={posts.id}
             >
               <h1 className="">{posts.title}</h1>
               <p>{posts.description}</p>
               <p>{posts.date}</p>
               <button className="button">Click Here.</button>
-              <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-r from-slate-600 to-slate-900 blur-[100px] hover:from-pink-500 hover:to-orange-500"></div>
             </div>
           ))}
         </div>

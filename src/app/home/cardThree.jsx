@@ -1,10 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import meClimb from "../../../public/assets/images/Climbing/climbing.jpeg";
-import pets from "../../../public/assets/images/Climbing/pets.jpeg";
-import action from "../../../public/assets/images/Climbing/action.jpeg";
-import rafting from "../../../public/assets/images/Climbing/rafting.jpeg";
-import wr from "../../../public/assets/images/Climbing/wr.jpeg";
 
 export default function CardThree() {
   return (

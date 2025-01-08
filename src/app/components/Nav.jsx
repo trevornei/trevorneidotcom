@@ -115,9 +115,7 @@ export default function Nav() {
         </div>
       </nav>
       {/* Line at the bottom of the nav bar. */}
-      <div className="flex items-center justify-center">
-        <div className="mt-4 h-px w-10/12 bg-gradient-to-r from-purple-500 to-tp/30"></div>
-      </div>
+
       <div className="flex items-center justify-center">
         <Modal isOpen={isModalOpen} onClose={closeModal} className="">
           <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
