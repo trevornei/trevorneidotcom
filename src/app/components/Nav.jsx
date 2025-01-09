@@ -94,7 +94,7 @@ export default function Nav() {
           <button onClick={openModal} className="relative">
             <Image
               src="/assets/images/ma_cherry/3.png"
-              className="absolute right-0 top-0 animate-pulse-slow animate-spin-slow blur-xl saturate-200"
+              className="absolute right-0 top-0 animate-spin-slow blur-xl saturate-200"
               width={100}
               height={100}
               alt="Absract shape for button styling"

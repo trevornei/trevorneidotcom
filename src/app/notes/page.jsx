@@ -44,7 +44,7 @@ export default function Notes() {
   return (
     <>
       <Nav />
-      <div className="absolute rotate-[70deg] bg-gradient-to-r from-ts to-blue-500 blur-[120px] lg:right-[0px] lg:top-[400px] lg:h-[100px] lg:w-[900px]"></div>
+      <div className="absolute rotate-[80deg] rounded-[300px] bg-gradient-to-r from-fuchsia-800 to-blue-500 blur-[135px] lg:right-[0px] lg:top-[600px] lg:h-[75px] lg:w-[1300px]"></div>
       <div className="flex flex-col items-center justify-center">
         <div className="mx-auto flex w-10/12 flex-col items-start justify-center xl:mt-8 2xl:mt-10">
           <div className="sm: px-2 font-bold xl:mb-4">
