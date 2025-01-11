@@ -32,9 +32,10 @@ module.exports = {
         bgdg: "#0b1a17",
       },
       fontFamily: {
-        chakra: ["Chakra Petch", "sans-serif"],
-        silkscreen: ["Silkscreen", "monospace"],
-        rubikglitch: ["Rubik Glitch", "monospace"],
+        chakra: ["Chakra Petch"],
+        silkscreen: ["Silkscreen", "sans-serif"],
+        rubikglitch: ["Rubik Glitch"],
+        barriecito: ["Barriecito-Regular"],
       },
       animation: {
         // Existing
