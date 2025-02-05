@@ -2,12 +2,38 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import gsap from "gsap";
+import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
 
 export default function Hero() {
+  gsap.registerPlugin(ScrambleTextPlugin);
+  useEffect(() => {
+    gsap.to("#scrmbl-one", {
+      duration: 2,
+      scrambleText: {
+        text: "Trevor Nei",
+        chars: "${whoami}",
+        revealDelay: 1.2,
+        speed: 0.2,
+      },
+    });
+    gsap.to("#scrmbl-two", {
+      duration: 2,
+      scrambleText: {
+        text: "Software Engineer",
+        chars: "학상니다",
+        revealDelay: 0,
+        speed: 0.5,
+      },
+    });
+  });
   return (
     <>
       <div className="absolute z-30 mb-20 hidden -rotate-[10deg] overflow-hidden bg-tp sm:left-[215px] sm:top-[497px] sm:block md:left-[200px] md:top-[500px] md:mb-32 md:block lg:left-[450px] lg:top-[680px] lg:block lg:-rotate-[15deg] xl:block 2xl:block">
-        <h1 className="z-30 font-bold text-black sm:px-2 sm:py-px sm:text-xl md:px-2 md:py-1 md:text-2xl lg:px-4 lg:py-2 lg:text-4xl">
+        <h1
+          className="z-30 font-bold text-black sm:px-2 sm:py-px sm:text-xl md:px-2 md:py-1 md:text-2xl lg:px-4 lg:py-2 lg:text-4xl"
+          id="scrmbl-one"
+        >
           Trevor Nei
         </h1>
       </div>
@@ -31,15 +57,18 @@ export default function Hero() {
         </div>
         <div className="relative z-10 my-0 flex h-full w-full flex-col items-center justify-end overflow-hidden rounded-t-none sm:h-[300px] sm:w-full md:w-1/2 md:items-end md:rounded-3xl md:rounded-l-none lg:h-full lg:w-96 lg:items-center lg:justify-center lg:rounded-l-none xl:w-1/2 xl:items-end xl:justify-center xl:rounded-l-none 2xl:w-1/2 2xl:rounded-l-none">
           <div className="m-0 my-0 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-3xl bg-black/50 p-10 backdrop-blur-md sm:m-0 sm:my-0 sm:h-full sm:items-center sm:rounded-none sm:py-10 md:w-full md:rounded-l-none md:py-10 lg:m-0 lg:h-full lg:w-full lg:items-center lg:justify-center lg:rounded-l-none lg:px-8 lg:py-10 xl:h-full xl:w-full xl:items-center xl:justify-center xl:rounded-l-none xl:py-16 2xl:rounded-l-none">
-            <h1 className="scrambleName z-30 font-bold text-tp sm:hidden sm:px-2 sm:py-px sm:text-xl md:hidden md:px-2 md:py-1 md:text-2xl lg:hidden lg:px-4 lg:py-2 lg:text-4xl xl:hidden 2xl:hidden">
+            <h1
+              className="scrambleName z-30 font-bold text-tp sm:hidden sm:px-2 sm:py-px sm:text-xl md:hidden md:px-2 md:py-1 md:text-2xl lg:hidden lg:px-4 lg:py-2 lg:text-4xl xl:hidden 2xl:hidden"
+              id="scrmbl-one"
+            >
               Trevor Nei
             </h1>
             <div className="flex flex-row items-start justify-start gap-x-2 sm:flex-col">
-              <h1 className="mx-none software text-2xl font-extrabold text-white md:text-5xl lg:text-6xl xl:mx-8 xl:pb-5 xl:text-6xl">
+              <h1
+                className="mx-none software text-2xl font-extrabold text-white md:text-5xl lg:text-6xl xl:mx-8 xl:pb-5 xl:text-6xl"
+                id="scrmbl-two"
+              >
                 SOFTWARE
-              </h1>
-              <h1 className="engineer text-2xl font-extrabold text-tp md:text-5xl lg:text-6xl xl:mx-8 xl:text-6xl">
-                ENGINEER
               </h1>
             </div>
             <div className="flex h-full w-full flex-row items-center justify-center">
