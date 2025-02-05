@@ -10,9 +10,10 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
-    "gsap": "npm:@gsap/shockingly@^3.12.5",
+    "gsap": "npm:@gsap/shockingly@^3.12.7",
     "next": "^15.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
