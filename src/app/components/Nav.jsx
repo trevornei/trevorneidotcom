@@ -118,6 +118,14 @@ export default function Nav() {
 
       <div className="flex items-center justify-center">
         <Modal isOpen={isModalOpen} onClose={closeModal} className="">
+          :
+          <img
+            src="assets/images/profile_pictures/da_snake.png"
+            alt=""
+            height={900}
+            width={900}
+            className="absolute bottom-0 right-0"
+          />
           <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
             <button onClick={() => router.push("/")}>
               <li className="hover:rounded-btn hover:border-2 hover:border-tpink hover:p-2">
