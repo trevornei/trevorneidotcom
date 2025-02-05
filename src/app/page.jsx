@@ -1,5 +1,4 @@
 import Nav from "./components/Nav";
-import Image from "next/image";
 import Footer from "./components/Footer";
 import CardTwo from "./home/cardTwo";
 import Hero from "./home/hero";
