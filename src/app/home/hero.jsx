@@ -29,7 +29,7 @@ export default function Hero() {
             height={500}
           />
         </div>
-        <div className="relative z-10 my-0 flex h-full w-full flex-col items-center justify-end overflow-hidden rounded-t-none bg-black/50 sm:h-[300px] sm:w-full md:w-1/2 md:items-end md:rounded-3xl md:rounded-l-none lg:h-full lg:w-96 lg:items-center lg:justify-center lg:rounded-l-none xl:w-1/2 xl:items-end xl:justify-center xl:rounded-l-none 2xl:w-1/2 2xl:rounded-l-none">
+        <div className="relative z-10 my-0 flex h-full w-full flex-col items-center justify-end overflow-hidden rounded-t-none sm:h-[300px] sm:w-full md:w-1/2 md:items-end md:rounded-3xl md:rounded-l-none lg:h-full lg:w-96 lg:items-center lg:justify-center lg:rounded-l-none xl:w-1/2 xl:items-end xl:justify-center xl:rounded-l-none 2xl:w-1/2 2xl:rounded-l-none">
           <div className="m-0 my-0 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-3xl bg-black/50 p-10 backdrop-blur-md sm:m-0 sm:my-0 sm:h-full sm:items-center sm:rounded-none sm:py-10 md:w-full md:rounded-l-none md:py-10 lg:m-0 lg:h-full lg:w-full lg:items-center lg:justify-center lg:rounded-l-none lg:px-8 lg:py-10 xl:h-full xl:w-full xl:items-center xl:justify-center xl:rounded-l-none xl:py-16 2xl:rounded-l-none">
             <h1 className="scrambleName z-30 font-bold text-tp sm:hidden sm:px-2 sm:py-px sm:text-xl md:hidden md:px-2 md:py-1 md:text-2xl lg:hidden lg:px-4 lg:py-2 lg:text-4xl xl:hidden 2xl:hidden">
               Trevor Nei
