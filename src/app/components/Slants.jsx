@@ -1,8 +1,7 @@
 "use client";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Slant from "./Slant.jsx";
-export default function slants() {
+export default function Slants() {
   const [slantComponents, setSlantComponent] = useState([]);
   useEffect(() => {
     const numberOfSlants = 7;
