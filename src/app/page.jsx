@@ -3,8 +3,12 @@ import Footer from "./components/Footer";
 import CardTwo from "./home/cardTwo";
 import Hero from "./home/hero";
 import Slants from "./components/Slants.jsx";
+import gsap from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 
 export default function Home() {
+  gsap.registerPlugin(ScrollSmoother);
+
   return (
     <>
       <div className="display-none relative overflow-hidden">
