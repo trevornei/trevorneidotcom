@@ -4,7 +4,7 @@ import Slant from "./Slant.jsx";
 export default function Slants() {
   const [slantComponents, setSlantComponent] = useState([]);
   useEffect(() => {
-    const numberOfSlants = 7;
+    const numberOfSlants = 30;
     const componentsArrary = [];
 
     function genSlant() {
@@ -20,7 +20,7 @@ export default function Slants() {
     <>
       {/* Parent Div*/}
       <div
-        className="absolute right-0 block -rotate-35 xl:m-0 xl:flex xl:flex-row"
+        className="absolute right-0 -z-10 block -rotate-35 xl:m-0 xl:flex xl:flex-row"
         id="slantPop"
       >
         {/* Each Child Div's */}
