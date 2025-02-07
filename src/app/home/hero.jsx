@@ -21,9 +21,9 @@ export default function Hero() {
       duration: 2,
       scrambleText: {
         text: "Software Engineer",
-        chars: "학상 니다 010011010",
+        chars: "학상101110니다010011학상학상101110니다010011학상",
         revealDelay: 0,
-        speed: 10,
+        speed: 0.5,
       },
     });
   });
