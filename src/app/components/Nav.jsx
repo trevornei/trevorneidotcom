@@ -117,14 +117,13 @@ export default function Nav() {
       {/* Line at the bottom of the nav bar. */}
 
       <div className="flex items-center justify-center">
-        <Modal isOpen={isModalOpen} onClose={closeModal} className="">
-          :
+        <Modal isOpen={isModalOpen} onClose={closeModal} className="z-20">
           <img
             src="assets/images/profile_pictures/da_snake.png"
             alt=""
             height={900}
             width={900}
-            className="absolute bottom-0 right-0"
+            className="absolute -right-24 bottom-0 h-auto w-36 border-b-8 border-r-8 border-b-purple-600 border-r-purple-600 sm:-right-full md:-right-36 md:h-auto md:w-56 lg:-right-full"
           />
           <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
             <button onClick={() => router.push("/")}>
