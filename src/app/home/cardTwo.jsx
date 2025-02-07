@@ -1,7 +1,14 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 export default function CardTwo() {
+  const mvTxt = useRef();
+
+  gsap.registerPlugin(useGSAP);
+
   return (
     <>
       <div className="lg:px-10/12 relative flex w-screen flex-row flex-wrap overflow-hidden border-[1px] border-white sm:flex-row md:flex-row lg:flex-row xl:my-72 xl:rounded-none xl:backdrop-blur-3xl">
@@ -30,7 +37,11 @@ export default function CardTwo() {
           width={1700}
           height={1700}
         />
-        <div className="xl:px-18 x glassy relative z-0 flex-col items-start justify-center gap-6 px-12 py-16 text-white sm:flex-col sm:items-start sm:justify-center sm:gap-6 sm:px-16 sm:py-24 md:flex-col md:items-start md:justify-center md:gap-6 md:px-16 md:py-24 lg:w-1/2 lg:flex-col lg:items-start lg:justify-center lg:gap-6 lg:px-16 lg:py-24 lg:text-8xl xl:flex-col xl:items-start xl:justify-center xl:gap-24 xl:py-28 2xl:gap-24">
+        <div
+          className="xl:px-18 x glassy relative z-0 flex-col items-start justify-center gap-6 px-12 py-16 text-white sm:flex-col sm:items-start sm:justify-center sm:gap-6 sm:px-16 sm:py-24 md:flex-col md:items-start md:justify-center md:gap-6 md:px-16 md:py-24 lg:w-1/2 lg:flex-col lg:items-start lg:justify-center lg:gap-6 lg:px-16 lg:py-24 lg:text-8xl xl:flex-col xl:items-start xl:justify-center xl:gap-24 xl:py-28 2xl:gap-24"
+          ref={mvTxt}
+          id="scrollTxt"
+        >
           <h1 className="font-extrabold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
             Developer.
           </h1>
