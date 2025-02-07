@@ -39,7 +39,10 @@ export default function Hero() {
       </div>
       <div className="b-36 moveHero relative mb-36 mt-16 flex h-1/2 w-10/12 flex-col items-center justify-end overflow-hidden rounded-3xl border-[1px] border-white sm:h-[300px] sm:w-10/12 sm:flex-row md:h-auto md:w-10/12 md:flex-row lg:h-[500px] lg:w-10/12 xl:h-[500px] xl:w-10/12 xl:flex-row 2xl:w-10/12">
         {/* PROFILE EXTENDING THE LENGTH OF THE SCREEN. */}
-        <div className="sm:border-b-none relative -z-0 flex h-full w-full flex-row items-start justify-center overflow-hidden border-b-2 border-tpink/20 backdrop-blur-md sm:-z-10 sm:h-full sm:w-[600px] sm:border-b-0 md:absolute md:left-0 md:-z-10 md:h-full md:w-full md:items-start md:justify-start md:rounded-r-none md:border-b-0 lg:absolute lg:left-0 lg:-z-10 lg:w-full lg:flex-row lg:items-start lg:justify-start lg:border-b-0 xl:absolute xl:h-full xl:w-full xl:border-b-0 2xl:w-full 2xl:border-b-0">
+        <div
+          className="sm:border-b-none relative -z-0 flex h-full w-full flex-row items-start justify-center overflow-hidden border-b-2 border-tpink/20 backdrop-blur-md sm:-z-10 sm:h-full sm:w-[600px] sm:border-b-0 md:absolute md:left-0 md:-z-10 md:h-full md:w-full md:items-start md:justify-start md:rounded-r-none md:border-b-0 lg:absolute lg:left-0 lg:-z-10 lg:w-full lg:flex-row lg:items-start lg:justify-start lg:border-b-0 xl:absolute xl:h-full xl:w-full xl:border-b-0 2xl:w-full 2xl:border-b-0"
+          id="mvHero"
+        >
           <Image
             src="/assets/images/ma_cherry/image_2.png"
             className="absolute inset-0 -z-10 animate-rotateAndScale7s object-cover blur-[80px]"
