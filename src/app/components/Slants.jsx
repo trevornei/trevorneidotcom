@@ -23,15 +23,15 @@ export default function Slants() {
     if (containerRef.current) {
       const children = containerRef.current.children;
       Array.from(children).forEach((child) => {
-        let color = ["tp"];
+        let color = ["tp", "white"];
         // let randomColor = Math.floor(Math.random() * color.length);
 
         // child.classList.add(`${color[randomColor]}`);
-        child.classList.add("bg-teal-300");
+        child.classList.add("bg-tp");
 
         const max = 1800;
         const random = Math.floor(Math.random() * max);
-        gsap.to(child, { y: random, duration: 10, stagger: 150, delay: 0 });
+        gsap.to(child, { y: random, duration: 6, stagger: 150, delay: 0 });
       });
     }
   }, [slantComponents]);
