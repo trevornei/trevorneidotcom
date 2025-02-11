@@ -2,11 +2,30 @@
 import React, { useEffect, useState } from "react";
 import Nav from "../components/Nav.jsx";
 import "./notes.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import gsap from "gsap";
+import _GSDevTools from "gsap/GSDevTools";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 import blogPosts from "./posts.json";
 export default function Notes() {
   const [isHovered, setHovered] = useState(false);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
+    // Wait for DOM elements
+    setTimeout(() => {
+      const smoother = ScrollSmoother.create({
+        smooth: 5,
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+      });
+
+      return () => smoother.kill();
+    }, 0); // Short delay to ensure DOM exists
+  }, []);
   useEffect(() => {
     const element = document.querySelector(".hvr");
 
@@ -43,30 +62,34 @@ export default function Notes() {
 
   return (
     <>
-      <Nav />
-      <div className="absolute rotate-[80deg] rounded-[300px] bg-gradient-to-r from-fuchsia-800 to-blue-500 blur-[135px] lg:right-[0px] lg:top-[600px] lg:h-[75px] lg:w-[1300px]"></div>
-      <div className="flex flex-col items-center justify-center">
-        <div className="mx-auto flex w-10/12 flex-col items-start justify-center xl:mt-8 2xl:mt-10">
-          <div className="sm: px-2 font-bold xl:mb-4">
-            <h1>Welcome.</h1>
-            <div className="flex h-full w-full flex-row">
-              <p className="bg-gradient-to-r from-purple-300 to-slate-200 bg-clip-text text-transparent">
-                Notes is my blog where I talk about technology, travel, & living
-                in the modern era.
-              </p>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <Nav />
+          <div className="absolute rotate-[80deg] rounded-[300px] bg-gradient-to-r from-fuchsia-800 to-blue-500 blur-[135px] lg:right-[0px] lg:top-[600px] lg:h-[75px] lg:w-[1300px]"></div>
+          <div className="flex flex-col items-center justify-center">
+            <div className="mx-auto flex w-10/12 flex-col items-start justify-center xl:mt-8 2xl:mt-10">
+              <div className="sm: px-2 font-bold xl:mb-4">
+                <h1>Welcome.</h1>
+                <div className="flex h-full w-full flex-row">
+                  <p className="bg-gradient-to-r from-purple-300 to-slate-200 bg-clip-text text-transparent">
+                    Notes is my blog where I talk about technology, travel, &
+                    living in the modern era.
+                  </p>
+                </div>
+              </div>
+              {blogPosts.map((posts) => (
+                <div
+                  className="glassy-mid hvr relative flex w-full flex-col gap-2 overflow-clip"
+                  key={posts.id}
+                >
+                  <h1 className="">{posts.title}</h1>
+                  <p>{posts.description}</p>
+                  <p>{posts.date}</p>
+                  <button className="button">Click Here.</button>
+                </div>
+              ))}
             </div>
           </div>
-          {blogPosts.map((posts) => (
-            <div
-              className="glassy-mid hvr relative flex w-full flex-col gap-2 overflow-clip"
-              key={posts.id}
-            >
-              <h1 className="">{posts.title}</h1>
-              <p>{posts.description}</p>
-              <p>{posts.date}</p>
-              <button className="button">Click Here.</button>
-            </div>
-          ))}
         </div>
       </div>
     </>
