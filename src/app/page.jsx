@@ -7,9 +7,9 @@ import Slants from "./components/Slants.jsx";
 export default function Home() {
   return (
     <>
-      <div className="display-none relative overflow-hidden">
-        <Nav />
-        <Slants className="absolute right-96 -rotate-55" />
+      <div className="relative overflow-hidden">
+        <Nav className="fixed right-0 top-0 z-50" />
+        <Slants className="fixed right-96 -rotate-55" />
         <div className="flex flex-col items-center justify-center overflow-hidden">
           <Hero />
           <CardTwo />

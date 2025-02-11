@@ -116,7 +116,7 @@ export default function Nav() {
       </nav>
       {/* Line at the bottom of the nav bar. */}
 
-      <div className="flex items-center justify-center">
+      <div className="absolute right-0 top-0 flex items-center justify-center">
         <Modal isOpen={isModalOpen} onClose={closeModal} className="z-20">
           <img
             src="assets/images/profile_pictures/da_snake.png"
