@@ -12,7 +12,7 @@ export default function Hero() {
       duration: 2,
       scrambleText: {
         text: "Trevor Nei",
-        chars: "${whoami}",
+        chars: "${whoami}who ami ${whoami}}",
         revealDelay: 1.2,
         speed: 0.2,
       },
