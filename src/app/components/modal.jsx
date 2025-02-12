@@ -46,7 +46,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       >
         <div
           ref={modalRef}
-          className="relative rounded-lg bg-white p-6 shadow-xl"
+          className="absolute right-0 top-0 rounded-lg p-6 shadow-xl"
           style={{ opacity: 1 }}
         >
           {children}
