@@ -41,7 +41,7 @@ export default function Slants() {
       {/* Parent Div*/}
       <div
         ref={containerRef}
-        className="inset-right-[1000px] absolute -inset-y-[300px] -z-10 flex h-[600px] w-[800px] rotate-12 flex-row flex-wrap overflow-visible sm:h-[760px] sm:w-[850px] md:-top-[100px] md:w-[1200px] xl:m-0 xl:h-auto xl:w-[2900px]"
+        className="absolute inset-0 -z-10 flex h-[600px] w-[800px] rotate-12 flex-row flex-wrap overflow-visible sm:h-[760px] sm:w-[850px] md:-top-[100px] md:w-[1200px] xl:m-0 xl:h-auto xl:w-[2900px]"
         id="slantPop"
       >
         {/* Each Child Div's */}
