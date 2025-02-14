@@ -9,7 +9,7 @@ export default function Slants() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const numberOfSlants = 1500;
+    const numberOfSlants = 100;
     const componentsArrary = [];
 
     for (let i = 0; i < numberOfSlants; i++) {
@@ -23,15 +23,21 @@ export default function Slants() {
     if (containerRef.current) {
       const children = containerRef.current.children;
       Array.from(children).forEach((child) => {
-        let color = ["tp", "white"];
-        // let randomColor = Math.floor(Math.random() * color.length);
+        let color = [
+          "bg-red-500/40",
+          "bg-red-300",
+          "bg-red-100/30",
+          "bg-red-900",
+          "bg-red-700",
+        ];
+        let randomColor = Math.floor(Math.random() * color.length);
 
-        // child.classList.add(`${color[randomColor]}`);
-        child.classList.add("bg-tp");
+        child.classList.add(`${color[randomColor]}`);
+        // child.classList.add("");
 
         const max = 1800;
         const random = Math.floor(Math.random() * max);
-        gsap.to(child, { y: random, duration: 6, stagger: 150, delay: 0 });
+        gsap.to(child, { y: random, duration: 6, stagger: 1000, delay: 0 });
       });
     }
   }, [slantComponents]);
