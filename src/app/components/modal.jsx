@@ -42,11 +42,11 @@ const Modal = ({ isOpen, onClose, children }) => {
     <>
       <div
         ref={overlayRef}
-        className="fixed inset-0 z-50 flex h-full w-full items-center justify-center bg-black/20 backdrop-blur-3xl"
+        className="fixed inset-0 z-50 flex h-full w-full items-center justify-center bg-black/70 backdrop-blur-3xl"
       >
         <div
           ref={modalRef}
-          className="absolute right-0 top-0 rounded-lg p-6 shadow-xl"
+          className="absolute right-1/2 top-10 rounded-lg p-6 shadow-xl"
           style={{ opacity: 1 }}
         >
           {children}

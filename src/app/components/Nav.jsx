@@ -123,20 +123,20 @@ export default function Nav() {
             alt=""
             height={900}
             width={900}
-            className="absolute -right-24 bottom-0 h-auto w-36 border-b-8 border-r-8 border-b-purple-600 border-r-purple-600 sm:-right-full md:-right-36 md:h-auto md:w-56 lg:-right-full"
+            className="absolute -right-24 bottom-0 h-auto w-36 border-b-2 border-r-2 border-b-purple-600 border-r-purple-600 sm:-right-full md:-right-36 md:h-auto md:w-56 lg:-right-full"
           />
           <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
             <button onClick={() => router.push("/")}>
-              <li className="hover:rounded-btn hover:border-2 hover:border-tpink hover:p-2">
+              <li className="">
                 <h3 className="text-6xl">Home</h3>
               </li>
             </button>
             <button onClick={() => router.push("/notes")}>
-              <li className="hover:rounded-btn hover:border-2 hover:border-tpink hover:p-2">
+              <li className="">
                 <h3 className="text-6xl">Notes</h3>
               </li>
             </button>
-            <li className="hover:rounded-btn hover:border-2 hover:border-tpink hover:p-2">
+            <li className="">
               <button onClick={() => router.push("/contact")}>
                 <h3 className="text-6xl">Contact</h3>
               </button>
@@ -144,7 +144,7 @@ export default function Nav() {
           </ul>
           <button
             onClick={closeModal}
-            className="bg- mt-4 rounded px-4 py-2 text-white backdrop-blur-3xl"
+            className="mt-4 rounded bg-tp/10 px-4 py-2 text-white backdrop-blur-3xl"
           >
             CLOSE
           </button>
