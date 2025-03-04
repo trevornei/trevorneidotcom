@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Nav from "../components/Nav.jsx";
 import "./notes.css";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import gsap from "gsap";
 import _GSDevTools from "gsap/GSDevTools";
