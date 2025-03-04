@@ -8,7 +8,7 @@ export default function Slants() {
   const [slantComponents, setSlantComponent] = useState([]);
   const containerRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const numberOfSlants = 100;
     const componentsArrary = [];
 
@@ -18,7 +18,7 @@ export default function Slants() {
     setSlantComponent(componentsArrary);
   }, []);
 
-  useEffect(() => {
+  useGSAP(() => {
     // Ensure the container and its children have been rendered.
     if (containerRef.current) {
       const children = containerRef.current.children;
