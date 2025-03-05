@@ -1,5 +1,4 @@
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import CardTwo from "./home/cardTwo";
 import Hero from "./home/hero";
 import Slants from "./components/Slants.jsx";
@@ -13,7 +12,6 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center overflow-hidden">
           <Hero />
           <CardTwo />
-          <Footer />
         </div>
       </div>
     </>
