@@ -119,7 +119,7 @@ export default function Nav() {
       <div className="absolute right-0 top-0 flex items-center justify-center">
         <Modal isOpen={isModalOpen} onClose={closeModal} className="z-20">
           <img
-            src="assets/images/profile_pictures/da_snake.png"
+            src="/assets/images/profile_pictures/da_snake.png"
             alt=""
             height={900}
             width={900}
