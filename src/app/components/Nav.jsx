@@ -124,9 +124,9 @@ export default function Nav() {
                 <h3 className="text-6xl">Home</h3>
               </li>
             </button>
-            <button onClick={() => router.push("/notes")}>
+            <button onClick={() => router.push("/")}>
               <li className="">
-                <h3 className="text-6xl">Notes</h3>
+                <h3 className="text-6xl text-red-500 line-through">Notes</h3>
               </li>
             </button>
             <li className="">
