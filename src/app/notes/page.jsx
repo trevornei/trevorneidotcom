@@ -7,7 +7,6 @@ import gsap from "gsap";
 import _GSDevTools from "gsap/GSDevTools";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from 'next/image';
-import bg from '@public/ma_cherry/en 9.png';
 
 export default function Notes() {
   const [isHovered, setHovered] = useState(false);
@@ -65,14 +64,6 @@ export default function Notes() {
         <div id="smooth-content">
           <Nav />
           <div className="absolute rotate-[80deg] rounded-[300px] bg-gradient-to-r from-fuchsia-800 to-blue-500 blur-[0px] lg:right-[0px] lg:top-[600px] lg:h-[75px] lg:w-[1300px]">
-
-	  <Image
-	  src={bg}
-	  width={100}
-	  height={100}
-	  alt={null}
-	  />
-	  
 	  </div>
           <div className="flex flex-col items-center justify-center">
             <div className="mx-auto flex w-10/12 flex-col items-start justify-center xl:mt-8 2xl:mt-10">
