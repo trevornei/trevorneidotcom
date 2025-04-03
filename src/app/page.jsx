@@ -2,7 +2,7 @@ import Nav from "./components/Nav";
 import CardTwo from "./home/cardTwo";
 import Hero from "./home/hero";
 import Slants from "./components/Slants.jsx";
-import CardThree from "./home/CardThree";
+import CardThree from "./home/cardThree";
 
 export default function Home() {
   return (
