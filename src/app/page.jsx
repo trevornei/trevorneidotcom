@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import CardTwo from "./home/cardTwo";
 import Hero from "./home/hero";
 import Slants from "./components/Slants.jsx";
+import CardThree from "./home/CardThree.jsx";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center overflow-hidden">
           <Hero />
           <CardTwo />
-        </div>
+       	  <CardThree />
+	</div>
       </div>
     </>
   );
