@@ -63,7 +63,6 @@ export default function Notes() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <Nav />
-          <div className="absolute rotate-[80deg] rounded-[300px] bg-gradient-to-r from-fuchsia-800 to-blue-500 blur-[0px] lg:right-[0px] lg:top-[600px] lg:h-[75px] lg:w-[1300px]">
 	  </div>
           <div className="flex flex-col items-center justify-center">
             <div className="mx-auto flex w-10/12 flex-col items-start justify-center xl:mt-8 2xl:mt-10">
@@ -76,10 +75,13 @@ export default function Notes() {
                   </p>
                 </div>
               </div>
+            <div className="border-2 border-white rounded-lg w-10/12 h-full sm:w-10/12 md:w-10/12 lg:w-10/12 xl:w-10/12 "> 
+
+            </div>
             </div>
           </div>
         </div>
-      </div>
-    </>
-  );
+        
+      </>
+  )
 }
