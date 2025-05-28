@@ -31,7 +31,7 @@ export default function Hero() {
     <>
       <div className="absolute z-30 mb-20 hidden -rotate-[10deg] overflow-hidden bg-tp sm:left-[215px] sm:top-[497px] sm:block md:left-[200px] md:top-[500px] md:mb-32 md:block lg:left-[450px] lg:top-[680px] lg:block lg:-rotate-[15deg] xl:block 2xl:block">
         <h1
-          className="z-30 font-bold text-black sm:px-2 sm:py-px sm:text-xl md:px-2 md:py-1 md:text-2xl lg:px-4 lg:py-2 lg:text-4xl"
+          className="z-30 font-silkscreen font-bold text-black sm:px-2 sm:py-px sm:text-xl md:px-2 md:py-1 md:text-2xl lg:px-4 lg:py-2 lg:text-4xl"
           id="scrmbl-one"
         >
           Trevor Nei
@@ -45,7 +45,7 @@ export default function Hero() {
         >
           <Image
             src="/assets/images/ma_cherry/image_2.png"
-            className="absolute inset-0 -z-10 animate-rotateAndScale7s object-cover blur-[80px]"
+            className="absolute top-0 left-0 -z-10 object-cover blur-[40px]"
             alt="Shoshone"
             width={800}
             height={800}
