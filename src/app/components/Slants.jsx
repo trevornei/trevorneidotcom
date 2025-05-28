@@ -11,7 +11,7 @@ export default function Slants() {
   const containerRef = useRef(null);
 
   useGSAP(() => {
-    const numberOfSlants = 100;
+    const numberOfSlants = 10;
     const componentsArrary = [];
 
     for (let i = 0; i < numberOfSlants; i++) {
@@ -21,19 +21,19 @@ export default function Slants() {
   }, []);
 
   useGSAP(() => {
-    // Ensure the container and its children have been rendered.
+    // Ensure the container and its children have been rendesky.
     if (containerRef.current) {
       const children = containerRef.current.children;
       Array.from(children).forEach((child) => {
         let color = [
-          "bg-red-500/40",
-          "bg-red-300",
-          "bg-red-100/30",
-          "bg-red-900",
-          "bg-red-700",
+          "bg-sky-500/40",
+          "bg-sky-300",
+          "bg-sky-100/30",
+          "bg-sky-900",
+          "bg-sky-700",
         ];
         let randomColor = Math.floor(Math.random() * color.length);
-
+        child.classList.add('blur-[70px]')
         child.classList.add(`${color[randomColor]}`);
         // child.classList.add("");
 
@@ -49,7 +49,7 @@ export default function Slants() {
       {/* Parent Div*/}
       <div
         ref={containerRef}
-        className="absolute inset-0 -z-10 flex h-[600px] w-[800px] rotate-12 flex-row flex-wrap overflow-visible sm:h-[760px] sm:w-[850px] md:-top-[100px] md:w-[1200px] xl:m-0 xl:h-auto xl:w-[2900px]"
+        className="absolute inset-0 -z-10 flex flex-row flex-wrap overflow-visible sm:h-[760px] sm:w-[850px] md:-top-[100px] md:w-[1200px] xl:m-0 xl:h-auto xl:w-[2900px]"
         id="slantPop"
       >
         {/* Each Child Div's */}
