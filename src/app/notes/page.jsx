@@ -12,46 +12,11 @@ import "./notes.css";
 /*GSAP*/
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-<<<<<<< HEAD
 import ScrollSmoother from "gsap/ScrollSmoother";
 import _GSDevTools from "gsap/GSDevTools";
 
-
-/*Firebase*/
-import { db } from "../../../firebase/firebase-config.jsx" 
-import { doc, getDoc } from "firebase/firestore"
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
-
-const firebaseConfig = {
-  apikey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectID: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messageSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-
-
-=======
->>>>>>> 7e7aedf (Had npm uninstall firebase since it was breaking prod and deleted the firebsase configuration file.)
-
 export default function Notes() {
     
-    /*Firebase Call(s)*/
-    useEffect(() => {
-        async function getFirebase () {
-            console.log("This is proof that useEffect-->getFirebase() is firing.")
-        }
-        getFirebase()
-    }) 
-
     const [isHovered, setHovered] = useState(false);
     useEffect(() => {
         gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
