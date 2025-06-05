@@ -12,6 +12,7 @@ import "./notes.css";
 /*GSAP*/
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+<<<<<<< HEAD
 import ScrollSmoother from "gsap/ScrollSmoother";
 import _GSDevTools from "gsap/GSDevTools";
 
@@ -38,6 +39,8 @@ const app = initializeApp(firebaseConfig);
 
 
 
+=======
+>>>>>>> 7e7aedf (Had npm uninstall firebase since it was breaking prod and deleted the firebsase configuration file.)
 
 export default function Notes() {
     
