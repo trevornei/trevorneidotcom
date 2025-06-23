@@ -72,7 +72,7 @@ p {
 }
 
 .button {
-  @apply border-white border-[1px] w-24 bg-black/50 rounded-btn h-6
+  @apply border-white border-[1px] w-24 bg-black/50 rounded-xl h-6
 }
 
 .position-bottom-right {
