@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #000000;
-  --foreground: #000000;
+  --background: rgb(0, 0, 0, 1);
+  --foreground: rgb(0, 0, 0, 1);
+}
+
+html {
+  background: rgb(0, 0, 0, 1); 
 }
 
 /* Fonts Imported */
