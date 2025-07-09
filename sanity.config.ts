@@ -1,7 +1,7 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 import project from './sanity/schemas/project-schema';
-import { schemas } 'sanity/schemas';
+import schemas from './sanity/schemas';
 
 // Now create a variable that calls the defineConfig({}) method. 
 // Don't forget to add a base-path: this is where your sanity application will
@@ -13,7 +13,7 @@ const config = defineConfig({
   apiVersion: '2025-18-07',
   basePath: '/admin',
   plugins: [deskTool()],
-  schema: {types: schemas}
+  schema: {types: schemas},
 });
 
 
