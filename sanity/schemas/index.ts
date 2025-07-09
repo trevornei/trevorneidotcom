@@ -3,7 +3,7 @@
 // ---> sanity.config.ts file points here...
 
 
-import project from 'project-schema';
+import project from './project-schema';
 
 const schemas = [project];
 
