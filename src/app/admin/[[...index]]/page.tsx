@@ -1,10 +1,8 @@
 'use client';
-import {NextStudio} from 'next-sanity/studio'
+import { NextStudio } from 'next-sanity/studio'
 import config from '../../../../sanity.config'
 
 export const dynamic = 'force-static'
-
-export { nextStudio } from 'next-sanity/studio'
 
 export default function adminPage() {
   return <NextStudio config={config} />
