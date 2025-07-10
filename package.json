@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@sanity/vision": "^3.98.1",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "gsap": "npm:@gsap/shockingly@^3.12.7",
@@ -19,7 +20,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-firebase-hooks": "^5.1.1",
-    "sanity": "^3.98.0",
+    "sanity": "^3.98.1",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {

@@ -11,12 +11,11 @@ export async function getProjects() {
   projectId: 'm1aaeqzz',
   dataset: 'production',
   apiVersion: '2025-07-08',
-  useCdn: true, // Use CDN for faster content delivery
-  
+  useCdn: false, 
   })
 
   return client.fetch(
-    groq`*[_type == "project"]{
+    groq`*[_type == "note"]{
       _id, 
       _createdAt,
       name,
