@@ -8,8 +8,8 @@ import schemas from './sanity/schemas';
 // Don't forget to add a base-path: this is where your sanity application will
 // live on your domain/path...
 const config = defineConfig({
-  projectId: process.env.NEXT_SANITY_PROJECT_ID, 
-  dataset: process.env.NEXT_SANITY_DATASET,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID, 
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   title: 'notes',
   apiVersion: '2025-02-19',
   basePath: '/admin',
@@ -17,7 +17,7 @@ const config = defineConfig({
       deskTool(), 
       visionTool({
         defaultApiVersion: '2025-02-19',
-        defaultDataset: process.env.NEXT_SANITY_DATASET
+        defaultDataset: process.env.NEXT_PUBLIC_SANITY_DATASET
       })
   ],
   schema: {types: schemas},

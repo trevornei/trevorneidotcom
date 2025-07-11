@@ -5,14 +5,22 @@
 //  then create your query with an http verb
 
 import { createClient, groq } from 'next-sanity';
+import imageUrlBuilder from '@sanity/image-url';
 
-export async function getProjects(): promise<project[]> {
-  const client = createClient({
+const client = createClient({
   projectId: 'm1aaeqzz',
   dataset: 'production',
   apiVersion: '2025-07-08',
-  useCdn: false, 
-  })
+  useCdn: true, 
+});
+
+const builder = imageUrlBuilder(client);
+
+export function urlFor(source: any) {
+  return builder.image(source);
+}
+
+export async function getProjects(): Promise<any[]> {
 
   return client.fetch(
     groq`*[_type == "note"]{
@@ -20,7 +28,7 @@ export async function getProjects(): promise<project[]> {
       _createdAt,
       name,
       "slug": slug.current,
-      "image": image.asset,
+      "image": image.asset->url,
       url,
       content
     }`
