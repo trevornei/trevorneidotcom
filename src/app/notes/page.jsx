@@ -9,7 +9,11 @@ export default async function page() {
   if (!projects.length) {
     return (
       <p className="text-4xl text-white">No data was found</p>
-    )
+    ) 
+    if (projects) {
+      return (
+          <h1 className="text-4xl font-bold text-red-500">${projects}</h1>)
+    }
   };
   return (
     <>
@@ -17,14 +21,14 @@ export default async function page() {
 
         {projects.map((project) => {
           return (
-          <div key={project._id} className="text-4xl text-white"> 
+          <div key={project._id} className="text-4xl text-white border-2 border-white/50 p-8"> 
                 {project.image && (
                   <Image 
-                    src={project.image
-                    } 
-                    alt={project.name || 'Project image'}
+                    src={project.image} 
+                    alt={project.name}
                     width={250}
                     height={250}
+                    objectFit="cover"
                   />
                 )}
             {project.name}
