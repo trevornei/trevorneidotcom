@@ -1,8 +1,8 @@
 import Nav from '../components/Nav';
 import { getProjects, urlFor } from '../../../sanity/sanity-utils';
 import Image from 'next/image';
+import Link from 'next/link';
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import bgImg from '../../../public/assets/images/ma_cherry/image_2.png';
 import { Suspense } from 'react';
 
@@ -42,6 +42,9 @@ export default async function page() {
                   />
                 )}
             {project.name}
+            <Link className="mx-auto my-2 w-10 h-6 bg-neutral-100/20 p-[2px] rounded-3xl" href={`/notes/${project.slug}`}>
+             Click 💥 Here
+            </Link>
           </div>
           )
 

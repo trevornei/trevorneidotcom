@@ -34,3 +34,18 @@ export async function getProjects(): Promise<any[]> {
     }`
   )
 };
+
+export async function getProject(slug: string): Promise<any> {
+  return client.fetch(
+    groq`*[_type == "note" && slug.current == $slug][0]{
+      _id,
+      _createdAt,
+      name,
+      "": slug.current,
+      "image": image.asset->url,
+      url,
+      content
+    }`,
+    { slug: slug }
+  )
+}
