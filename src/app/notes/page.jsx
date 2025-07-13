@@ -30,7 +30,7 @@ export default async function page() {
       <Suspense fallback={<Loading />}>
       {projects.map((project) => {
           return (
-          <div key={project._id} className="bg-neutral-400/20 hover:bg-neutral-400/30 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[.5px] border-tp rounded-xl rounded-r-3xl overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
+          <div key={project._id} className="bg-neutral-400/20 hover:bg-neutral-400/30 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[1px] border-tp rounded-3xl overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
                 {project.image && (
                   <Image 
                     src={project.image} 
@@ -42,9 +42,11 @@ export default async function page() {
                   />
                 )}
             {project.name}
-            <Link className="mx-auto my-2 w-10 h-6 bg-neutral-100/20 p-[2px] rounded-3xl" href={`/notes/${project.slug}`}>
-             Click 💥 Here
+          <div >   
+          <Link className="mx-auto text-tp text-lg my-2 w-10 h-6 bg-neutral-100/20 px-[10px] py-[5px]" href={`/notes/${project.slug}`}>
+            NOTE 
             </Link>
+          </div> 
           </div>
           )
 
