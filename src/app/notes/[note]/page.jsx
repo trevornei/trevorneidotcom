@@ -31,7 +31,7 @@ export default async function note({ params }) {
       <h1 className="text-4xl text-white">{note.name}</h1>
       <div className="w-full h-[30px] bg-neutral-500/10"></div>
       <div className="text-white text-sky-500 font-semibold">
-        <PortableText value={note.content} />    
+        <PortableText value={note.content} flex flex-col content-evenly/>    
       </div>
     </div> 
   </>)
