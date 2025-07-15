@@ -116,15 +116,23 @@ export default function Nav() {
       </nav>
       {/* Line at the bottom of the nav bar. */}
 
-      <div className="absolute right-0 top-0 flex items-center justify-center">
-        <Modal isOpen={isModalOpen} onClose={closeModal} className="z-20">
+      <div className="absolute inset-0 w-screen h-auto overflow-none flex items-center justify-center">
+        <Modal isOpen={isModalOpen} onClose={closeModal} className="z-20 absolute inset-0 flex items-center justify-center">
           <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
-            <button onClick={() => router.push("/")}>
+            
               <li className="">
+      <button onClick={() => router.push("/")}>
                 <h3 className="text-6xl">Home</h3>
-              </li>
             </button>
-            <li className="">
+            
+              </li>
+
+          <li>
+            <button onClick={() => router.push("/notes")}>
+              <h3 className="text-6xl">Notes</h3>
+            </button>
+          </li>
+      <li className="">
               <button onClick={() => router.push("/contact")}>
                 <h3 className="text-6xl">Contact</h3>
               </button>
