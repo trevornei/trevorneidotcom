@@ -41,7 +41,7 @@ export async function getProject(slug: string): Promise<any> {
       _id,
       _createdAt,
       name,
-      "": slug.current,
+      "slug": slug.current,
       "image": image.asset->url,
       url,
       content

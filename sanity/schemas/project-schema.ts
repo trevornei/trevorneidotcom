@@ -38,8 +38,6 @@ const project = {
       type: 'array',
       of: [
             {type: 'block'},
-            {type: 'images'},
-            {type: 'code'}
       ],
     },
   ],

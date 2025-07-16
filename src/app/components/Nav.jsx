@@ -116,7 +116,7 @@ export default function Nav() {
       </nav>
       {/* Line at the bottom of the nav bar. */}
 
-      <div className="absolute inset-0 w-screen h-auto overflow-none flex items-center justify-center">
+      <div className="absolute inset-0 w-screen h-16 overflow-none flex items-center justify-center">
         <Modal isOpen={isModalOpen} onClose={closeModal} className="z-20 absolute inset-0 flex items-center justify-center">
           <ul className="flex flex-col items-start justify-center gap-y-6 font-chakra font-extrabold text-tp">
             
