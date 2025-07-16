@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from "next/navigation";
 import bgImg from '../../../public/assets/images/ma_cherry/image_2.png';
-import { Suspense } from 'react';
 
 export default async function page() {
   const projects = await getProjects();
@@ -16,52 +15,31 @@ export default async function page() {
   return (
     <>
       <Nav />
-      <div>
-        <Image 
-          src={bgImg} 
-          alt='background blured image.'
-          width={750}
-          height={750}
-          objectFit="cover"
-          className="absolute inset-0 -z-10 blur-[200px]"
-        />
-      </div>
       <div className="m-6 md:m-8 lg:m-10 flex flex-col">  
-      <Suspense fallback={<Loading />}>
       {projects.map((project) => {
           return (
-          <div key={project._id} className="bg-neutral-400/20 hover:bg-neutral-400/30 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[1px] border-tp rounded-3xl overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
+          <div key={project._id} className="bg-neutral-400/20 hover:bg-neutral-400/30 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[1px] border-tp rounded-md overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
                 {project.image && (
                   <Image 
                     src={project.image} 
                     alt={project.name}
                     width={250}
                     height={250}
-                    objectFit="cover"
-                    className="rounded-2xl"
+                    className="rounded-md"
                   />
                 )}
             {project.name}
-          <div >   
-          <Link className="mx-auto text-tp text-lg my-2 w-10 h-6 bg-neutral-100/20 px-[10px] py-[5px]" href={`/notes/${project.slug}`}>
-            NOTE 
-            </Link>
-          </div> 
+          
+          <Link id="link" className="z-50 mx-auto text-tp text-lg my-2 w-10 h-6 bg-neutral-100/20 px-[10px] py-[5px]" href={`/notes/${project.slug}`}>
+            NOTE
+          </Link>
+              <div>
+          </div>
           </div>
           )
+      })}
 
-        })}
-
-    </Suspense>
     </div>
     </>
   )
-}
-
-function Loading () {
-  <>
-    return <div className="bg-neutral-20 w-[100px] h-[25px] md:w-[200px] md:h-[50px]  lg:w-[400px] lg:h-[100px]">
-             <p className="text-4xl">... LOADING ...</p>
-           </div>
-  </>
 }
