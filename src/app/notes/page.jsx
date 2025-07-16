@@ -29,11 +29,12 @@ export default async function page() {
                   />
                 )}
             {project.name}
-          
+          <div>
           <Link id="link" className="z-50 mx-auto text-tp text-lg my-2 w-10 h-6 bg-neutral-100/20 px-[10px] py-[5px]" href={`/notes/${project.slug}`}>
             NOTE
           </Link>
-              <div>
+          </div>
+          <div>
           </div>
           </div>
           )
