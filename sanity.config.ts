@@ -1,8 +1,10 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 import { visionTool } from '@sanity/vision';
+import { codeInput } from '@sanity/code-input';
 import project from './sanity/schemas/project-schema';
 import schemas from './sanity/schemas';
+
 
 // Now create a variable that calls the defineConfig({}) method. 
 // Don't forget to add a base-path: this is where your sanity application will
@@ -18,7 +20,8 @@ const config = defineConfig({
       visionTool({
         defaultApiVersion: '2025-02-19',
         defaultDataset: process.env.NEXT_PUBLIC_SANITY_DATASET
-      })
+      }),
+      codeInput()
   ],
   schema: {types: schemas},
 });
