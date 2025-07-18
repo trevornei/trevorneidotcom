@@ -18,7 +18,7 @@ export default async function page() {
       <div className="m-6 md:m-8 lg:m-10 flex flex-col">  
       {projects.map((project) => {
           return (
-          <div key={project._id} className="bg-neutral-400/20 hover:bg-neutral-400/30 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[1px] border-tp rounded-md overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
+          <div key={project._id} className="bg-transparent hover:bg-sky-400/10 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[1px] border-tp/20 rounded-md overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
                 {project.image && (
                   <Image 
                     src={project.image} 

@@ -10,7 +10,7 @@ export default async function note({ params }) {
   return (
     <>
     <Nav /> 
-    <div className="mx-10 items-center content-start flex flex-col content-evenly gap-8 my-10 bg-neutral-950/10 w-auto h-full" key={note._id}>
+    <div className="mx-10 md:mx-20 lg:mx-28 xl:mx-32 items-center content-start flex flex-col content-evenly gap-8 my-10 bg-neutral-950/10 w-auto h-full" key={note._id}>
       <Image
         src={bg}
         alt="Background image for aesthetics."
@@ -28,10 +28,10 @@ export default async function note({ params }) {
         className="rounded-2xl"
       />
 
-      <h1 className="text-4xl text-white">{note.name}</h1>
-      <div className="w-full h-[30px] bg-neutral-500/10"></div>
-      <div className="text-white text-sky-500 font-semibold">
-        <PortableText 
+      <div className="text-white font-semibold">
+        
+      <h1 className="text-2xl sm:text-3xl md:text-4xl pb-6 text-tp">{note.name}</h1>
+      <PortableText 
           value={note.content}
           components={{
             block: {
@@ -41,12 +41,12 @@ export default async function note({ params }) {
             },
             list: {
               bullet: ({children}) => (
-                <ul className="list-disc text-sky-500">{children}</ul>
+                <ul className="list-disc ">{children}</ul>
               ),
             },
             listItem: {
               bullet: ({children}) => ( 
-                <li className="list-disc text-sky-500">{children}</li>
+                <li className="list-disc marker:text-tp text-white">{children}</li>
               ),
             },
           }}
