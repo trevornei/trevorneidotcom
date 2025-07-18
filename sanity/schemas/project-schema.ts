@@ -11,7 +11,6 @@ defineField({
       {title: 'HTML', value: 'html'},
       {title: 'CSS', value: 'css'},
     ],
-    withFileName: true,
   },
 })
 
