@@ -5,7 +5,7 @@ import bg from '../../../../public/bg.png';
 import Nav from '../../components/Nav';
 
 export default async function note({ params }) {
-  const slug = params.note
+  const {note: slug } = await params 
   const note = await getProject(slug) 
   return (
     <>
@@ -37,8 +37,18 @@ export default async function note({ params }) {
             block: {
               normal: ({children}) => (
                 <p className="mb-4 indent-4">{children}</p>
-              )
-            }
+              ),
+            },
+            list: {
+              bullet: ({children}) => (
+                <ul className="list-disc text-sky-500">{children}</ul>
+              ),
+            },
+            listItem: {
+              bullet: ({children}) => ( 
+                <li className="list-disc text-sky-500">{children}</li>
+              ),
+            },
           }}
         />    
       </div>
