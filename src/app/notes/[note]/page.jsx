@@ -36,10 +36,18 @@ export default async function note({ params }) {
           components={{
             block: {
               normal: ({children}) => (
-                <p className="mb-4 indent-4">{children}</p>,
+                <p className="mb-4 indent-4">{children}</p>
               ),
-              ul: ({children}) => <ul className="list-disc text-sky-500">{children}</ul>,
-              li: ({children}) => <li className="list-disc text-sky-500">{children}</li>,
+            },
+            list: {
+              bullet: ({children}) => (
+                <ul className="list-disc text-sky-500">{children}</ul>
+              ),
+            },
+            listItem: {
+              bullet: ({children}) => ( 
+                <li className="list-disc text-sky-500">{children}</li>
+              ),
             },
           }}
         />    
