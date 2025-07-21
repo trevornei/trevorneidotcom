@@ -36,7 +36,7 @@ export default async function note({ params }) {
           components={{
             block: {
               normal: ({children}) => (
-                <p className="mb-4 indent-4">{children}</p>
+                <p className="mb-4 indent-4 text-sm text-white/90">{children}</p>
               ),
             },
             list: {
