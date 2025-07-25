@@ -14,6 +14,12 @@ defineField({
   },
 })
 
+defineField({
+  type: 'image',
+  name: 'myImageField',
+  title: 'Image'
+})
+
 const project = {
   name: 'note',
   title: 'Notes',
@@ -55,6 +61,7 @@ const project = {
       of: [
             {type: 'block'},
             {type: 'code'},
+            {type: 'image'}
       ],
     },
   ],
