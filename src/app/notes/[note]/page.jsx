@@ -49,6 +49,21 @@ export default async function note({ params }) {
                 <li className="list-disc marker:text-tp text-white">{children}</li>
               ),
             },
+            types: {
+              image: ({ value }) => {
+                return (
+                  <div className="flex flex-col border-2 border-tp items-center bg-tp/10 justify-center my-6 mx-auto">
+                    <Image 
+                      src={urlFor(value).url()}
+                      alt={value.alt || "Image"}
+                      width={400}
+                      height={400}
+                      className=""
+                    />
+                  </div>
+                )
+              }
+            },
           }}
         />    
       </div>
