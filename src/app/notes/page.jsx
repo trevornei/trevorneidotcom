@@ -14,7 +14,6 @@ export default async function page() {
   };
   return (
     <>
-      <Nav />
       <div className="m-6 md:m-8 lg:m-10 flex flex-col">  
       {projects.map((project) => {
           return (
