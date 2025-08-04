@@ -14,15 +14,36 @@ html {
 /* Fonts Imported */
 
 @font-face {
-  font-family: "Chakra";
-  src: url("/fonts/Chakra_Petch") format(".tff");
+  font-family: "chakra";
+  src: url("/assets/fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'silkscreen';
-  src: url('/fonts/Silkscreen/Silkscreen-Regular.tff') format('tff');
+  font-family: "chakra";
+  src: url("/assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "silkscreen";
+  src: url("/assets/fonts/Silkscreen/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "silkscreen";
+  src: url("/assets/fonts/Silkscreen/Silkscreen-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik Glitch";
+  src: url("/assets/fonts/Rubik_Glitch/RubikGlitch-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }

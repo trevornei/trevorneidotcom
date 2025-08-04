@@ -10,9 +10,16 @@
 /* Fonts Imported */
 
 @font-face {
-  font-family: "Chakra Petch";
-  src: url("/fonts/Chakra_Petch.woff2") format("woff2");
+  font-family: "chakra";
+  src: url("/assets/fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "chakra";
+  src: url("/assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 
