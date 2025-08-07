@@ -7,6 +7,7 @@ import bgImg from '../../../public/assets/images/ma_cherry/image_2.png';
 
 export default async function page() {
   const projects = await getProjects();
+  console.log(projects);
   if (!projects.length) {
     return (
       <p className="text-4xl text-white">No data was found</p>
@@ -22,7 +23,7 @@ export default async function page() {
       </div>
       {projects.map((project) => {
           return (
-          <div key={project._id} className="bg-transparent hover:bg-sky-400/10 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[1px] border-tp/20 rounded-md overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
+            <div key={project._id} className="bg-transparent hover:bg-sky-400/10 text-2xl md:text-3xl lg:text-4xl xl:text-l text-white border-[1px] border-tp/20 rounded-md overflow-clip p-8 m-4 lg:m-6 xl:m-10"> 
                 {project.image && (
                   <Image 
                     src={project.image} 
