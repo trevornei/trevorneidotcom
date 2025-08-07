@@ -62,7 +62,16 @@ export default async function note({ params }) {
                     />
                   </div>
                 )
-              }
+              },
+              code: ({ value }) => {
+                return(
+                  <div>
+                    <pre className>
+                      <code>{value.code}</code>
+                    </pre>
+                  </div>
+                )
+             },
             },
           }}
         />    
