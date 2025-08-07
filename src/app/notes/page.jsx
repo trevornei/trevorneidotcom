@@ -17,9 +17,9 @@ export default async function page() {
     <>
       <Nav />
       <div className="m-6 md:m-8 lg:m-10 flex flex-col">  
-      <div className="text-white text-4xl">
+      <div className="m-6 md:m-8 lg:m-10 text-white text-4xl">
         <h1 className="text-tp">ALL CAPS</h1>
-        <h3>Trying to find Bobby Tables -__-</h3>
+        <h3>Trying to find Bobby Tables</h3>
       </div>
       {projects.map((project) => {
           return (
