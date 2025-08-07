@@ -55,6 +55,10 @@ nav {
   @apply font-silkscreen text-2xl font-semibold backdrop-blur-sm;
 }
 
+link {
+  @apply font-silkscreen
+}
+
 /* Glassy Containers */
 .glassy {
   @apply bg-white/10 shadow-lg backdrop-blur-md;

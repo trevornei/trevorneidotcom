@@ -33,11 +33,14 @@ export default async function page() {
                     className="rounded-md"
                   />
                 )}
-          <div>
+            
+            <div>
           
           <Link id="link" className="z-50 mx-auto text-tp text-lg my-2 w-10 h-6 px-[10px] py-[5px]" href={`/notes/${project.slug}`}>
+            
             <h1>{project.name}</h1>
-            <h4 className="border-[.5px] rounded-full border-white w-20 flex items-center justify-center ">NOTE</h4>
+            <h4 className="text-ts">By: {project.author}</h4>
+            <h4 className="border-[.5px] rounded-md border-white/50 shadow-xl shadow-sky-500/20 w-16 px-10 flex items-center justify-center text-white/40 bg-ts/40">NOTE</h4>
           </Link>
           </div>
           <div>

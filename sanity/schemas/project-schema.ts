@@ -10,6 +10,7 @@ defineField({
       {title: 'Javascript', value: 'javascript'},
       {title: 'HTML', value: 'html'},
       {title: 'CSS', value: 'css'},
+      {title: 'sh', value:'sh'},
     ],
   },
 })
@@ -28,6 +29,11 @@ const project = {
     {
       name: 'name', 
       title: 'Name',
+      type: 'string',
+    },
+    {
+      name: 'author', 
+      title: 'Author',
       type: 'string',
     },
     {
