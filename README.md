@@ -1,7 +1,7 @@
 # Hello & Welcome
-## I'm Trevor, Dev, & Cybersecurity Student @ the University of Montana.
+## ***Dev & Cybersecurity Student @ the **University of Montana.*****
 
-### About My Personal Website
+##### About My Personal Website
 This is my largest project to date. I did the Montana Code School a couple of years ago now and have been building my knowledge of web development ever since.
 
 ##### My Stack:
