@@ -14,4 +14,9 @@ Recent Features Added to the website:
 - Created a [blog schematic](https://www.sanity.io/docs/content-lake/how-queries-work) 
 - Querying Sanity.io's content lake with [Groq querying language](https://www.sanity.io/docs/content-lake/how-queries-work). 
 
+### <domain> Landing Page ###
+<img width="1440" height="753" alt="image" src="https://github.com/user-attachments/assets/01004ec8-887f-4d70-916d-423b710067c8" />
+
+### <domain>/notes ###
+<img width="1440" height="753" alt="image" src="https://github.com/user-attachments/assets/78c99c7b-3d40-4cc4-a847-7237b4568e20" />
 
