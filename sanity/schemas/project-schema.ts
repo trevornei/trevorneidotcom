@@ -3,15 +3,15 @@ import { defineType, defineField } from 'sanity';
 defineField({
   type: 'code',
   name: 'myCodeField',
-  title: 'Code with All Options', 
+  title: 'Code with All Options',
   options: {
-    language: 'javascript',
     languageAlternatives: [
       {title: 'Javascript', value: 'javascript'},
       {title: 'HTML', value: 'html'},
       {title: 'CSS', value: 'css'},
       {title: 'sh', value:'sh'},
     ],
+    withFilename: true,
   },
 })
 
