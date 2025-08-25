@@ -1,14 +1,20 @@
 import Nav from "../components/Nav";
 import "./contact.css";
 import Image from "next/image";
+import Spline from '@splinetool/react-spline/next';
 
 export default function Contact() {
   return (
     <>
       <Nav className="" />
       <div className="relative z-10 flex min-h-screen items-center justify-center">
+      <div className="absolute w-screen h-screen -z-10 left-0">      
+        <Spline
+          scene="https://prod.spline.design/mm7IQ4VuMt8GReOw/scene.splinecode" 
+        />
+      </div>
         <div className="contact-box flex w-10/12 flex-row items-center justify-center bg-gradient-to-r from-purple-900/50 to-transparent sm:flex-col">
-          <h3 className="font-bold">You can find me on</h3>
+          <h3 className="text-white text-3xl font-bold">You can find me on</h3>
           <div className="m-4 flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex flex-row items-center justify-center">
               <a

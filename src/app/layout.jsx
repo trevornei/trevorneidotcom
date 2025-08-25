@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     // Wait for DOM elements
     setTimeout(() => {
       const smoother = ScrollSmoother.create({
-        smooth: 5,
+        smooth: 2,
         wrapper: "#smooth-wrapper",
         content: "#smooth-content",
       });
