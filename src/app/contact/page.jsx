@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="relative z-10 flex min-h-screen items-center justify-center">
       <div className="absolute w-screen h-screen -z-10 left-0">      
         <Spline
-          scene="https://prod.spline.design/mm7IQ4VuMt8GReOw/scene.splinecode" 
+          scene="https://prod.spline.design/pbWHDlUueOTih3lo/scene.splinecode" 
         />
       </div>
         <div className="contact-box flex w-10/12 flex-row items-center justify-center bg-gradient-to-r from-purple-900/50 to-transparent sm:flex-col">
