@@ -7,15 +7,15 @@ export default function Contact() {
   return (
     <>
       <Nav className="" />
-      <div className="relative z-10 flex min-h-screen items-center justify-center">
+      <div className="relative z-10 flex min-h-screen items-start justify-start">
       <div className="absolute w-screen h-screen -z-10 left-0">      
         <Spline
           scene="https://prod.spline.design/pbWHDlUueOTih3lo/scene.splinecode" 
         />
       </div>
-        <div className="contact-box flex w-10/12 flex-row items-center justify-center bg-gradient-to-r from-purple-900/50 to-transparent sm:flex-col">
+        <div className="p-4 rounded-md flex w-1/3 flex-row items-center justify-center bg-gradient-to-r from-purple-900/50 to-transparent sm:flex-col">
           <h3 className="text-white text-3xl font-bold">You can find me on</h3>
-          <div className="m-4 flex flex-col items-center justify-between gap-6 sm:flex-row">
+          <div className="m-4 flex flex-col items-center justify-between gap-2 sm:flex-row">
             <div className="flex flex-row items-center justify-center">
               <a
                 href="https://www.linkedin.com/in/trevornei-dev/"
