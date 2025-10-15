@@ -3,6 +3,7 @@ import "./contact.css";
 import Image from "next/image";
 import Spline from '@splinetool/react-spline/next';
 
+
 export default function Contact() {
   return (
     <>
@@ -13,10 +14,8 @@ export default function Contact() {
           scene="https://prod.spline.design/pbWHDlUueOTih3lo/scene.splinecode" 
         />
       </div>
-        <div className="p-4 rounded-md flex w-1/3 flex-row items-center justify-center bg-gradient-to-r from-purple-900/50 to-transparent sm:flex-col">
-          <h3 className="text-white text-3xl font-bold">You can find me on</h3>
-          <div className="m-4 flex flex-col items-center justify-between gap-2 sm:flex-row">
-            <div className="flex flex-row items-center justify-center">
+        <div className="p-4 rounded-md w-1/3 flex-col items-center justify-center">
+            <div className="flex flex-col p-6 items-center justify-center">
               <a
                 href="https://www.linkedin.com/in/trevornei-dev/"
                 target="_blank"
@@ -31,7 +30,7 @@ export default function Contact() {
                 />
               </a>
             </div>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row p-6 items-center justify-center">
               <a
                 href="https://www.github.com/trevornei"
                 target="_blank"
@@ -45,7 +44,7 @@ export default function Contact() {
                 />
               </a>
             </div>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row p-6 items-center justify-center">
               <a
                 href="https://x.com/trevv_dev"
                 target="_blank"
@@ -59,7 +58,6 @@ export default function Contact() {
                 />
               </a>
             </div>
-          </div>
         </div>
       </div>
     </>
