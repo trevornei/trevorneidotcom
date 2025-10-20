@@ -2,12 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 export default function CardTwo() {
   const mvTxt = useRef();
-
-  gsap.registerPlugin(useGSAP);
 
   return (
     <>

@@ -1,16 +1,13 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Slant from "./Slant.jsx";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-
-gsap.registerPlugin(useGSAP);
 
 export default function Slants() {
   const [slantComponents, setSlantComponent] = useState([]);
   const containerRef = useRef(null);
 
-  useGSAP(() => {
+  useEffect(() => {
     const numberOfSlants = 10;
     const componentsArrary = [];
 
@@ -20,7 +17,7 @@ export default function Slants() {
     setSlantComponent(componentsArrary);
   }, []);
 
-  useGSAP(() => {
+  useEffect(() => {
     // Ensure the container and its children have been rendesky.
     if (containerRef.current) {
       const children = containerRef.current.children;

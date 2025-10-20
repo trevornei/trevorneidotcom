@@ -4,13 +4,13 @@ import { useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
-import { useGSAP } from "@gsap/react";
 
 
 
 export default function Hero() {
   gsap.registerPlugin(ScrambleTextPlugin);
-  useGSAP(() => {
+  
+  useEffect(() => {
     gsap.to("#scrmbl-one", {
       duration: 3.5,
       delay: 0,
@@ -36,7 +36,7 @@ export default function Hero() {
     gsap.to(".slide", {
         x: 0, y: 0, 
     });
-  });
+  }, []);
   return (
     <>
       <div className="absolute slide z-30 mb-20 hidden -rotate-[10deg] overflow-hidden bg-tp sm:left-[215px] sm:top-[497px] sm:block md:left-[200px] md:top-[500px] md:mb-32 md:block lg:left-[450px] lg:top-[680px] lg:block lg:-rotate-[15deg] xl:block 2xl:block">
