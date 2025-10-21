@@ -30,14 +30,14 @@ export default async function note({ params }) {
 
       <div className="text-white font-semibold w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl overflow-hidden break-words">
         
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pb-4 sm:pb-5 md:pb-6 text-tp text-center sm:text-left break-words overflow-wrap-anywhere">{note.name}</h1>
+      <h1 className="font-size-5xl leading-tight pb-4 sm:pb-5 md:pb-6 text-tp text-center sm:text-left break-words overflow-wrap-anywhere">{note.name}</h1>
       <PortableText
           className="flex flex-col flex-wrap"
           value={note.content}
           components={{
             block: {
               normal: ({children}) => (
-                <p className="mb-3 sm:mb-4 md:mb-5 indent-2 sm:indent-4 md:indent-6 text-xs sm:text-sm md:text-base lg:text-lg text-white/90 leading-relaxed sm:leading-loose break-words overflow-wrap-anywhere">{children}</p>
+                <p className="mb-3 font-mono sm:mb-4 md:mb-5 indent-2 sm:indent-4 md:indent-6 font-size-base text-white/90 leading-relaxed break-words overflow-wrap-anywhere">{children}</p>
               ),
             },
             list: {
@@ -47,7 +47,7 @@ export default async function note({ params }) {
             },
             listItem: {
               bullet: ({children}) => ( 
-                <li className="list-disc marker:text-tp text-white text-xs sm:text-sm md:text-base lg:text-lg break-words overflow-wrap-anywhere">{children}</li>
+                <li className="list-disc marker:text-tp text-white font-size-base break-words overflow-wrap-anywhere">{children}</li>
               ),
             },
             types: {
@@ -68,7 +68,7 @@ export default async function note({ params }) {
                 const {language} = value.language;
                 return(
                   <div className="border-2 border-tp rounded-md sm:rounded-lg md:rounded-xl p-3 sm:p-4 md:p-6 my-4 sm:my-6 md:my-8 overflow-x-auto bg-neutral-900/50 backdrop-blur-sm max-w-full">
-                    <pre data-language={value.language} className="text-xs sm:text-sm md:text-base lg:text-lg overflow-x-auto whitespace-pre-wrap break-words max-w-full">
+                    <pre data-language={value.language} className="font-size-sm overflow-x-auto whitespace-pre-wrap break-words max-w-full">
                       <code className="text-white/95 break-words">{value.code}</code>
                     </pre>
                   </div>

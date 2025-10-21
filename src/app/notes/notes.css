@@ -23,23 +23,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "rubik";
+  src: url("assets/fonts/Rubik_Glitch.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
 /* REUSABLE COMPONENTS*/
 
 nav {
   @apply font-chakra text-2xl font-semibold backdrop-blur-sm;
-}
-
-/* Glassy Containers */
-.glassy-dark {
-  @apply bg-tpink/50 shadow-lg backdrop-blur-md;
-}
-
-.glassy-mid {
-  @apply bg-tp/5 shadow-tp/10 shadow-md backdrop-blur-xl rounded-xl p-2 my-4;
-}
-
-.turn {
-  @apply rotate-90 blur-[100px]
 }
 
 /* <h> & all text <tags> */
@@ -49,39 +45,25 @@ h1 {
 }
 
 h2 {
-  @apply font-chakra text-3xl selection:bg-tp selection:text-black;
+  @apply font-mono text-3xl selection:bg-tp selection:text-black;
 }
 
 h3 {
-  @apply font-chakra text-2xl selection:bg-tp selection:text-black;
+  @apply font-mono text-2xl selection:bg-tp selection:text-black;
 }
 
 h4 {
-  @apply font-chakra text-xl selection:bg-tp selection:text-black ;
+  @apply font-mono text-xl selection:bg-tp selection:text-black ;
 }
 
 h5 {
-  @apply font-chakra text-lg selection:bg-tp selection:text-black;
+  @apply font-mono text-lg selection:bg-tp selection:text-black;
 }
 
 h6 {
-  @apply font-chakra text-base selection:bg-tp selection:text-black;
+  @apply font-mono text-base selection:bg-tp selection:text-black;
 }
 
 p {
-  @apply font-chakra font-semibold text-tp selection:bg-tp selection:text-black;
-}
-
-/* Reusable Styles. */
-
-.bdr-light {
-  @apply border-[2px] border-tp/30 py-6 px-6 mt-16
-}
-
-.button {
-  @apply border-white border-[1px] w-24 bg-black/50 rounded-xl h-6
-}
-
-.position-bottom-right {
-  @apply bottom-0 right-0
+  @apply font-mono font-semibold text-tp selection:bg-tp selection:text-black;
 }
