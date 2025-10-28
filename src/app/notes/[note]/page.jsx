@@ -11,14 +11,6 @@ export default async function note({ params }) {
     <>
     <Nav /> 
     <div className="mx-10 md:mx-20 lg:mx-28 xl:mx-32 w-3/4 items-center content-start flex flex-col flex-wrap content-evenly gap-8 my-10 bg-neutral-950/10 h-full" key={note._id}>
-      <Image
-        src={bg}
-        alt="Background image for aesthetics."
-        width={400}
-        height={600}
-        className="absolute -z-20 top-[100px] -right-[100px] blur-[50px]"
-        objectFit="cover"
-      /> 
       <Image 
         src={note.image} 
         alt={note.name}
