@@ -1,5 +1,5 @@
 import Nav from "../components/Nav";
-import "./contact.css";
+import "../globals.css";
 import Image from "next/image";
 import Spline from '@splinetool/react-spline/next';
 

@@ -16,6 +16,7 @@
     "@sanity/vision": "^4.10.3",
     "@splinetool/react-spline": "^4.1.0",
     "@splinetool/runtime": "^1.10.39",
+    "@tailwindcss/postcss": "^4.1.18",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "gsap": "^3.12.7",
@@ -23,17 +24,17 @@
     "next-sanity": "^11.5.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "styled-components": "^6.1.18"
+    "styled-components": "^6.1.18",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@types/react": "^19.2.7",
     "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "^16.0.8",
-    "postcss": "^8",
+    "postcss": "^8.5.6",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"
   }
 }

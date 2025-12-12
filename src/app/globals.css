@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: rgb(0, 0, 0, 1);
@@ -45,19 +43,6 @@ html {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "silkscreen";
-  src: url("/assets/fonts/Silkscreen/Silkscreen-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "silkscreen";
-  src: url("/assets/fonts/Silkscreen/Silkscreen-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
 
 @font-face {
   font-family: "Rubik Glitch";
@@ -66,50 +51,85 @@ html {
   font-style: normal;
 }
 
-
 /* REUSABLE COMPONENTS*/
-
 nav {
-  @apply font-silkscreen text-2xl font-semibold backdrop-blur-sm;
-}
-
-link {
-  @apply font-silkscreen
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 /* Glassy Containers */
 .glassy {
-  @apply bg-white/10 shadow-lg backdrop-blur-md;
+  background-color: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* <h> & all text <tags> */
-
 h1 {
-  @apply font-silkscreen text-4xl selection:bg-tp selection:text-black;
+  font-size: 3.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  color: #FFFFFF;
+}
+
+h1::selection {
+  background-color: var(--tp); /* Replace with your tp color value */
+  color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 h2 {
-  @apply font-silkscreen text-3xl selection:bg-tp selection:text-black;
+  font-size: 2.85rem;
+  background-color: var(--tp); /* Replace with your tp color value */
+  color: #FFFFFF;
+}
+
+h2::selection {
+  background-color: var(--tp); /* Replace with your tp color value */
+  color: #FFFFFF;
 }
 
 h3 {
-  @apply font-silkscreen text-2xl selection:bg-tp selection:text-black;
+  font-size: 2.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  color: #FFFFFF;
+}
+
+h3::selection {
+  background-color: var(--tp); /* Replace with your tp color value */
+  color: #FFFFFF;
 }
 
 h4 {
-  @apply font-silkscreen text-xl selection:bg-tp selection:text-black;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  color: #FFFFFF;
+}
+
+h4::selection {
+  background-color: var(--tp); /* Replace with your tp color value */
+  color: #FFFFFF;
 }
 
 h5 {
-  @apply font-silkscreen text-lg selection:bg-tp selection:text-black;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  color: #FFFFFF;
 }
 
-h6 {
-  @apply font-silkscreen text-base selection:bg-tp selection:text-black;
+h5::selection {
+  background-color: var(--tp); /* Replace with your tp color value */
+  color: #FFFFFF;
 }
 
 p {
-  @apply font-silkscreen selection:bg-tp selection:text-black;
+  font-size: .75rem;
+  color: #FFFFFF;
+}
+
+p::selection {
+  background-color: var(--tp); /* Replace with your tp color value */
+  color: #FFFFFF;
 }
 
 .img-shadow {
