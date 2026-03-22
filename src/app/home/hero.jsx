@@ -5,11 +5,9 @@ import Image from "next/image";
 import gsap from "gsap";
 import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
 
-
+gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Hero() {
-  gsap.registerPlugin(ScrambleTextPlugin);
-  
   useEffect(() => {
     gsap.to("#scrmbl-one", {
       duration: 2.2,
@@ -29,12 +27,11 @@ export default function Hero() {
         delimiter: " ",
         speed: 30,
       },
-    }),
-    gsap.fromTo(".slide", 
-        {duration: 1.9, x: -500, y:300, opacity: 0, ease: "ease"},
-        {opacity: 1, x: 0, y: 0,}
-    )
-    
+    });
+    gsap.fromTo(".slide",
+      { x: -500, y: 300, opacity: 0 },
+      { duration: 1.9, x: 0, y: 0, opacity: 1, ease: "power2.out" }
+    );
   }, []);
   return (
     <>
