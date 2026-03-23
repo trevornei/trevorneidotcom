@@ -3,7 +3,7 @@ import { getProjects, urlFor } from '../../../sanity/sanity-utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from "next/navigation";
-import bgImg from '../../../public/images/decorative/ma_cherry_image2.png';
+import bgImg from '../../../public/images/decorative/ma_cherry_image2.webp';
 
 export default async function page() {
   const projects = await getProjects();

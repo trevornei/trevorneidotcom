@@ -140,7 +140,7 @@ export default function Hero() {
         {/* Profile photo — replaces AI illustration */}
         <div className="h-32 w-32 shrink-0 overflow-hidden rounded-full border border-white/10 md:h-44 md:w-44">
           <Image
-            src="/images/photos/hero.JPEG"
+            src="/images/photos/hero.webp"
             alt="Trevor Nei"
             width={400}
             height={400}
@@ -166,7 +166,7 @@ export default function Hero() {
           <div className="mt-3 flex items-center gap-x-6">
             <a href="https://www.github.com/trevornei" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/images/icons/github-mark-white.png"
+                src="/images/icons/github-mark-white.webp"
                 alt="GitHub"
                 width={24}
                 height={24}
@@ -175,7 +175,7 @@ export default function Hero() {
             </a>
             <a href="https://www.linkedin.com/in/trevornei-dev/" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/images/icons/LI-In-Bug.png"
+                src="/images/icons/LI-In-Bug.webp"
                 alt="LinkedIn"
                 width={24}
                 height={24}
@@ -184,7 +184,7 @@ export default function Hero() {
             </a>
             <a href="https://x.com/trevv_dev" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/images/icons/x-white.png"
+                src="/images/icons/x-white.webp"
                 alt="X"
                 width={24}
                 height={24}
@@ -202,9 +202,10 @@ export default function Hero() {
         <div className="card-amsterdam col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md lg:col-span-2">
           <div className="relative h-72 w-full overflow-hidden">
             <Image
-              src="/images/photos/amsterdam.JPEG"
+              src="/images/photos/amsterdam.webp"
               alt="React Summit Amsterdam 2025"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 66vw"
               className="amsterdam-img object-cover object-top"
             />
           </div>
@@ -239,9 +240,10 @@ export default function Hero() {
         <div className="card-climbing col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
           <div className="relative h-64 w-full overflow-hidden">
             <Image
-              src="/images/photos/climbing.JPEG"
+              src="/images/photos/climbing.webp"
               alt="Rock climbing in Montana"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="climbing-img object-cover"
             />
           </div>
@@ -256,9 +258,10 @@ export default function Hero() {
         <div className="card-backpacking col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md md:col-span-1 lg:col-span-2">
           <div className="relative h-64 w-full overflow-hidden">
             <Image
-              src="/images/photos/backpacking.JPEG"
+              src="/images/photos/backpacking.webp"
               alt="Backpacking in the mountains"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 66vw"
               className="backpacking-img object-cover object-center"
             />
           </div>

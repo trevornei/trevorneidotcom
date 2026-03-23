@@ -93,7 +93,7 @@ export default function Nav() {
           {/* Haystack button */}
           <button onClick={openModal} className="relative">
             <Image
-              src="/images/decorative/ma_cherry_3.png"
+              src="/images/decorative/ma_cherry_3.webp"
               className="absolute right-0 top-0 animate-spin-slow blur-xl saturate-200"
               width={100}
               height={100}

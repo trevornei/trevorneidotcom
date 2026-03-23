@@ -1,7 +1,7 @@
 import { getProject, urlFor } from '../../../../sanity/sanity-utils';
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
-import bg from '../../../../public/bg.png';
+import bg from '../../../../public/bg.webp';
 import Nav from '../../components/Nav';
 
 export default async function note({ params }) {

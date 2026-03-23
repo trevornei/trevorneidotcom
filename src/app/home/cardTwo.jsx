@@ -20,7 +20,7 @@ export default function CardTwo() {
         </div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-black">
           <Image
-            src="/images/decorative/ma_cherry_image8.png"
+            src="/images/decorative/ma_cherry_image8.webp"
             alt="A new image"
             className="absolute inset-0 -z-10 object-cover sm:h-auto sm:w-[200px] md:h-full md:w-full xl:bottom-10 2xl:right-0 2xl:h-auto 2xl:w-full 2xl:-rotate-55"
             width={1700}
