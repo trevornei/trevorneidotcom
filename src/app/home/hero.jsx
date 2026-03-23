@@ -133,7 +133,7 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full px-4 pb-32 pt-20 md:px-10 lg:px-20"
+      className="relative w-full px-4 pb-32 pt-20 md:px-10 lg:px-20 max-w-7xl mx-auto"
     >
       {/* ── HEADER ── */}
       <div className="hero-header mb-24 flex flex-col items-center gap-6 md:flex-row md:items-center md:gap-12">
@@ -145,7 +145,7 @@ export default function Hero() {
             width={400}
             height={400}
             priority
-            className="h-full w-full object-cover object-top"
+            className="h-full w-full object-cover object-center"
           />
         </div>
 
@@ -206,7 +206,7 @@ export default function Hero() {
               alt="React Summit Amsterdam 2025"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 66vw"
-              className="amsterdam-img object-cover object-top"
+              className="amsterdam-img object-cover object-center"
             />
           </div>
           <div className="p-6">
@@ -224,14 +224,22 @@ export default function Hero() {
           href="https://hcarego.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="card-hcarego group col-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-md transition-colors hover:bg-white/10"
+          className="card-hcarego group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-md transition-colors hover:bg-white/10"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-white/40">Co-Founder</p>
-          <div className="mt-6">
+          <div className="absolute inset-8">
+            <Image
+              src="/images/icons/risorsa-hcarego.webp"
+              alt="HcareGo"
+              fill
+              className="object-contain object-center opacity-20"
+            />
+          </div>
+          <p className="relative font-mono text-xs uppercase tracking-widest text-white/40">Co-Founder</p>
+          <div className="relative mt-6">
             <h3 className="text-3xl font-bold text-white">HcareGo.com</h3>
             <p className="mt-2 text-white/60">Healthcare staffing for rural Montana.</p>
           </div>
-          <span className="mt-8 font-mono text-sm text-white/30 transition-colors group-hover:text-white/70">
+          <span className="relative mt-8 font-mono text-sm text-white/30 transition-colors group-hover:text-white/70">
             hcarego.com →
           </span>
         </a>
@@ -256,14 +264,26 @@ export default function Hero() {
 
         {/* ── Backpacking — rises from BOTTOM, spans 2 cols ── */}
         <div className="card-backpacking col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md md:col-span-1 lg:col-span-2">
-          <div className="relative h-64 w-full overflow-hidden">
+          <div className="relative h-72 w-full overflow-hidden">
             <Image
               src="/images/photos/backpacking.webp"
               alt="Backpacking in the mountains"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 66vw"
-              className="backpacking-img object-cover object-center"
+              className="backpacking-img object-cover object-bottom grayscale"
             />
+            <div
+              className="absolute inset-0 backdrop-blur-[2px]"
+              style={{
+                maskImage: "radial-gradient(circle, transparent 60%, black 95%)",
+                WebkitMaskImage: "radial-gradient(circle, transparent 60%, black 95%)",
+              }}
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-lg font-bold leading-snug text-white">
+              ...a marathon of sprints 🔄
+            </h3>
           </div>
         </div>
 
