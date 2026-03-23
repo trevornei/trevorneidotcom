@@ -1,7 +1,8 @@
 'use client';
 
 import { Component } from 'react';
-import Spline from '@splinetool/react-spline/next';
+import dynamic from 'next/dynamic';
+const Spline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
 
 class ErrorBoundary extends Component {
   constructor(props) {
