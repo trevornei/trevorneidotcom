@@ -175,7 +175,7 @@ export default function Hero() {
             />
           </div>
           <div className="p-6">
-            <h3 className="text-lg font-bold leading-snug text-white">
+            <h3 className="text-lg font-bold leading-relaxed text-white">
               I build software the same way I play outside.
             </h3>
           </div>
@@ -200,7 +200,7 @@ export default function Hero() {
             />
           </div>
           <div className="p-6">
-            <h3 className="text-lg font-bold leading-snug text-white">
+            <h3 className="text-lg font-bold leading-relaxed text-white">
               ...a marathon of sprints 🔄
             </h3>
           </div>

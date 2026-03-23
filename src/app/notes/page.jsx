@@ -15,7 +15,7 @@ export default async function page() {
         <div className="mb-12">
           <p className="font-mono text-xs uppercase tracking-widest text-white/30">trevornei.com</p>
           <h1 className="mt-2 font-mono text-4xl font-bold text-white md:text-5xl">Notes</h1>
-          <p className="mt-2 font-mono text-sm text-white/50">Writing, essays, and half-baked ideas.</p>
+          <p className="mt-2 font-mono text-sm text-white/50">Writing</p>
         </div>
 
         {/* Grid */}
