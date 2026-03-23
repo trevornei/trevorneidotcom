@@ -4,9 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrambleTextPlugin, ScrollTrigger);
+gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Hero() {
   const sectionRef = useRef(null);
@@ -41,90 +39,11 @@ export default function Hero() {
         },
       });
 
-      // ── Amsterdam card: slides from RIGHT ──
-      gsap.from(".card-amsterdam", {
-        x: 220,
-        opacity: 0,
-        duration: 1.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".card-amsterdam",
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        },
-      });
-      // Amsterdam image: zooms in as card enters (zeroing in on a destination)
-      gsap.from(".amsterdam-img", {
-        scale: 1.12,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".card-amsterdam",
-          start: "top bottom",
-          end: "center center",
-          scrub: true,
-        },
-      });
-
-      // ── Climbing card: slides from LEFT ──
-      gsap.from(".card-climbing", {
-        x: -220,
-        opacity: 0,
-        duration: 1.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".card-climbing",
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        },
-      });
-      // Climbing image: parallax upward as you scroll (ascending the rock)
-      gsap.to(".climbing-img", {
-        yPercent: -14,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".card-climbing",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
-
-      // ── Backpacking card: rises from BOTTOM ──
-      gsap.from(".card-backpacking", {
-        y: 120,
-        opacity: 0,
-        duration: 1.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".card-backpacking",
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        },
-      });
-      // Backpacking image: slow horizontal drift (wandering through landscape)
-      gsap.to(".backpacking-img", {
-        xPercent: 4,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".card-backpacking",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
-
-      // ── HcareGo card: slides from RIGHT ──
-      gsap.from(".card-hcarego", {
-        x: 120,
-        opacity: 0,
-        duration: 1.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".card-hcarego",
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        },
-      });
+      // ── Bento cards ──
+      gsap.from(".card-amsterdam", { x: 220, opacity: 0, duration: 1.1, ease: "power3.out", delay: 0.2 });
+      gsap.from(".card-hcarego",   { x: 120, opacity: 0, duration: 1.1, ease: "power3.out", delay: 0.4 });
+      gsap.from(".card-climbing",  { x: -220, opacity: 0, duration: 1.1, ease: "power3.out", delay: 0.5 });
+      gsap.from(".card-backpacking", { y: 120, opacity: 0, duration: 1.1, ease: "power3.out", delay: 0.6 });
     }, sectionRef);
 
     return () => ctx.revert();
@@ -213,8 +132,8 @@ export default function Hero() {
             <p className="font-mono text-xs uppercase tracking-widest text-white/40">
               React Summit · Amsterdam, 2025
             </p>
-            <h3 className="mt-3 text-xl font-bold leading-snug text-white md:text-2xl">
-              Help Desk to AWS.<br />Missoula to Amsterdam.
+            <h3 className="mt-3 text-xl font-bold leading-relaxed text-white md:text-2xl">
+              IT, Cybersecurity,<br />& Web Development.
             </h3>
           </div>
         </div>
