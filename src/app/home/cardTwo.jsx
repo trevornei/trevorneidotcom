@@ -11,7 +11,7 @@ export default function CardTwo() {
       <div className="lg:px-10/12 relative flex w-screen flex-row flex-wrap overflow-hidden border-[1px] border-white sm:flex-row md:flex-row lg:flex-row xl:my-72 xl:rounded-none xl:backdrop-blur-3xl">
         <div className="relative z-10 flex h-full w-full items-center justify-center">
           <Image
-            src="/assets/images/CirclesAndSpheres/SVG/circles_100.svg"
+            src="/images/icons/circles_100.svg"
             alt="A new generated image"
             className="absolute right-0 top-0 h-auto w-[150px] animate-rotate-y object-cover sm:right-0 sm:top-0 sm:h-auto sm:w-[280px] md:right-0 md:top-0 md:h-auto md:w-[390px] lg:right-0 lg:top-0 lg:h-auto lg:w-[500px] xl:-right-20 xl:top-0 xl:h-auto xl:w-[500px] 2xl:right-0 2xl:top-0"
             width={800}
@@ -20,7 +20,7 @@ export default function CardTwo() {
         </div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-black">
           <Image
-            src="/assets/images/ma_cherry/image_8.png"
+            src="/images/decorative/ma_cherry_image8.png"
             alt="A new image"
             className="absolute inset-0 -z-10 object-cover sm:h-auto sm:w-[200px] md:h-full md:w-full xl:bottom-10 2xl:right-0 2xl:h-auto 2xl:w-full 2xl:-rotate-55"
             width={1700}
@@ -28,7 +28,7 @@ export default function CardTwo() {
           />
         </div>
         <Image
-          src="/assets/images/illustrator/2xl_grid.svg"
+          src="/images/icons/2xl_grid.svg"
           alt="2xl grid"
           className="absolute inset-0 -z-10"
           width={1700}

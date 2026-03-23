@@ -6,7 +6,7 @@ export default function CardThree() {
     <>
 	<div className="">
 		<Image 
-			src="/assets/images/ps/dogboy.png"
+			src="/images/decorative/dogboy.png"
 	  		width={2850}
 			height={1538}
 	  		alt=""

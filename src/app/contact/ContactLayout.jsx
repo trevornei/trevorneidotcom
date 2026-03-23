@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Trevor Nei is a software engineer based out of Missoula Montana. You can contact me on LinkedIn, GitHub, or X.",
   icons: {
-    icon: "/images/CirclesAndSpheres/SVG/circles_79_white.svg",
+    icon: "/images/icons/circles_79_white.svg",
   },
 };
 

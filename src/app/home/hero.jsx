@@ -140,7 +140,7 @@ export default function Hero() {
         {/* Profile photo — replaces AI illustration */}
         <div className="h-32 w-32 shrink-0 overflow-hidden rounded-full border border-white/10 md:h-44 md:w-44">
           <Image
-            src="/refactor/heroImage.JPEG"
+            src="/images/photos/hero.JPEG"
             alt="Trevor Nei"
             width={400}
             height={400}
@@ -166,7 +166,7 @@ export default function Hero() {
           <div className="mt-3 flex items-center gap-x-6">
             <a href="https://www.github.com/trevornei" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/assets/images/github-mark/github-mark-white.png"
+                src="/images/icons/github-mark-white.png"
                 alt="GitHub"
                 width={24}
                 height={24}
@@ -175,7 +175,7 @@ export default function Hero() {
             </a>
             <a href="https://www.linkedin.com/in/trevornei-dev/" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/assets/images/linkedin-logos/LI-In-Bug.png"
+                src="/images/icons/LI-In-Bug.png"
                 alt="LinkedIn"
                 width={24}
                 height={24}
@@ -184,7 +184,7 @@ export default function Hero() {
             </a>
             <a href="https://x.com/trevv_dev" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/assets/images/x-logo/logo-white.png"
+                src="/images/icons/x-white.png"
                 alt="X"
                 width={24}
                 height={24}
@@ -202,7 +202,7 @@ export default function Hero() {
         <div className="card-amsterdam col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md lg:col-span-2">
           <div className="relative h-72 w-full overflow-hidden">
             <Image
-              src="/refactor/amsterdam/iCloud%20Photos/IMG_5268.JPEG"
+              src="/images/photos/amsterdam.JPEG"
               alt="React Summit Amsterdam 2025"
               fill
               className="amsterdam-img object-cover object-top"
@@ -239,7 +239,7 @@ export default function Hero() {
         <div className="card-climbing col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
           <div className="relative h-64 w-full overflow-hidden">
             <Image
-              src="/refactor/climbing.JPEG"
+              src="/images/photos/climbing.JPEG"
               alt="Rock climbing in Montana"
               fill
               className="climbing-img object-cover"
@@ -256,7 +256,7 @@ export default function Hero() {
         <div className="card-backpacking col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md md:col-span-1 lg:col-span-2">
           <div className="relative h-64 w-full overflow-hidden">
             <Image
-              src="/refactor/backpacking.JPEG"
+              src="/images/photos/backpacking.JPEG"
               alt="Backpacking in the mountains"
               fill
               className="backpacking-img object-cover object-center"

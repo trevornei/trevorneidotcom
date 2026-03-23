@@ -81,7 +81,7 @@ export default function Nav() {
         <div className="">
           {/* Logo */}
           <Image
-            src="/assets/images/CirclesAndSpheres/SVG/circles_79_white.svg"
+            src="/images/icons/circles_79_white.svg"
             width={100}
             height={100}
             alt="Logo for trevor nei dot com"
@@ -93,7 +93,7 @@ export default function Nav() {
           {/* Haystack button */}
           <button onClick={openModal} className="relative">
             <Image
-              src="/assets/images/ma_cherry/3.png"
+              src="/images/decorative/ma_cherry_3.png"
               className="absolute right-0 top-0 animate-spin-slow blur-xl saturate-200"
               width={100}
               height={100}

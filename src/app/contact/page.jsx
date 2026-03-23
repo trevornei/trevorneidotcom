@@ -22,7 +22,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/assets/images/linkedin-logos/LI-In-Bug.png"
+                  src="/images/icons/LI-In-Bug.png"
                   alt="LinkedIn"
                   width={100}
                   height={100}
@@ -37,7 +37,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/assets/images/github-mark/github-mark-white.png"
+                  src="/images/icons/github-mark-white.png"
                   alt="GitHub"
                   width={75}
                   height={75}
@@ -51,7 +51,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/assets/images/x-logo/logo-white.png"
+                  src="/images/icons/x-white.png"
                   alt="X.com"
                   width={75}
                   height={75}
