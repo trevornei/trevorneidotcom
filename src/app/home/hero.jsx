@@ -1,134 +1,270 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrambleTextPlugin);
+gsap.registerPlugin(ScrambleTextPlugin, ScrollTrigger);
 
 export default function Hero() {
+  const sectionRef = useRef(null);
+
   useEffect(() => {
-    gsap.to("#scrmbl-one", {
-      duration: 2.2,
-      delay: 0,
-      scrambleText: {
-        text: "Trevor Nei",
-        chars: "THEINTERNETISAFAD",
-        speed: 100,
-      },
-    });
-    gsap.to("#scrmbl-two", {
-      duration: 2,
-      delay: 0,
-      scrambleText: {
-        text: "Software Engineer",
-        chars: "110111001001110111001001110111001001110111001001110111001001110111001001110111001001110111001001101110010011101110010011",
-        delimiter: " ",
-        speed: 30,
-      },
-    });
-    gsap.fromTo(".slide",
-      { x: -500, y: 300, opacity: 0 },
-      { duration: 1.9, x: 0, y: 0, opacity: 1, ease: "power2.out" }
-    );
+    const ctx = gsap.context(() => {
+      // ── Initial load ──
+      gsap.from(".hero-header", {
+        y: -60,
+        opacity: 0,
+        duration: 1.3,
+        ease: "power3.out",
+      });
+
+      gsap.to("#scrmbl-name", {
+        duration: 2.2,
+        scrambleText: {
+          text: "Trevor Nei",
+          chars: "THEINTERNETISAFAD",
+          speed: 100,
+        },
+      });
+
+      gsap.to("#scrmbl-title", {
+        duration: 2,
+        delay: 0.4,
+        scrambleText: {
+          text: "Developer. Builder. Co-Founder.",
+          chars: "110111001001110111001001",
+          delimiter: " ",
+          speed: 30,
+        },
+      });
+
+      // ── Amsterdam card: slides from RIGHT ──
+      gsap.from(".card-amsterdam", {
+        x: 220,
+        opacity: 0,
+        duration: 1.1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".card-amsterdam",
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
+      // Amsterdam image: zooms in as card enters (zeroing in on a destination)
+      gsap.from(".amsterdam-img", {
+        scale: 1.12,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".card-amsterdam",
+          start: "top bottom",
+          end: "center center",
+          scrub: true,
+        },
+      });
+
+      // ── Climbing card: slides from LEFT ──
+      gsap.from(".card-climbing", {
+        x: -220,
+        opacity: 0,
+        duration: 1.1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".card-climbing",
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
+      // Climbing image: parallax upward as you scroll (ascending the rock)
+      gsap.to(".climbing-img", {
+        yPercent: -14,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".card-climbing",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      // ── Backpacking card: rises from BOTTOM ──
+      gsap.from(".card-backpacking", {
+        y: 120,
+        opacity: 0,
+        duration: 1.1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".card-backpacking",
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
+      // Backpacking image: slow horizontal drift (wandering through landscape)
+      gsap.to(".backpacking-img", {
+        xPercent: 4,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".card-backpacking",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      // ── HcareGo card: slides from RIGHT ──
+      gsap.from(".card-hcarego", {
+        x: 120,
+        opacity: 0,
+        duration: 1.1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".card-hcarego",
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
   }, []);
+
   return (
-    <>
-      <div className="absolute slide z-30 mb-20 hidden -rotate-[10deg] overflow-hidden bg-tp sm:left-[215px] sm:top-[497px] sm:block md:left-[200px] md:top-[500px] md:mb-32 md:block lg:left-[450px] lg:top-[680px] lg:block lg:-rotate-[15deg] xl:block 2xl:block">
-        <h1
-          className="z-30 font-silkscreen font-bold text-black sm:px-2 sm:py-px sm:text-xl md:px-2 md:py-1 md:text-2xl lg:px-4 lg:py-2 lg:text-4xl"
-          id="scrmbl-one"
-        >
-          Trevor Nei
-        </h1>
-      </div>
-      <div className="b-36 slide relative mb-36 mt-16 flex h-1/2 w-10/12 flex-col items-center justify-end overflow-hidden rounded-3xl border-[1px] border-white sm:h-[300px] sm:w-10/12 sm:flex-row md:h-auto md:w-10/12 md:flex-row lg:h-[500px] lg:w-10/12 xl:h-[500px] xl:w-10/12 xl:flex-row 2xl:w-10/12">
-        {/* PROFILE EXTENDING THE LENGTH OF THE SCREEN. */}
-        <div
-          className="sm:border-b-none relative -z-0 flex h-full w-full flex-row items-start justify-center overflow-hidden border-b-2 border-tpink/20 backdrop-blur-md sm:-z-10 sm:h-full sm:w-[600px] sm:border-b-0 md:absolute md:left-0 md:-z-10 md:h-full md:w-full md:items-start md:justify-start md:rounded-r-none md:border-b-0 lg:absolute lg:left-0 lg:-z-10 lg:w-full lg:flex-row lg:items-start lg:justify-start lg:border-b-0 xl:absolute xl:h-full xl:w-full xl:border-b-0 2xl:w-full 2xl:border-b-0"
-          id="mvHero"
-        >
+    <section
+      ref={sectionRef}
+      className="relative w-full px-4 pb-32 pt-20 md:px-10 lg:px-20"
+    >
+      {/* ── HEADER ── */}
+      <div className="hero-header mb-24 flex flex-col items-center gap-6 md:flex-row md:items-center md:gap-12">
+        {/* Profile photo — replaces AI illustration */}
+        <div className="h-32 w-32 shrink-0 overflow-hidden rounded-full border border-white/10 md:h-44 md:w-44">
           <Image
-            src="/assets/images/ma_cherry/image_2.png"
-            className="absolute top-0 left-0 -z-10 object-cover blur-[40px]"
-            alt="Shoshone"
-            width={800}
-            height={800}
-          />
-          <Image
-            src="/assets/images/profile_pictures/profile_picture.png"
-            className="relative z-10 translate-y-6 border-r-0 grayscale md:h-full md:w-auto"
-            alt="A png illustration that aids in the visual representation of the website."
-            width={500}
-            height={500}
+            src="/refactor/heroImage.JPEG"
+            alt="Trevor Nei"
+            width={400}
+            height={400}
+            priority
+            className="h-full w-full object-cover object-top"
           />
         </div>
-        <div className="relative z-10 my-0 flex h-full w-full flex-col items-center justify-end overflow-hidden rounded-t-none sm:h-[300px] sm:w-full md:w-1/2 md:items-end md:rounded-3xl md:rounded-l-none lg:h-full lg:w-96 lg:items-center lg:justify-center lg:rounded-l-none xl:w-1/2 xl:items-end xl:justify-center xl:rounded-l-none 2xl:w-1/2 2xl:rounded-l-none">
-          <div className="m-0 my-0 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-3xl bg-black/50 p-10 backdrop-blur-md sm:m-0 sm:my-0 sm:h-full sm:items-center sm:rounded-none sm:py-10 md:w-full md:rounded-l-none md:py-10 lg:m-0 lg:h-full lg:w-full lg:items-center lg:justify-center lg:rounded-l-none lg:px-8 lg:py-10 xl:h-full xl:w-full xl:items-center xl:justify-center xl:rounded-l-none xl:py-16 2xl:rounded-l-none">
-            <h1
-              className="scrambleName z-30 font-bold text-tp sm:hidden sm:px-2 sm:py-px sm:text-xl md:hidden md:px-2 md:py-1 md:text-2xl lg:hidden lg:px-4 lg:py-2 lg:text-4xl xl:hidden 2xl:hidden"
-              id="scrmbl-one"
-            >
-              Trevor Nei
-            </h1>
-            <div className="flex flex-row items-start justify-start gap-x-2 sm:flex-col">
-              <h1
-                className="mx-none software text-2xl font-extrabold text-white md:text-5xl lg:text-6xl xl:mx-8 xl:pb-5 xl:text-6xl"
-                id="scrmbl-two"
-              >
-                SOFTWARE
-              </h1>
-            </div>
-            <div className="flex h-full w-full flex-row items-center justify-center">
-              <div className="relative mt-10 flex flex-row items-center justify-center overflow-visible md:mt-24">
-                {/* Foreground Icons */}
-                <div className="flex items-center justify-center space-x-4 sm:space-x-4 md:space-x-8 lg:space-x-8 xl:space-x-20">
-                  <a
-                    href="https://www.github.com/trevornei"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/assets/images/github-mark/github-mark-white.png"
-                      alt="Github logo"
-                      className="pt-2 sm:h-auto sm:w-10 md:h-auto md:w-16 md:pt-2 lg:h-auto lg:w-16"
-                      width={100}
-                      height={100}
-                    />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/trevornei-dev/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/assets/images/linkedin-logos/LI-In-Bug.png"
-                      alt="LinkedIn logo"
-                      className="pt-2 sm:h-auto sm:w-10 md:h-auto md:w-16 md:pt-2 lg:h-auto lg:w-20"
-                      width={100}
-                      height={100}
-                    />
-                  </a>
-                  <a
-                    href="https://x.com/trevv_dev"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/assets/images/x-logo/logo-white.png"
-                      alt="Another logo"
-                      className="pt-2 sm:h-auto sm:w-10 md:h-auto md:w-16 md:pt-2 lg:h-auto lg:w-16 lg:pt-2"
-                      width={100}
-                      height={100}
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
+
+        {/* Text */}
+        <div className="flex flex-col items-center gap-y-2 text-center md:items-start md:text-left">
+          <h1
+            id="scrmbl-name"
+            className="font-silkscreen text-5xl font-bold text-white md:text-6xl lg:text-7xl"
+          >
+            Trevor Nei
+          </h1>
+          <p id="scrmbl-title" className="font-mono text-base text-white/60 md:text-xl">
+            Developer. Builder. Co-Founder.
+          </p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/30">
+            Missoula, MT
+          </p>
+          <div className="mt-3 flex items-center gap-x-6">
+            <a href="https://www.github.com/trevornei" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/assets/images/github-mark/github-mark-white.png"
+                alt="GitHub"
+                width={24}
+                height={24}
+                className="opacity-50 transition-opacity hover:opacity-100"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/trevornei-dev/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/assets/images/linkedin-logos/LI-In-Bug.png"
+                alt="LinkedIn"
+                width={24}
+                height={24}
+                className="opacity-50 transition-opacity hover:opacity-100"
+              />
+            </a>
+            <a href="https://x.com/trevv_dev" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/assets/images/x-logo/logo-white.png"
+                alt="X"
+                width={24}
+                height={24}
+                className="opacity-50 transition-opacity hover:opacity-100"
+              />
+            </a>
           </div>
         </div>
       </div>
-    </>
+
+      {/* ── BENTO GRID ── */}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        {/* ── Amsterdam — slides from RIGHT, spans 2 cols ── */}
+        <div className="card-amsterdam col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md lg:col-span-2">
+          <div className="relative h-72 w-full overflow-hidden">
+            <Image
+              src="/refactor/amsterdam/iCloud%20Photos/IMG_5268.JPEG"
+              alt="React Summit Amsterdam 2025"
+              fill
+              className="amsterdam-img object-cover object-top"
+            />
+          </div>
+          <div className="p-6">
+            <p className="font-mono text-xs uppercase tracking-widest text-white/40">
+              React Summit · Amsterdam, 2025
+            </p>
+            <h3 className="mt-3 text-xl font-bold leading-snug text-white md:text-2xl">
+              Help Desk to AWS.<br />Missoula to Amsterdam.
+            </h3>
+          </div>
+        </div>
+
+        {/* ── HcareGo — slides from RIGHT ── */}
+        <a
+          href="https://hcarego.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-hcarego group col-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-md transition-colors hover:bg-white/10"
+        >
+          <p className="font-mono text-xs uppercase tracking-widest text-white/40">Co-Founder</p>
+          <div className="mt-6">
+            <h3 className="text-3xl font-bold text-white">HcareGo.com</h3>
+            <p className="mt-2 text-white/60">Healthcare staffing for rural Montana.</p>
+          </div>
+          <span className="mt-8 font-mono text-sm text-white/30 transition-colors group-hover:text-white/70">
+            hcarego.com →
+          </span>
+        </a>
+
+        {/* ── Climbing — slides from LEFT ── */}
+        <div className="card-climbing col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative h-64 w-full overflow-hidden">
+            <Image
+              src="/refactor/climbing.JPEG"
+              alt="Rock climbing in Montana"
+              fill
+              className="climbing-img object-cover"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-lg font-bold leading-snug text-white">
+              I build software the same way I play outside.
+            </h3>
+          </div>
+        </div>
+
+        {/* ── Backpacking — rises from BOTTOM, spans 2 cols ── */}
+        <div className="card-backpacking col-span-1 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md md:col-span-1 lg:col-span-2">
+          <div className="relative h-64 w-full overflow-hidden">
+            <Image
+              src="/refactor/backpacking.JPEG"
+              alt="Backpacking in the mountains"
+              fill
+              className="backpacking-img object-cover object-center"
+            />
+          </div>
+        </div>
+
+      </div>
+    </section>
   );
 }
