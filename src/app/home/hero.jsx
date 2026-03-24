@@ -101,15 +101,6 @@ export default function Hero() {
                 className="opacity-50 transition-opacity hover:opacity-100"
               />
             </a>
-            <a href="https://x.com/trevv_dev" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/images/icons/x-white.webp"
-                alt="X"
-                width={24}
-                height={24}
-                className="opacity-50 transition-opacity hover:opacity-100"
-              />
-            </a>
           </div>
         </div>
       </div>
